@@ -62,7 +62,7 @@ def check_ffmpeg_installation():
                               stderr=subprocess.PIPE, 
                               text=True, 
                               check=True)
-        logger.info(f"FFmpeg installed: {result.stdout.split('\\n')[0]}")
+        logger.info(rf"FFmpeg installed: {result.stdout.split('\n')[0]}")
         return True
     except subprocess.CalledProcessError:
         logger.error("FFmpeg failed to run. Check installation.")
