@@ -1,0 +1,4561 @@
+{
+  "name": "POWER 5.0 PHYSICS NEET 2025",
+  "type": "NEET-POWER",
+  "year": "2025",
+  "created_at": "2025-03-19",
+  "subjects": {
+    "physics": {
+      "name": "PHYSICS",
+      "icon": "physics",
+      "content": [
+        {
+          "title": "Mock Test 1 Solution",
+          "type": "video",
+          "url": "https://transcoded-videos-v2.classx.co.in/videos/firephysics-data/1789336-1741241433/encrypted-49bd4f/360p/encrypted.mkv*848086",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "MOCKTESTs",
+            "number": 1
+          },
+          "created_at": "2025-03-19",
+          "video_data": {
+            "id": "1789336-1741241433",
+            "hash": "49bd4f",
+            "key": "848086"
+          }
+        },
+        {
+          "title": "Mock test solution 1",
+          "type": "pdf",
+          "url": "https://appx-content-v2.classx.co.in/paid_course4/2025-02-28-0.475639886621803.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "MOCKTESTs",
+            "number": 1
+          },
+          "created_at": "2025-03-19"
+        },
+        {
+          "title": "Mock Test -2 SOLUTION Live Class",
+          "type": "video",
+          "url": "https://transcoded-videos-v2.classx.co.in/videos/firephysics-data/1788991-1741237293/encrypted-d3bd45/360p/encrypted.mkv*414079",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "MOCKTESTs",
+            "number": 1
+          },
+          "created_at": "2025-03-19",
+          "video_data": {
+            "id": "1788991-1741237293",
+            "hash": "d3bd45",
+            "key": "414079"
+          }
+        },
+        {
+          "title": "Mock test solution 2",
+          "type": "pdf",
+          "url": "https://appx-content-v2.classx.co.in/paid_course4/2025-03-06-0.5616696305646636.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "MOCKTESTs",
+            "number": 1
+          },
+          "created_at": "2025-03-19"
+        },
+        {
+          "title": "Mock Test-3 solution Live Class",
+          "type": "video",
+          "url": "https://transcoded-videos-v2.classx.co.in/videos/firephysics-data/1793431-1741325126/encrypted-8db751/360p/encrypted.mkv*8499810",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "MOCKTESTs",
+            "number": 1
+          },
+          "created_at": "2025-03-19",
+          "video_data": {
+            "id": "1793431-1741325126",
+            "hash": "8db751",
+            "key": "8499810"
+          }
+        },
+        {
+          "title": "Mock test solution 3",
+          "type": "pdf",
+          "url": "https://appx-content-v2.classx.co.in/paid_course4/2025-03-07-0.8011401326134013.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "MOCKTESTs",
+            "number": 1
+          },
+          "created_at": "2025-03-19"
+        },
+        {
+          "title": "Mock Test-4 solution Live Class  PART-1",
+          "type": "video",
+          "url": "https://transcoded-videos-v2.classx.co.in/videos/firephysics-data/1801425-1741581626/encrypted-e76053/360p/encrypted.mkv*3908147",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "MOCKTESTs",
+            "number": 1
+          },
+          "created_at": "2025-03-19",
+          "video_data": {
+            "id": "1801425-1741581626",
+            "hash": "e76053",
+            "key": "3908147"
+          }
+        },
+        {
+          "title": "Mock test solution 4 PART-1",
+          "type": "pdf",
+          "url": "https://appx-content-v2.classx.co.in/paid_course4/2025-03-10-0.8692224859793884.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "MOCKTESTs",
+            "number": 1
+          },
+          "created_at": "2025-03-19"
+        },
+        {
+          "title": "Mock Test-4 solution  Live Class  PART-2",
+          "type": "video",
+          "url": "https://transcoded-videos-v2.classx.co.in/videos/firephysics-data/1805052-1741666228/encrypted-7be540/360p/encrypted.mkv*7425757",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "MOCKTESTs",
+            "number": 1
+          },
+          "created_at": "2025-03-19",
+          "video_data": {
+            "id": "1805052-1741666228",
+            "hash": "7be540",
+            "key": "7425757"
+          }
+        },
+        {
+          "title": "Mock test solution 4 PART-2",
+          "type": "pdf",
+          "url": "https://appx-content-v2.classx.co.in/paid_course4/2025-03-11-0.984072247927847.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "MOCKTESTs",
+            "number": 1
+          },
+          "created_at": "2025-03-19"
+        },
+        {
+          "title": "Mock Test -5 solution Live Class PART-1",
+          "type": "video",
+          "url": "https://transcoded-videos-v2.classx.co.in/videos/firephysics-data/1808790-1741757852/encrypted-d755e6/360p/encrypted.mkv*2638280",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "MOCKTESTs",
+            "number": 1
+          },
+          "created_at": "2025-03-19",
+          "video_data": {
+            "id": "1808790-1741757852",
+            "hash": "d755e6",
+            "key": "2638280"
+          }
+        },
+        {
+          "title": "Mock test solution 5 PART-1",
+          "type": "pdf",
+          "url": "https://appx-content-v2.classx.co.in/paid_course4/2025-03-12-0.09153502042263284.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "MOCKTESTs",
+            "number": 1
+          },
+          "created_at": "2025-03-19"
+        },
+        {
+          "title": "Mock Test -5 solution Live Class PART-2",
+          "type": "video",
+          "url": "https://transcoded-videos-v2.classx.co.in/videos/firephysics-data/1812138-1741843883/encrypted-5cef02/360p/encrypted.mkv*4085452",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "MOCKTESTs",
+            "number": 1
+          },
+          "created_at": "2025-03-19",
+          "video_data": {
+            "id": "1812138-1741843883",
+            "hash": "5cef02",
+            "key": "4085452"
+          }
+        },
+        {
+          "title": "Mock test solution 5 PART-2",
+          "type": "pdf",
+          "url": "https://appx-content-v2.classx.co.in/paid_course4/2025-03-13-0.819442916993139.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "MOCKTESTs",
+            "number": 1
+          },
+          "created_at": "2025-03-19"
+        },
+        {
+          "title": "Students Comments Review",
+          "type": "youtube",
+          "url": "https://youtu.be/aSo73n2kLgw",
+          "thumbnail": "https://img.youtube.com/vi/default/maxresdefault.jpg",
+          "chapter": {
+            "name": "Student",
+            "number": 1
+          },
+          "created_at": "2025-03-19"
+        },
+        {
+          "title": "Students Video Review",
+          "type": "youtube",
+          "url": "https://youtu.be/rM_iXfL_q0o",
+          "thumbnail": "https://img.youtube.com/vi/default/maxresdefault.jpg",
+          "chapter": {
+            "name": "Student",
+            "number": 1
+          },
+          "created_at": "2025-03-19"
+        },
+        {
+          "title": "Final NEET Mocktest Timetable",
+          "type": "pdf",
+          "url": "https://appx-content-v2.classx.co.in/paid_course4/2024-12-26-0.4424898085883686.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "Student",
+            "number": 1
+          },
+          "created_at": "2025-03-19"
+        },
+        {
+          "title": "Live Class - 1",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/3302982-1723639054/encrypted-d3947f/360p/encrypted.mkv*6958233",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "Meetings",
+            "number": 1
+          },
+          "created_at": "2025-03-19",
+          "video_data": {
+            "id": "3302982-1723639054",
+            "hash": "d3947f",
+            "key": "6958233"
+          }
+        },
+        {
+          "title": "Class Note - 1",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/01062024/028f3.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "Meetings",
+            "number": 1
+          },
+          "created_at": "2025-03-19"
+        },
+        {
+          "title": "Meeting",
+          "type": "video",
+          "url": "3:https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1194098-1726321768/encrypted-df82f4/360p/encrypted.mkv*2260836",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "Meetings",
+            "number": 1
+          },
+          "created_at": "2025-03-19",
+          "video_data": {
+            "id": "1194098-1726321768",
+            "hash": "df82f4",
+            "key": "2260836"
+          }
+        },
+        {
+          "title": "Meeting",
+          "type": "video",
+          "url": "4 ( 27/10/2024):https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1343675-1730015577/encrypted-5ff102/360p/encrypted.mkv*5390001",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "Meetings",
+            "number": 1
+          },
+          "created_at": "2025-03-19",
+          "video_data": {
+            "id": "1343675-1730015577",
+            "hash": "5ff102",
+            "key": "5390001"
+          }
+        },
+        {
+          "title": "Meeting",
+          "type": "pdf",
+          "url": "4 ( 27/10/2024):https://appxcontent.kaxa.in/paid_course4/2024-10-27-0.21217672151064182.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "Meetings",
+            "number": 1
+          },
+          "created_at": "2025-03-19"
+        },
+        {
+          "title": "Meeting 6 Date 05/01/2025",
+          "type": "video",
+          "url": "https://transcoded-videos-v2.classx.co.in/videos/firephysics-data/200858-1736095951/encrypted-2b3e4f/360p.zip",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "Meetings",
+            "number": 1
+          },
+          "created_at": "2025-03-19"
+        },
+        {
+          "title": "meeting 7 [13-01-2025]",
+          "type": "video",
+          "url": "https://transcoded-videos-v2.classx.co.in/videos/firephysics-data/207798-1736745393/encrypted-4c5faf/360p.zip",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "Meetings",
+            "number": 1
+          },
+          "created_at": "2025-03-19"
+        },
+        {
+          "title": "meeting 8 [03-02-2025]",
+          "type": "video",
+          "url": "https://transcoded-videos-v2.classx.co.in/videos/firephysics-data/227145-1738559255/encrypted-5f9fd7/360p.zip",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "Meetings",
+            "number": 1
+          },
+          "created_at": "2025-03-19"
+        },
+        {
+          "title": "Meeting",
+          "type": "video",
+          "url": "https://transcoded-videos-v2.classx.co.in/videos/firephysics-data/1760358-1740468509/encrypted-41a99e/360p/encrypted.mkv*8528048",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "Meetings",
+            "number": 1
+          },
+          "created_at": "2025-03-19",
+          "video_data": {
+            "id": "1760358-1740468509",
+            "hash": "41a99e",
+            "key": "8528048"
+          }
+        },
+        {
+          "title": "Meeting (11/3)",
+          "type": "video",
+          "url": "https://transcoded-videos-v2.classx.co.in/videos/firephysics-data/1807905-1741707449/encrypted-936e54/360p/encrypted.mkv*1550118",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "Meetings",
+            "number": 1
+          },
+          "created_at": "2025-03-19",
+          "video_data": {
+            "id": "1807905-1741707449",
+            "hash": "936e54",
+            "key": "1550118"
+          }
+        },
+        {
+          "title": "Live Class 1",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124835-1724495306/encrypted-0d6659/360p/encrypted.mkv*4299382",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "BASIC PHYSICS",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124835-1724495306",
+            "hash": "0d6659",
+            "key": "4299382"
+          }
+        },
+        {
+          "title": "Class Note - 1",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/03062024/783e5.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "BASIC PHYSICS",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 1",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/03062024/56a4d.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "BASIC PHYSICS",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class 2",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124836-1724495307/encrypted-5dde73/360p/encrypted.mkv*2214667",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "BASIC PHYSICS",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124836-1724495307",
+            "hash": "5dde73",
+            "key": "2214667"
+          }
+        },
+        {
+          "title": "Class Note - 2",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/04062024/655bb.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "BASIC PHYSICS",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 2",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/05062024/47af7.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "BASIC PHYSICS",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class 3",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124837-1724495307/encrypted-5395e0/360p/encrypted.mkv*6181020",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "BASIC PHYSICS",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124837-1724495307",
+            "hash": "5395e0",
+            "key": "6181020"
+          }
+        },
+        {
+          "title": "Class Note - 3",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/05062024/71ef2.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "BASIC PHYSICS",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 3",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/05062024/84037.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "BASIC PHYSICS",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class 4",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124838-1724495308/encrypted-82f66a/360p/encrypted.mkv*8815877",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "BASIC PHYSICS",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124838-1724495308",
+            "hash": "82f66a",
+            "key": "8815877"
+          }
+        },
+        {
+          "title": "Class Note - 4",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/06062024/05239.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "BASIC PHYSICS",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 4",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/06062024/68b07.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "BASIC PHYSICS",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class 5",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124839-1724495308/encrypted-cfb570/360p/encrypted.mkv*1267388",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "BASIC PHYSICS",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124839-1724495308",
+            "hash": "cfb570",
+            "key": "1267388"
+          }
+        },
+        {
+          "title": "Class Note - 5",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/07062024/dc2af.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "BASIC PHYSICS",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 5",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/10062024/80e1b.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "BASIC PHYSICS",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 5 Solution",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/12062024/204e4.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "BASIC PHYSICS",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class 6",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124840-1724495308/encrypted-52ce87/360p/encrypted.mkv*1170734",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "BASIC PHYSICS",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124840-1724495308",
+            "hash": "52ce87",
+            "key": "1170734"
+          }
+        },
+        {
+          "title": "Class Note - 6",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/10062024/e9b34.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "BASIC PHYSICS",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 6",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/10062024/6c5ea.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "BASIC PHYSICS",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 6 Solution",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/12062024/6979f.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "BASIC PHYSICS",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class 7",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124841-1724495309/encrypted-a3068f/360p/encrypted.mkv*8773448",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "BASIC PHYSICS",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124841-1724495309",
+            "hash": "a3068f",
+            "key": "8773448"
+          }
+        },
+        {
+          "title": "Class Note - 7",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/11062024/5e433.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "BASIC PHYSICS",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 7",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/10062024/b41f3.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "BASIC PHYSICS",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class 8",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124842-1724495309/encrypted-9ac6a7/360p/encrypted.mkv*3034219",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "BASIC PHYSICS",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124842-1724495309",
+            "hash": "9ac6a7",
+            "key": "3034219"
+          }
+        },
+        {
+          "title": "Class Note - 8",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/12062024/16434.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "BASIC PHYSICS",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 8",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/10062024/f6537.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "BASIC PHYSICS",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 8 Solution",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/18062024/d635e.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "BASIC PHYSICS",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class 9",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124843-1724495310/encrypted-92b6f6/360p/encrypted.mkv*7146210",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "BASIC PHYSICS",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124843-1724495310",
+            "hash": "92b6f6",
+            "key": "7146210"
+          }
+        },
+        {
+          "title": "Class Note - 9",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/13062024/fbaf8.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "BASIC PHYSICS",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class 10",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124844-1724495311/encrypted-97742b/360p/encrypted.mkv*230495",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "BASIC PHYSICS",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124844-1724495311",
+            "hash": "97742b",
+            "key": "230495"
+          }
+        },
+        {
+          "title": "Class Note - 10",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/14062024/fee14.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "BASIC PHYSICS",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class 11",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124845-1724495311/encrypted-89295d/360p/encrypted.mkv*7374239",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "BASIC PHYSICS",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124845-1724495311",
+            "hash": "89295d",
+            "key": "7374239"
+          }
+        },
+        {
+          "title": "Class Note - 11",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/18062024/6fb3b.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "BASIC PHYSICS",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 1",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124776-1724494232/encrypted-0f5a32/360p/encrypted.mkv*9071553",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-1 \u0a8f\u0a95\u0aae\u0acb \u0a85\u0aa8\u0ac7 \u0aae\u0abe\u0aaa\u0aa8\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124776-1724494232",
+            "hash": "0f5a32",
+            "key": "9071553"
+          }
+        },
+        {
+          "title": "Class Note - 1",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/19062024/a8f64.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-1 \u0a8f\u0a95\u0aae\u0acb \u0a85\u0aa8\u0ac7 \u0aae\u0abe\u0aaa\u0aa8\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 2",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124777-1724494233/encrypted-27643e/360p/encrypted.mkv*3436640",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-1 \u0a8f\u0a95\u0aae\u0acb \u0a85\u0aa8\u0ac7 \u0aae\u0abe\u0aaa\u0aa8\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124777-1724494233",
+            "hash": "27643e",
+            "key": "3436640"
+          }
+        },
+        {
+          "title": "Class Note - 2",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/20062024/149b2.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-1 \u0a8f\u0a95\u0aae\u0acb \u0a85\u0aa8\u0ac7 \u0aae\u0abe\u0aaa\u0aa8\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 3",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124778-1724494233/encrypted-eeae0c/360p/encrypted.mkv*5322784",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-1 \u0a8f\u0a95\u0aae\u0acb \u0a85\u0aa8\u0ac7 \u0aae\u0abe\u0aaa\u0aa8\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124778-1724494233",
+            "hash": "eeae0c",
+            "key": "5322784"
+          }
+        },
+        {
+          "title": "Class Note - 3",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/21062024/340ca.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-1 \u0a8f\u0a95\u0aae\u0acb \u0a85\u0aa8\u0ac7 \u0aae\u0abe\u0aaa\u0aa8\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 4",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124779-1724494233/encrypted-fb26ec/360p/encrypted.mkv*9756563",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-1 \u0a8f\u0a95\u0aae\u0acb \u0a85\u0aa8\u0ac7 \u0aae\u0abe\u0aaa\u0aa8\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124779-1724494233",
+            "hash": "fb26ec",
+            "key": "9756563"
+          }
+        },
+        {
+          "title": "Class Note - 4",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/24062024/4ace8.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-1 \u0a8f\u0a95\u0aae\u0acb \u0a85\u0aa8\u0ac7 \u0aae\u0abe\u0aaa\u0aa8\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 5",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124780-1724494242/encrypted-373452/360p/encrypted.mkv*2072824",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-1 \u0a8f\u0a95\u0aae\u0acb \u0a85\u0aa8\u0ac7 \u0aae\u0abe\u0aaa\u0aa8\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124780-1724494242",
+            "hash": "373452",
+            "key": "2072824"
+          }
+        },
+        {
+          "title": "Class Note - 5",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/25062024/d6b84.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-1 \u0a8f\u0a95\u0aae\u0acb \u0a85\u0aa8\u0ac7 \u0aae\u0abe\u0aaa\u0aa8\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "CH-1 PYQ Lecture 1",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124695-1724493507/encrypted-9d6387/360p/encrypted.mkv*3280661",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-1 \u0a8f\u0a95\u0aae\u0acb \u0a85\u0aa8\u0ac7 \u0aae\u0abe\u0aaa\u0aa8\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124695-1724493507",
+            "hash": "9d6387",
+            "key": "3280661"
+          }
+        },
+        {
+          "title": "CH-1 PYQ Class Note - 1",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/28062024/8c30d.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-1 \u0a8f\u0a95\u0aae\u0acb \u0a85\u0aa8\u0ac7 \u0aae\u0abe\u0aaa\u0aa8\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "CH-1 PYQ Lecture 2",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124696-1724493507/encrypted-9e036c/360p/encrypted.mkv*7587808",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-1 \u0a8f\u0a95\u0aae\u0acb \u0a85\u0aa8\u0ac7 \u0aae\u0abe\u0aaa\u0aa8\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124696-1724493507",
+            "hash": "9e036c",
+            "key": "7587808"
+          }
+        },
+        {
+          "title": "CH-1 PYQ Class Note - 2",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/28062024/58f2a.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-1 \u0a8f\u0a95\u0aae\u0acb \u0a85\u0aa8\u0ac7 \u0aae\u0abe\u0aaa\u0aa8\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 1",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/19062024/d2252.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-1 \u0a8f\u0a95\u0aae\u0acb \u0a85\u0aa8\u0ac7 \u0aae\u0abe\u0aaa\u0aa8\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 1 Solution",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/25062024/c2fc7.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-1 \u0a8f\u0a95\u0aae\u0acb \u0a85\u0aa8\u0ac7 \u0aae\u0abe\u0aaa\u0aa8\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 2",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/19062024/6aa01.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-1 \u0a8f\u0a95\u0aae\u0acb \u0a85\u0aa8\u0ac7 \u0aae\u0abe\u0aaa\u0aa8\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 2 Solution",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/25062024/48021.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-1 \u0a8f\u0a95\u0aae\u0acb \u0a85\u0aa8\u0ac7 \u0aae\u0abe\u0aaa\u0aa8\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 3",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/19062024/2c4a7.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-1 \u0a8f\u0a95\u0aae\u0acb \u0a85\u0aa8\u0ac7 \u0aae\u0abe\u0aaa\u0aa8\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 3 Solution",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/25062024/b091b.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-1 \u0a8f\u0a95\u0aae\u0acb \u0a85\u0aa8\u0ac7 \u0aae\u0abe\u0aaa\u0aa8\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 4",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/19062024/9cbf7.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-1 \u0a8f\u0a95\u0aae\u0acb \u0a85\u0aa8\u0ac7 \u0aae\u0abe\u0aaa\u0aa8\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 4 Solution",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/26062024/90662.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-1 \u0a8f\u0a95\u0aae\u0acb \u0a85\u0aa8\u0ac7 \u0aae\u0abe\u0aaa\u0aa8\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 5",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/19062024/2a272.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-1 \u0a8f\u0a95\u0aae\u0acb \u0a85\u0aa8\u0ac7 \u0aae\u0abe\u0aaa\u0aa8\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "11th CH-1 PYQ-L1",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/3278428-1722886108/encrypted-0e3874/360p/encrypted.mkv*6658275",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-1 \u0a8f\u0a95\u0aae\u0acb \u0a85\u0aa8\u0ac7 \u0aae\u0abe\u0aaa\u0aa8\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "3278428-1722886108",
+            "hash": "0e3874",
+            "key": "6658275"
+          }
+        },
+        {
+          "title": "CH-1 PYQ",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/29062024/ca101.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-1 \u0a8f\u0a95\u0aae\u0acb \u0a85\u0aa8\u0ac7 \u0aae\u0abe\u0aaa\u0aa8\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "11th CH-2 L1",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/3278428-1722886108/encrypted-0e3874/360p/encrypted.mkv*6658275",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-2 \u0ab8\u0ac1\u0ab8\u0ac1\u0ab0\u0ac7\u0a96\u0aaa\u0aa5 \u0aaa\u0ab0 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "3278428-1722886108",
+            "hash": "0e3874",
+            "key": "6658275"
+          }
+        },
+        {
+          "title": "11th CH-2 CN1",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/production/single/uwxla/6726d105-cf59-4302-9713-94d271eee69c.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-2 \u0ab8\u0ac1\u0ab8\u0ac1\u0ab0\u0ac7\u0a96\u0aaa\u0aa5 \u0aaa\u0ab0 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "11th CH-2 L2",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/3278429-1722886111/encrypted-afa80e/360p/encrypted.mkv*3748505",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-2 \u0ab8\u0ac1\u0ab8\u0ac1\u0ab0\u0ac7\u0a96\u0aaa\u0aa5 \u0aaa\u0ab0 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "3278429-1722886111",
+            "hash": "afa80e",
+            "key": "3748505"
+          }
+        },
+        {
+          "title": "11th CH-2 CN2",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/production/single/uwxla/0db521e8-d20d-47e9-bdcd-3d1419152a5f.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-2 \u0ab8\u0ac1\u0ab8\u0ac1\u0ab0\u0ac7\u0a96\u0aaa\u0aa5 \u0aaa\u0ab0 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "NEET PHY PYQ 11thChap2",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/production/single/uwxla/e1e47d22-bdff-410d-9ffa-fffd541e3f38.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-2 \u0ab8\u0ac1\u0ab8\u0ac1\u0ab0\u0ac7\u0a96\u0aaa\u0aa5 \u0aaa\u0ab0 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "CH-2 PYQ (AIIMS PYQ)",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/production/single/uwxla/0f251a18-37bb-46b7-811e-a6967552b934.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-2 \u0ab8\u0ac1\u0ab8\u0ac1\u0ab0\u0ac7\u0a96\u0aaa\u0aa5 \u0aaa\u0ab0 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 1",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124854-1724495317/encrypted-5e0248/360p/encrypted.mkv*446159",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-2 \u0ab8\u0ac1\u0ab8\u0ac1\u0ab0\u0ac7\u0a96\u0aaa\u0aa5 \u0aaa\u0ab0 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124854-1724495317",
+            "hash": "5e0248",
+            "key": "446159"
+          }
+        },
+        {
+          "title": "Class Note - 1",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/26062024/9fc8e.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-2 \u0ab8\u0ac1\u0ab8\u0ac1\u0ab0\u0ac7\u0a96\u0aaa\u0aa5 \u0aaa\u0ab0 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 2",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124855-1724495317/encrypted-deff9d/360p/encrypted.mkv*1011064",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-2 \u0ab8\u0ac1\u0ab8\u0ac1\u0ab0\u0ac7\u0a96\u0aaa\u0aa5 \u0aaa\u0ab0 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124855-1724495317",
+            "hash": "deff9d",
+            "key": "1011064"
+          }
+        },
+        {
+          "title": "Class Note - 2",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/27062024/ea1d8.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-2 \u0ab8\u0ac1\u0ab8\u0ac1\u0ab0\u0ac7\u0a96\u0aaa\u0aa5 \u0aaa\u0ab0 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 3",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124856-1724495318/encrypted-016293/360p/encrypted.mkv*7939585",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-2 \u0ab8\u0ac1\u0ab8\u0ac1\u0ab0\u0ac7\u0a96\u0aaa\u0aa5 \u0aaa\u0ab0 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124856-1724495318",
+            "hash": "016293",
+            "key": "7939585"
+          }
+        },
+        {
+          "title": "Class Note - 3",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/28062024/1c7aa.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-2 \u0ab8\u0ac1\u0ab8\u0ac1\u0ab0\u0ac7\u0a96\u0aaa\u0aa5 \u0aaa\u0ab0 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 4",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124857-1724495318/encrypted-62e104/360p/encrypted.mkv*5566030",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-2 \u0ab8\u0ac1\u0ab8\u0ac1\u0ab0\u0ac7\u0a96\u0aaa\u0aa5 \u0aaa\u0ab0 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124857-1724495318",
+            "hash": "62e104",
+            "key": "5566030"
+          }
+        },
+        {
+          "title": "Class Note - 4",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/01072024/a8efe.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-2 \u0ab8\u0ac1\u0ab8\u0ac1\u0ab0\u0ac7\u0a96\u0aaa\u0aa5 \u0aaa\u0ab0 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 5",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124858-1724495319/encrypted-644dcb/360p/encrypted.mkv*4486482",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-2 \u0ab8\u0ac1\u0ab8\u0ac1\u0ab0\u0ac7\u0a96\u0aaa\u0aa5 \u0aaa\u0ab0 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124858-1724495319",
+            "hash": "644dcb",
+            "key": "4486482"
+          }
+        },
+        {
+          "title": "Class Note - 5",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/03072024/aafae.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-2 \u0ab8\u0ac1\u0ab8\u0ac1\u0ab0\u0ac7\u0a96\u0aaa\u0aa5 \u0aaa\u0ab0 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 6 WS Solution",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124859-1724495319/encrypted-aefe1c/360p/encrypted.mkv*2516744",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-2 \u0ab8\u0ac1\u0ab8\u0ac1\u0ab0\u0ac7\u0a96\u0aaa\u0aa5 \u0aaa\u0ab0 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124859-1724495319",
+            "hash": "aefe1c",
+            "key": "2516744"
+          }
+        },
+        {
+          "title": "Class Note - 6",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/04072024/0739a.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-2 \u0ab8\u0ac1\u0ab8\u0ac1\u0ab0\u0ac7\u0a96\u0aaa\u0aa5 \u0aaa\u0ab0 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "CH-2 PYQ Lecture 1",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124785-1724494406/encrypted-8dba96/360p/encrypted.mkv*4219094",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-2 \u0ab8\u0ac1\u0ab8\u0ac1\u0ab0\u0ac7\u0a96\u0aaa\u0aa5 \u0aaa\u0ab0 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124785-1724494406",
+            "hash": "8dba96",
+            "key": "4219094"
+          }
+        },
+        {
+          "title": "CH-2 PYQ Class Note - 1",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/28062024/8fb71.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-2 \u0ab8\u0ac1\u0ab8\u0ac1\u0ab0\u0ac7\u0a96\u0aaa\u0aa5 \u0aaa\u0ab0 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 1",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/26062024/d4aa1.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-2 \u0ab8\u0ac1\u0ab8\u0ac1\u0ab0\u0ac7\u0a96\u0aaa\u0aa5 \u0aaa\u0ab0 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 1 Solution",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/28062024/fdff0.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-2 \u0ab8\u0ac1\u0ab8\u0ac1\u0ab0\u0ac7\u0a96\u0aaa\u0aa5 \u0aaa\u0ab0 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 1 Extra",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/27062024/e0d39.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-2 \u0ab8\u0ac1\u0ab8\u0ac1\u0ab0\u0ac7\u0a96\u0aaa\u0aa5 \u0aaa\u0ab0 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 1 Extra Solution",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/28062024/d1f5d.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-2 \u0ab8\u0ac1\u0ab8\u0ac1\u0ab0\u0ac7\u0a96\u0aaa\u0aa5 \u0aaa\u0ab0 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 2",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/26062024/65fc6.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-2 \u0ab8\u0ac1\u0ab8\u0ac1\u0ab0\u0ac7\u0a96\u0aaa\u0aa5 \u0aaa\u0ab0 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 2 Solution",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/04072024/3c1f7.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-2 \u0ab8\u0ac1\u0ab8\u0ac1\u0ab0\u0ac7\u0a96\u0aaa\u0aa5 \u0aaa\u0ab0 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 2 Extra",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/27062024/dc038.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-2 \u0ab8\u0ac1\u0ab8\u0ac1\u0ab0\u0ac7\u0a96\u0aaa\u0aa5 \u0aaa\u0ab0 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 2 Extra Solution",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/04072024/8b32f.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-2 \u0ab8\u0ac1\u0ab8\u0ac1\u0ab0\u0ac7\u0a96\u0aaa\u0aa5 \u0aaa\u0ab0 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 3",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/26062024/215be.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-2 \u0ab8\u0ac1\u0ab8\u0ac1\u0ab0\u0ac7\u0a96\u0aaa\u0aa5 \u0aaa\u0ab0 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 4 Graph",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/27062024/f2785.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-2 \u0ab8\u0ac1\u0ab8\u0ac1\u0ab0\u0ac7\u0a96\u0aaa\u0aa5 \u0aaa\u0ab0 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 4 Graph Solution",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/04072024/79098.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-2 \u0ab8\u0ac1\u0ab8\u0ac1\u0ab0\u0ac7\u0a96\u0aaa\u0aa5 \u0aaa\u0ab0 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "CH-2 PYQ",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/29062024/c0ad0.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-2 \u0ab8\u0ac1\u0ab8\u0ac1\u0ab0\u0ac7\u0a96\u0aaa\u0aa5 \u0aaa\u0ab0 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "11th CH-3 L1",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/3278437-1722886136/encrypted-c639ff/360p/encrypted.mkv*6987048",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-3 \u0ab8\u0aae\u0aa4\u0ab2\u0aae\u0abe\u0a82 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "3278437-1722886136",
+            "hash": "c639ff",
+            "key": "6987048"
+          }
+        },
+        {
+          "title": "11th CH-3 CN1",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/production/single/uwxla/508ec0ea-7841-4ed4-8a57-55df87044fad.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-3 \u0ab8\u0aae\u0aa4\u0ab2\u0aae\u0abe\u0a82 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "NEET PHY PYQ 11thChap3",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/production/single/uwxla/fda9af74-9cfa-4931-b043-2c93f7fe60d2.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-3 \u0ab8\u0aae\u0aa4\u0ab2\u0aae\u0abe\u0a82 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "CH-3 PYQ (AIIMS PYQ)",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/production/single/uwxla/97e241e4-e8a8-41a6-be77-8b2b263ebdcb.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-3 \u0ab8\u0aae\u0aa4\u0ab2\u0aae\u0abe\u0a82 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 1",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124887-1724495671/encrypted-e78991/360p/encrypted.mkv*7866757",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-3 \u0ab8\u0aae\u0aa4\u0ab2\u0aae\u0abe\u0a82 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124887-1724495671",
+            "hash": "e78991",
+            "key": "7866757"
+          }
+        },
+        {
+          "title": "Class Note - 1",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/05072024/8a01a.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-3 \u0ab8\u0aae\u0aa4\u0ab2\u0aae\u0abe\u0a82 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 2",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124888-1724495671/encrypted-9d3e97/360p/encrypted.mkv*1156179",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-3 \u0ab8\u0aae\u0aa4\u0ab2\u0aae\u0abe\u0a82 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124888-1724495671",
+            "hash": "9d3e97",
+            "key": "1156179"
+          }
+        },
+        {
+          "title": "Class Note - 2",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/09072024/52ebc.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-3 \u0ab8\u0aae\u0aa4\u0ab2\u0aae\u0abe\u0a82 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 3",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124889-1724495672/encrypted-3cde30/360p/encrypted.mkv*680291",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-3 \u0ab8\u0aae\u0aa4\u0ab2\u0aae\u0abe\u0a82 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124889-1724495672",
+            "hash": "3cde30",
+            "key": "680291"
+          }
+        },
+        {
+          "title": "Class Note - 3",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/10072024/bc094.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-3 \u0ab8\u0aae\u0aa4\u0ab2\u0aae\u0abe\u0a82 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 4",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124890-1724495672/encrypted-aeae1b/360p/encrypted.mkv*5897642",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-3 \u0ab8\u0aae\u0aa4\u0ab2\u0aae\u0abe\u0a82 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124890-1724495672",
+            "hash": "aeae1b",
+            "key": "5897642"
+          }
+        },
+        {
+          "title": "Class Note - 4",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/11072024/a11da.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-3 \u0ab8\u0aae\u0aa4\u0ab2\u0aae\u0abe\u0a82 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 5",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124891-1724495673/encrypted-5cadcc/360p/encrypted.mkv*7745012",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-3 \u0ab8\u0aae\u0aa4\u0ab2\u0aae\u0abe\u0a82 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124891-1724495673",
+            "hash": "5cadcc",
+            "key": "7745012"
+          }
+        },
+        {
+          "title": "Class Note - 5",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/12072024/66038.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-3 \u0ab8\u0aae\u0aa4\u0ab2\u0aae\u0abe\u0a82 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 6 WS sol. 3 4 5",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124892-1724495673/encrypted-00649c/360p/encrypted.mkv*3892674",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-3 \u0ab8\u0aae\u0aa4\u0ab2\u0aae\u0abe\u0a82 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124892-1724495673",
+            "hash": "00649c",
+            "key": "3892674"
+          }
+        },
+        {
+          "title": "Class Note - 6 WS SOL 3 4 5",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/19072024/5506d.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-3 \u0ab8\u0aae\u0aa4\u0ab2\u0aae\u0abe\u0a82 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "CH-3 PYQ Lecture 1",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124812-1724494771/encrypted-30a998/360p/encrypted.mkv*9996485",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-3 \u0ab8\u0aae\u0aa4\u0ab2\u0aae\u0abe\u0a82 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124812-1724494771",
+            "hash": "30a998",
+            "key": "9996485"
+          }
+        },
+        {
+          "title": "CH-3 PYQ Class Note - 1",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/11072024/8eb28.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-3 \u0ab8\u0aae\u0aa4\u0ab2\u0aae\u0abe\u0a82 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 1",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/05072024/95aa3.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-3 \u0ab8\u0aae\u0aa4\u0ab2\u0aae\u0abe\u0a82 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 2",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/05072024/157b6.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-3 \u0ab8\u0aae\u0aa4\u0ab2\u0aae\u0abe\u0a82 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 3",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/05072024/45343.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-3 \u0ab8\u0aae\u0aa4\u0ab2\u0aae\u0abe\u0a82 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 4",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/05072024/c6167.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-3 \u0ab8\u0aae\u0aa4\u0ab2\u0aae\u0abe\u0a82 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 5",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/05072024/0d727.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-3 \u0ab8\u0aae\u0aa4\u0ab2\u0aae\u0abe\u0a82 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 2 Extra",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/12072024/42479.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-3 \u0ab8\u0aae\u0aa4\u0ab2\u0aae\u0abe\u0a82 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 2 Extra Solution",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/12072024/15f10.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-3 \u0ab8\u0aae\u0aa4\u0ab2\u0aae\u0abe\u0a82 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "CH-3 PYQ",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/11072024/c73b8.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-3 \u0ab8\u0aae\u0aa4\u0ab2\u0aae\u0abe\u0a82 \u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class 11th Chap 4 Motion in 2 D",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/3278443-1722886154/encrypted-38e242/360p/encrypted.mkv*9582332",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-4 \u0a97\u0aa4\u0abf\u0aa8\u0abe \u0aa8\u0abf\u0aaf\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "3278443-1722886154",
+            "hash": "38e242",
+            "key": "9582332"
+          }
+        },
+        {
+          "title": "PYQLecture Notes 11th Chap 4",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/production/single/uwxla/76fb4338-f8ea-4127-a498-1866c3ae81b1.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-4 \u0a97\u0aa4\u0abf\u0aa8\u0abe \u0aa8\u0abf\u0aaf\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "CH-4 PYQ (AIIMS PYQ)",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/production/single/uwxla/d60afcba-7411-4fe3-9eea-461d241eb97c.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-4 \u0a97\u0aa4\u0abf\u0aa8\u0abe \u0aa8\u0abf\u0aaf\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "NEET PHY PYQ 11thChap4",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/production/single/uwxla/e27b1c63-5d59-442d-b3d8-ae705fc4a979.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-4 \u0a97\u0aa4\u0abf\u0aa8\u0abe \u0aa8\u0abf\u0aaf\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 1",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124977-1724496396/encrypted-a21dcb/360p/encrypted.mkv*1783391",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-4 \u0a97\u0aa4\u0abf\u0aa8\u0abe \u0aa8\u0abf\u0aaf\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124977-1724496396",
+            "hash": "a21dcb",
+            "key": "1783391"
+          }
+        },
+        {
+          "title": "class note",
+          "type": "pdf",
+          "url": "1:https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/15072024/44012.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-4 \u0a97\u0aa4\u0abf\u0aa8\u0abe \u0aa8\u0abf\u0aaf\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 2",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124978-1724496396/encrypted-3057a7/360p/encrypted.mkv*3540936",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-4 \u0a97\u0aa4\u0abf\u0aa8\u0abe \u0aa8\u0abf\u0aaf\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124978-1724496396",
+            "hash": "3057a7",
+            "key": "3540936"
+          }
+        },
+        {
+          "title": "class note",
+          "type": "pdf",
+          "url": "2:https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/16072024/e3a1a.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-4 \u0a97\u0aa4\u0abf\u0aa8\u0abe \u0aa8\u0abf\u0aaf\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 3",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124979-1724496397/encrypted-23bc6a/360p/encrypted.mkv*1278141",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-4 \u0a97\u0aa4\u0abf\u0aa8\u0abe \u0aa8\u0abf\u0aaf\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124979-1724496397",
+            "hash": "23bc6a",
+            "key": "1278141"
+          }
+        },
+        {
+          "title": "class note",
+          "type": "pdf",
+          "url": "3:https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/17072024/f123f.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-4 \u0a97\u0aa4\u0abf\u0aa8\u0abe \u0aa8\u0abf\u0aaf\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 4",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124980-1724496397/encrypted-9ef572/360p/encrypted.mkv*6125678",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-4 \u0a97\u0aa4\u0abf\u0aa8\u0abe \u0aa8\u0abf\u0aaf\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124980-1724496397",
+            "hash": "9ef572",
+            "key": "6125678"
+          }
+        },
+        {
+          "title": "class note",
+          "type": "pdf",
+          "url": "4:https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/18072024/09e7d.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-4 \u0a97\u0aa4\u0abf\u0aa8\u0abe \u0aa8\u0abf\u0aaf\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 5",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124981-1724496398/encrypted-666654/360p/encrypted.mkv*5609177",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-4 \u0a97\u0aa4\u0abf\u0aa8\u0abe \u0aa8\u0abf\u0aaf\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124981-1724496398",
+            "hash": "666654",
+            "key": "5609177"
+          }
+        },
+        {
+          "title": "class note",
+          "type": "pdf",
+          "url": "5:https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/22072024/3fed5.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-4 \u0a97\u0aa4\u0abf\u0aa8\u0abe \u0aa8\u0abf\u0aaf\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 6",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124982-1724496399/encrypted-452eaf/360p/encrypted.mkv*1004781",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-4 \u0a97\u0aa4\u0abf\u0aa8\u0abe \u0aa8\u0abf\u0aaf\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124982-1724496399",
+            "hash": "452eaf",
+            "key": "1004781"
+          }
+        },
+        {
+          "title": "class note",
+          "type": "pdf",
+          "url": "6:https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/23072024/c7a66.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-4 \u0a97\u0aa4\u0abf\u0aa8\u0abe \u0aa8\u0abf\u0aaf\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 7 WS Solution",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124983-1724496403/encrypted-0941c6/360p/encrypted.mkv*8866422",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-4 \u0a97\u0aa4\u0abf\u0aa8\u0abe \u0aa8\u0abf\u0aaf\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124983-1724496403",
+            "hash": "0941c6",
+            "key": "8866422"
+          }
+        },
+        {
+          "title": "class note",
+          "type": "pdf",
+          "url": "7 WS solution:https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/24072024/5e1a5.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-4 \u0a97\u0aa4\u0abf\u0aa8\u0abe \u0aa8\u0abf\u0aaf\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "CH-4 PYQ Lecture 1",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124875-1724495498/encrypted-703a64/360p/encrypted.mkv*4691218",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-4 \u0a97\u0aa4\u0abf\u0aa8\u0abe \u0aa8\u0abf\u0aaf\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124875-1724495498",
+            "hash": "703a64",
+            "key": "4691218"
+          }
+        },
+        {
+          "title": "Chap 4 PYQ Class note",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/24072024/49c71.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-4 \u0a97\u0aa4\u0abf\u0aa8\u0abe \u0aa8\u0abf\u0aaf\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet 1",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/15072024/efe3c.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-4 \u0a97\u0aa4\u0abf\u0aa8\u0abe \u0aa8\u0abf\u0aaf\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet 2",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/15072024/aa6fa.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-4 \u0a97\u0aa4\u0abf\u0aa8\u0abe \u0aa8\u0abf\u0aaf\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet 3",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/15072024/8d911.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-4 \u0a97\u0aa4\u0abf\u0aa8\u0abe \u0aa8\u0abf\u0aaf\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet 4",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/15072024/aeca9.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-4 \u0a97\u0aa4\u0abf\u0aa8\u0abe \u0aa8\u0abf\u0aaf\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet 5",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/15072024/bfb9e.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-4 \u0a97\u0aa4\u0abf\u0aa8\u0abe \u0aa8\u0abf\u0aaf\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "worksheet solution",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/16072024/b8559.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-4 \u0a97\u0aa4\u0abf\u0aa8\u0abe \u0aa8\u0abf\u0aaf\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "worksheet solution",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/17072024/72b9b.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-4 \u0a97\u0aa4\u0abf\u0aa8\u0abe \u0aa8\u0abf\u0aaf\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Chap 4 AIPMT Extra Que",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/24072024/5b43e.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-4 \u0a97\u0aa4\u0abf\u0aa8\u0abe \u0aa8\u0abf\u0aaf\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "CH-5 \u0a97\u0aa4\u0abf\u0aa8\u0abe \u0aa8\u0abf\u0aaf\u0aae\u0acb PYQ L1",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/3278451-1722886179/encrypted-ba12f3/360p/encrypted.mkv*801778",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-5 \u0a95\u0abe\u0ab0\u0acd\u0aaf,  \u0a89\u0ab0\u0acd\u0a9c \u0a85\u0aa8\u0ac7 \u0aaa\u0abe\u0ab5\u0ab0",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "3278451-1722886179",
+            "hash": "ba12f3",
+            "key": "801778"
+          }
+        },
+        {
+          "title": "CH-5 \u0a97\u0aa4\u0abf\u0aa8\u0abe \u0aa8\u0abf\u0aaf\u0aae\u0acb PYQ CN1",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/production/single/uwxla/4f7fa90f-05a3-4cad-a529-971ac55ac57b.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-5 \u0a95\u0abe\u0ab0\u0acd\u0aaf,  \u0a89\u0ab0\u0acd\u0a9c \u0a85\u0aa8\u0ac7 \u0aaa\u0abe\u0ab5\u0ab0",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "CH-5 PYQ (AIIMS PYQ)",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/production/single/uwxla/0898ec00-a957-4f64-b13e-d37c1fd7cf8f.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-5 \u0a95\u0abe\u0ab0\u0acd\u0aaf,  \u0a89\u0ab0\u0acd\u0a9c \u0a85\u0aa8\u0ac7 \u0aaa\u0abe\u0ab5\u0ab0",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "NEET PHY PYQ 11thChap5",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/production/single/uwxla/6d5e4a55-9412-41a5-be5c-d3eaaab083c1.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-5 \u0a95\u0abe\u0ab0\u0acd\u0aaf,  \u0a89\u0ab0\u0acd\u0a9c \u0a85\u0aa8\u0ac7 \u0aaa\u0abe\u0ab5\u0ab0",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 1",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124989-1724496566/encrypted-a138e1/360p/encrypted.mkv*6642997",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-5 \u0a95\u0abe\u0ab0\u0acd\u0aaf,  \u0a89\u0ab0\u0acd\u0a9c \u0a85\u0aa8\u0ac7 \u0aaa\u0abe\u0ab5\u0ab0",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124989-1724496566",
+            "hash": "a138e1",
+            "key": "6642997"
+          }
+        },
+        {
+          "title": "Class Note - 1",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/25072024/c0358.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-5 \u0a95\u0abe\u0ab0\u0acd\u0aaf,  \u0a89\u0ab0\u0acd\u0a9c \u0a85\u0aa8\u0ac7 \u0aaa\u0abe\u0ab5\u0ab0",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 2",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124990-1724496566/encrypted-f94ba8/360p/encrypted.mkv*967287",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-5 \u0a95\u0abe\u0ab0\u0acd\u0aaf,  \u0a89\u0ab0\u0acd\u0a9c \u0a85\u0aa8\u0ac7 \u0aaa\u0abe\u0ab5\u0ab0",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124990-1724496566",
+            "hash": "f94ba8",
+            "key": "967287"
+          }
+        },
+        {
+          "title": "Class Note 2",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/26072024/36a82.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-5 \u0a95\u0abe\u0ab0\u0acd\u0aaf,  \u0a89\u0ab0\u0acd\u0a9c \u0a85\u0aa8\u0ac7 \u0aaa\u0abe\u0ab5\u0ab0",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 3",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124991-1724496566/encrypted-369df2/360p/encrypted.mkv*9758958",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-5 \u0a95\u0abe\u0ab0\u0acd\u0aaf,  \u0a89\u0ab0\u0acd\u0a9c \u0a85\u0aa8\u0ac7 \u0aaa\u0abe\u0ab5\u0ab0",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124991-1724496566",
+            "hash": "369df2",
+            "key": "9758958"
+          }
+        },
+        {
+          "title": "Class Note - 3",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/29072024/6eae8.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-5 \u0a95\u0abe\u0ab0\u0acd\u0aaf,  \u0a89\u0ab0\u0acd\u0a9c \u0a85\u0aa8\u0ac7 \u0aaa\u0abe\u0ab5\u0ab0",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Class Note - 4",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/30072024/83a21.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-5 \u0a95\u0abe\u0ab0\u0acd\u0aaf,  \u0a89\u0ab0\u0acd\u0a9c \u0a85\u0aa8\u0ac7 \u0aaa\u0abe\u0ab5\u0ab0",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 5",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124992-1724496567/encrypted-a7c768/360p/encrypted.mkv*5411723",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-5 \u0a95\u0abe\u0ab0\u0acd\u0aaf,  \u0a89\u0ab0\u0acd\u0a9c \u0a85\u0aa8\u0ac7 \u0aaa\u0abe\u0ab5\u0ab0",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124992-1724496567",
+            "hash": "a7c768",
+            "key": "5411723"
+          }
+        },
+        {
+          "title": "Class Note - 5",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/31072024/3dae1.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-5 \u0a95\u0abe\u0ab0\u0acd\u0aaf,  \u0a89\u0ab0\u0acd\u0a9c \u0a85\u0aa8\u0ac7 \u0aaa\u0abe\u0ab5\u0ab0",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 6",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124993-1724496567/encrypted-e326e1/360p/encrypted.mkv*394590",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-5 \u0a95\u0abe\u0ab0\u0acd\u0aaf,  \u0a89\u0ab0\u0acd\u0a9c \u0a85\u0aa8\u0ac7 \u0aaa\u0abe\u0ab5\u0ab0",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124993-1724496567",
+            "hash": "e326e1",
+            "key": "394590"
+          }
+        },
+        {
+          "title": "Class Note - 6",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/01082024/955ce.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-5 \u0a95\u0abe\u0ab0\u0acd\u0aaf,  \u0a89\u0ab0\u0acd\u0a9c \u0a85\u0aa8\u0ac7 \u0aaa\u0abe\u0ab5\u0ab0",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "CH-5 PYQ Lecture 1",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124931-1724496036/encrypted-1065be/360p/encrypted.mkv*8543587",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-5 \u0a95\u0abe\u0ab0\u0acd\u0aaf,  \u0a89\u0ab0\u0acd\u0a9c \u0a85\u0aa8\u0ac7 \u0aaa\u0abe\u0ab5\u0ab0",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124931-1724496036",
+            "hash": "1065be",
+            "key": "8543587"
+          }
+        },
+        {
+          "title": "CH-5 PYQ Class Note 1",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-08-24-0.6024279498484535.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-5 \u0a95\u0abe\u0ab0\u0acd\u0aaf,  \u0a89\u0ab0\u0acd\u0a9c \u0a85\u0aa8\u0ac7 \u0aaa\u0abe\u0ab5\u0ab0",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "CH-5 PYQ Lecture 2",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1124932-1724496036/encrypted-2a970e/360p/encrypted.mkv*197006",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-5 \u0a95\u0abe\u0ab0\u0acd\u0aaf,  \u0a89\u0ab0\u0acd\u0a9c \u0a85\u0aa8\u0ac7 \u0aaa\u0abe\u0ab5\u0ab0",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1124932-1724496036",
+            "hash": "2a970e",
+            "key": "197006"
+          }
+        },
+        {
+          "title": "CH-5 PYQ Class Note 2",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-08-24-0.04945884496710895.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-5 \u0a95\u0abe\u0ab0\u0acd\u0aaf,  \u0a89\u0ab0\u0acd\u0a9c \u0a85\u0aa8\u0ac7 \u0aaa\u0abe\u0ab5\u0ab0",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Work sheet -1",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/24072024/e0d46.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-5 \u0a95\u0abe\u0ab0\u0acd\u0aaf,  \u0a89\u0ab0\u0acd\u0a9c \u0a85\u0aa8\u0ac7 \u0aaa\u0abe\u0ab5\u0ab0",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Work sheet -1 Solution",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/26072024/71486.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-5 \u0a95\u0abe\u0ab0\u0acd\u0aaf,  \u0a89\u0ab0\u0acd\u0a9c \u0a85\u0aa8\u0ac7 \u0aaa\u0abe\u0ab5\u0ab0",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Work sheet - 2",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/24072024/b5237.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-5 \u0a95\u0abe\u0ab0\u0acd\u0aaf,  \u0a89\u0ab0\u0acd\u0a9c \u0a85\u0aa8\u0ac7 \u0aaa\u0abe\u0ab5\u0ab0",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Work sheet - 3",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/24072024/e891c.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-5 \u0a95\u0abe\u0ab0\u0acd\u0aaf,  \u0a89\u0ab0\u0acd\u0a9c \u0a85\u0aa8\u0ac7 \u0aaa\u0abe\u0ab5\u0ab0",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 1",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1125060-1724497467/encrypted-27d0c0/360p/encrypted.mkv*1343755",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-6 \u0a95\u0aa3\u0acb\u0aa8\u0abe \u0aa4\u0a82\u0aa4\u0acd\u0ab0\u0acb \u0a85\u0aa8\u0ac7 \u0a9a\u0abe\u0a95\u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1125060-1724497467",
+            "hash": "27d0c0",
+            "key": "1343755"
+          }
+        },
+        {
+          "title": "Class Note - 1",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/02082024/4d91f.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-6 \u0a95\u0aa3\u0acb\u0aa8\u0abe \u0aa4\u0a82\u0aa4\u0acd\u0ab0\u0acb \u0a85\u0aa8\u0ac7 \u0a9a\u0abe\u0a95\u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 2",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1125061-1724497468/encrypted-d677f0/360p/encrypted.mkv*7501552",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-6 \u0a95\u0aa3\u0acb\u0aa8\u0abe \u0aa4\u0a82\u0aa4\u0acd\u0ab0\u0acb \u0a85\u0aa8\u0ac7 \u0a9a\u0abe\u0a95\u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1125061-1724497468",
+            "hash": "d677f0",
+            "key": "7501552"
+          }
+        },
+        {
+          "title": "Class Note - 2",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/05082024/efb02.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-6 \u0a95\u0aa3\u0acb\u0aa8\u0abe \u0aa4\u0a82\u0aa4\u0acd\u0ab0\u0acb \u0a85\u0aa8\u0ac7 \u0a9a\u0abe\u0a95\u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 3",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1125062-1724497468/encrypted-13fe08/360p/encrypted.mkv*552490",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-6 \u0a95\u0aa3\u0acb\u0aa8\u0abe \u0aa4\u0a82\u0aa4\u0acd\u0ab0\u0acb \u0a85\u0aa8\u0ac7 \u0a9a\u0abe\u0a95\u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1125062-1724497468",
+            "hash": "13fe08",
+            "key": "552490"
+          }
+        },
+        {
+          "title": "Class Note - 3",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/06082024/89595.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-6 \u0a95\u0aa3\u0acb\u0aa8\u0abe \u0aa4\u0a82\u0aa4\u0acd\u0ab0\u0acb \u0a85\u0aa8\u0ac7 \u0a9a\u0abe\u0a95\u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 4",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1125063-1724497468/encrypted-8e5393/360p/encrypted.mkv*8859209",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-6 \u0a95\u0aa3\u0acb\u0aa8\u0abe \u0aa4\u0a82\u0aa4\u0acd\u0ab0\u0acb \u0a85\u0aa8\u0ac7 \u0a9a\u0abe\u0a95\u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1125063-1724497468",
+            "hash": "8e5393",
+            "key": "8859209"
+          }
+        },
+        {
+          "title": "Class Note - 4",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/08082024/ed184.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-6 \u0a95\u0aa3\u0acb\u0aa8\u0abe \u0aa4\u0a82\u0aa4\u0acd\u0ab0\u0acb \u0a85\u0aa8\u0ac7 \u0a9a\u0abe\u0a95\u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 5",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1125064-1724497468/encrypted-b6a02e/360p/encrypted.mkv*7006729",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-6 \u0a95\u0aa3\u0acb\u0aa8\u0abe \u0aa4\u0a82\u0aa4\u0acd\u0ab0\u0acb \u0a85\u0aa8\u0ac7 \u0a9a\u0abe\u0a95\u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1125064-1724497468",
+            "hash": "b6a02e",
+            "key": "7006729"
+          }
+        },
+        {
+          "title": "Class Note - 5",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/09082024/3fb64.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-6 \u0a95\u0aa3\u0acb\u0aa8\u0abe \u0aa4\u0a82\u0aa4\u0acd\u0ab0\u0acb \u0a85\u0aa8\u0ac7 \u0a9a\u0abe\u0a95\u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 6 Worksheet Solution",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1125065-1724497468/encrypted-386298/360p/encrypted.mkv*5334349",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-6 \u0a95\u0aa3\u0acb\u0aa8\u0abe \u0aa4\u0a82\u0aa4\u0acd\u0ab0\u0acb \u0a85\u0aa8\u0ac7 \u0a9a\u0abe\u0a95\u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1125065-1724497468",
+            "hash": "386298",
+            "key": "5334349"
+          }
+        },
+        {
+          "title": "ALL WORK SHEET",
+          "type": "pdf",
+          "url": "https://appxcontent.securevideo.in/paid_course4/2024-10-02-0.7101992347211874.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-6 \u0a95\u0aa3\u0acb\u0aa8\u0abe \u0aa4\u0a82\u0aa4\u0acd\u0ab0\u0acb \u0a85\u0aa8\u0ac7 \u0a9a\u0abe\u0a95\u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet solution 1&2",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/06082024/e7745.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-6 \u0a95\u0aa3\u0acb\u0aa8\u0abe \u0aa4\u0a82\u0aa4\u0acd\u0ab0\u0acb \u0a85\u0aa8\u0ac7 \u0a9a\u0abe\u0a95\u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "CH-6 PYQ Lecture 1",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1125001-1724496572/encrypted-ca1e48/360p/encrypted.mkv*5554671",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-6 \u0a95\u0aa3\u0acb\u0aa8\u0abe \u0aa4\u0a82\u0aa4\u0acd\u0ab0\u0acb \u0a85\u0aa8\u0ac7 \u0a9a\u0abe\u0a95\u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1125001-1724496572",
+            "hash": "ca1e48",
+            "key": "5554671"
+          }
+        },
+        {
+          "title": "CH-6 PYQ Class Note 1",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-08-24-0.8747458924145322.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-6 \u0a95\u0aa3\u0acb\u0aa8\u0abe \u0aa4\u0a82\u0aa4\u0acd\u0ab0\u0acb \u0a85\u0aa8\u0ac7 \u0a9a\u0abe\u0a95\u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "CH-6 PYQ Lecture 2",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1125002-1724496572/encrypted-b99ca4/360p/encrypted.mkv*132755",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-6 \u0a95\u0aa3\u0acb\u0aa8\u0abe \u0aa4\u0a82\u0aa4\u0acd\u0ab0\u0acb \u0a85\u0aa8\u0ac7 \u0a9a\u0abe\u0a95\u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1125002-1724496572",
+            "hash": "b99ca4",
+            "key": "132755"
+          }
+        },
+        {
+          "title": "CH-6 PYQ Lecture 3",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1125003-1724496573/encrypted-74e5ca/360p/encrypted.mkv*2889566",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-6 \u0a95\u0aa3\u0acb\u0aa8\u0abe \u0aa4\u0a82\u0aa4\u0acd\u0ab0\u0acb \u0a85\u0aa8\u0ac7 \u0a9a\u0abe\u0a95\u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1125003-1724496573",
+            "hash": "74e5ca",
+            "key": "2889566"
+          }
+        },
+        {
+          "title": "CH-6 PYQ Class Note 2 & 3",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-08-24-0.2116933383726809.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-6 \u0a95\u0aa3\u0acb\u0aa8\u0abe \u0aa4\u0a82\u0aa4\u0acd\u0ab0\u0acb \u0a85\u0aa8\u0ac7 \u0a9a\u0abe\u0a95\u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "CH-6 PYQ Lecture 4",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1125000-1724496572/encrypted-669d31/360p/encrypted.mkv*340795",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-6 \u0a95\u0aa3\u0acb\u0aa8\u0abe \u0aa4\u0a82\u0aa4\u0acd\u0ab0\u0acb \u0a85\u0aa8\u0ac7 \u0a9a\u0abe\u0a95\u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1125000-1724496572",
+            "hash": "669d31",
+            "key": "340795"
+          }
+        },
+        {
+          "title": "CH-6 PYQ Class Note 4",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-08-24-0.3948532479799678.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-6 \u0a95\u0aa3\u0acb\u0aa8\u0abe \u0aa4\u0a82\u0aa4\u0acd\u0ab0\u0acb \u0a85\u0aa8\u0ac7 \u0a9a\u0abe\u0a95\u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "All worksheet",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/05082024/ca3fa.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-6 \u0a95\u0aa3\u0acb\u0aa8\u0abe \u0aa4\u0a82\u0aa4\u0acd\u0ab0\u0acb \u0a85\u0aa8\u0ac7 \u0a9a\u0abe\u0a95\u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "POWER4-PHY-11th-CH6-L6 PYQ Solution L1",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/3278457-1722886197/encrypted-928f64/360p/encrypted.mkv*9275855",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-6 \u0a95\u0aa3\u0acb\u0aa8\u0abe \u0aa4\u0a82\u0aa4\u0acd\u0ab0\u0acb \u0a85\u0aa8\u0ac7 \u0a9a\u0abe\u0a95\u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "3278457-1722886197",
+            "hash": "928f64",
+            "key": "9275855"
+          }
+        },
+        {
+          "title": "POWER4-PHY-11th-CH6-CN6 PYQ Solution L1",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/production/single/uwxla/1a30c8f5-8972-4fc2-85d2-6adf9988f76d.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-6 \u0a95\u0aa3\u0acb\u0aa8\u0abe \u0aa4\u0a82\u0aa4\u0acd\u0ab0\u0acb \u0a85\u0aa8\u0ac7 \u0a9a\u0abe\u0a95\u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "POWER4-PHY-11th-CH6-L7 PYQ Solution L2",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/3278458-1722886200/encrypted-0f4285/360p/encrypted.mkv*1896623",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-6 \u0a95\u0aa3\u0acb\u0aa8\u0abe \u0aa4\u0a82\u0aa4\u0acd\u0ab0\u0acb \u0a85\u0aa8\u0ac7 \u0a9a\u0abe\u0a95\u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "3278458-1722886200",
+            "hash": "0f4285",
+            "key": "1896623"
+          }
+        },
+        {
+          "title": "POWER4-PHY-11th-CH6-CN7 PYQ Solution L2",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/production/single/uwxla/71dd3872-21cb-4fad-b362-61c8cb650ee7.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-6 \u0a95\u0aa3\u0acb\u0aa8\u0abe \u0aa4\u0a82\u0aa4\u0acd\u0ab0\u0acb \u0a85\u0aa8\u0ac7 \u0a9a\u0abe\u0a95\u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "NEET PHY PYQ 11thChap6",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/production/single/uwxla/08a70ddf-ffee-416e-a239-afa52adda4d7.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-6 \u0a95\u0aa3\u0acb\u0aa8\u0abe \u0aa4\u0a82\u0aa4\u0acd\u0ab0\u0acb \u0a85\u0aa8\u0ac7 \u0a9a\u0abe\u0a95\u0a97\u0aa4\u0abf",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 1",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1125053-1724497293/encrypted-96d376/360p/encrypted.mkv*5101185",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-7 \u0a97\u0ac1\u0ab0\u0ac1\u0aa4\u0acd\u0ab5\u0abe\u0a95\u0ab0\u0acd\u0ab7\u0aa3",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1125053-1724497293",
+            "hash": "96d376",
+            "key": "5101185"
+          }
+        },
+        {
+          "title": "Class Note - 1",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-08-24-0.8744497428979539.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-7 \u0a97\u0ac1\u0ab0\u0ac1\u0aa4\u0acd\u0ab5\u0abe\u0a95\u0ab0\u0acd\u0ab7\u0aa3",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 2",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1125054-1724497293/encrypted-3fb954/360p/encrypted.mkv*1963187",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-7 \u0a97\u0ac1\u0ab0\u0ac1\u0aa4\u0acd\u0ab5\u0abe\u0a95\u0ab0\u0acd\u0ab7\u0aa3",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1125054-1724497293",
+            "hash": "3fb954",
+            "key": "1963187"
+          }
+        },
+        {
+          "title": "Class Note - 2",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-08-24-0.3429199739809945.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-7 \u0a97\u0ac1\u0ab0\u0ac1\u0aa4\u0acd\u0ab5\u0abe\u0a95\u0ab0\u0acd\u0ab7\u0aa3",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 3",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1125055-1724497294/encrypted-ab8254/360p/encrypted.mkv*4773113",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-7 \u0a97\u0ac1\u0ab0\u0ac1\u0aa4\u0acd\u0ab5\u0abe\u0a95\u0ab0\u0acd\u0ab7\u0aa3",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1125055-1724497294",
+            "hash": "ab8254",
+            "key": "4773113"
+          }
+        },
+        {
+          "title": "Class Note - 3",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-08-24-0.4131236314191171.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-7 \u0a97\u0ac1\u0ab0\u0ac1\u0aa4\u0acd\u0ab5\u0abe\u0a95\u0ab0\u0acd\u0ab7\u0aa3",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 4",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1125056-1724497303/encrypted-9a03c7/360p/encrypted.mkv*2247979",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-7 \u0a97\u0ac1\u0ab0\u0ac1\u0aa4\u0acd\u0ab5\u0abe\u0a95\u0ab0\u0acd\u0ab7\u0aa3",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1125056-1724497303",
+            "hash": "9a03c7",
+            "key": "2247979"
+          }
+        },
+        {
+          "title": "Class Note - 4",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-08-24-0.7501970947388443.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-7 \u0a97\u0ac1\u0ab0\u0ac1\u0aa4\u0acd\u0ab5\u0abe\u0a95\u0ab0\u0acd\u0ab7\u0aa3",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 5",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1125057-1724497307/encrypted-32592e/360p/encrypted.mkv*536075",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-7 \u0a97\u0ac1\u0ab0\u0ac1\u0aa4\u0acd\u0ab5\u0abe\u0a95\u0ab0\u0acd\u0ab7\u0aa3",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1125057-1724497307",
+            "hash": "32592e",
+            "key": "536075"
+          }
+        },
+        {
+          "title": "Class Note - 5",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-08-24-0.2853635410814681.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-7 \u0a97\u0ac1\u0ab0\u0ac1\u0aa4\u0acd\u0ab5\u0abe\u0a95\u0ab0\u0acd\u0ab7\u0aa3",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "CH-7 PYQ Lecture 1",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1125021-1724496923/encrypted-ead48c/360p/encrypted.mkv*9185882",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-7 \u0a97\u0ac1\u0ab0\u0ac1\u0aa4\u0acd\u0ab5\u0abe\u0a95\u0ab0\u0acd\u0ab7\u0aa3",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1125021-1724496923",
+            "hash": "ead48c",
+            "key": "9185882"
+          }
+        },
+        {
+          "title": "CH-7 PYQ Class Note 1",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-08-24-0.6631646555437138.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-7 \u0a97\u0ac1\u0ab0\u0ac1\u0aa4\u0acd\u0ab5\u0abe\u0a95\u0ab0\u0acd\u0ab7\u0aa3",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 1",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-08-24-0.6133569083795805.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-7 \u0a97\u0ac1\u0ab0\u0ac1\u0aa4\u0acd\u0ab5\u0abe\u0a95\u0ab0\u0acd\u0ab7\u0aa3",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 2",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-08-24-0.5661696074533764.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-7 \u0a97\u0ac1\u0ab0\u0ac1\u0aa4\u0acd\u0ab5\u0abe\u0a95\u0ab0\u0acd\u0ab7\u0aa3",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 3",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-08-24-0.3689261861695119.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-7 \u0a97\u0ac1\u0ab0\u0ac1\u0aa4\u0acd\u0ab5\u0abe\u0a95\u0ab0\u0acd\u0ab7\u0aa3",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 4",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-08-24-0.1580582539627975.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-7 \u0a97\u0ac1\u0ab0\u0ac1\u0aa4\u0acd\u0ab5\u0abe\u0a95\u0ab0\u0acd\u0ab7\u0aa3",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "POWER4-PHY-11th-CH7-PYQ L1",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/3278465-1722886222/encrypted-b9ba44/360p/encrypted.mkv*7978848",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-7 \u0a97\u0ac1\u0ab0\u0ac1\u0aa4\u0acd\u0ab5\u0abe\u0a95\u0ab0\u0acd\u0ab7\u0aa3",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "3278465-1722886222",
+            "hash": "b9ba44",
+            "key": "7978848"
+          }
+        },
+        {
+          "title": "POWER4-PHY-11th-CH7-PYQ CN1",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/production/single/uwxla/640443f4-84f3-4342-b01b-2c02a5db4a89.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-7 \u0a97\u0ac1\u0ab0\u0ac1\u0aa4\u0acd\u0ab5\u0abe\u0a95\u0ab0\u0acd\u0ab7\u0aa3",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "POWER4-PHY-11th-CH7-PYQ L2",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/3278466-1722886225/encrypted-bd401c/360p/encrypted.mkv*5218982",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-7 \u0a97\u0ac1\u0ab0\u0ac1\u0aa4\u0acd\u0ab5\u0abe\u0a95\u0ab0\u0acd\u0ab7\u0aa3",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "3278466-1722886225",
+            "hash": "bd401c",
+            "key": "5218982"
+          }
+        },
+        {
+          "title": "POWER4-PHY-11th-CH7-PYQ L3",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/3278467-1722886228/encrypted-44d560/360p/encrypted.mkv*2133189",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-7 \u0a97\u0ac1\u0ab0\u0ac1\u0aa4\u0acd\u0ab5\u0abe\u0a95\u0ab0\u0acd\u0ab7\u0aa3",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "3278467-1722886228",
+            "hash": "44d560",
+            "key": "2133189"
+          }
+        },
+        {
+          "title": "POWER4-PHY-11th-CH7-PYQ CN2 & 3",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/production/single/uwxla/526916f7-cde8-42bd-9da2-4c6123ac35e2.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-7 \u0a97\u0ac1\u0ab0\u0ac1\u0aa4\u0acd\u0ab5\u0abe\u0a95\u0ab0\u0acd\u0ab7\u0aa3",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "POWER4-PHY-11th-CH7-PYQ L4",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/3278468-1722886231/encrypted-6cfe37/360p/encrypted.mkv*8402018",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-7 \u0a97\u0ac1\u0ab0\u0ac1\u0aa4\u0acd\u0ab5\u0abe\u0a95\u0ab0\u0acd\u0ab7\u0aa3",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "3278468-1722886231",
+            "hash": "6cfe37",
+            "key": "8402018"
+          }
+        },
+        {
+          "title": "POWER4-PHY-11th-CH7-PYQ CN4",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/production/single/uwxla/2fb91a1d-5186-4db8-9759-01ab03fc02a2.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-7 \u0a97\u0ac1\u0ab0\u0ac1\u0aa4\u0acd\u0ab5\u0abe\u0a95\u0ab0\u0acd\u0ab7\u0aa3",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "POWER4-PHY-11th-CH8-L7 PYQ Solution",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/3278476-1722886256/encrypted-36d915/360p/encrypted.mkv*5347607",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-7 \u0a97\u0ac1\u0ab0\u0ac1\u0aa4\u0acd\u0ab5\u0abe\u0a95\u0ab0\u0acd\u0ab7\u0aa3",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "3278476-1722886256",
+            "hash": "36d915",
+            "key": "5347607"
+          }
+        },
+        {
+          "title": "POWER4-PHY-11th-CH8-CN8 PYQ Solution",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/production/single/uwxla/bc83a7bc-5d6c-480c-8666-9294f4af3e8b.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-7 \u0a97\u0ac1\u0ab0\u0ac1\u0aa4\u0acd\u0ab5\u0abe\u0a95\u0ab0\u0acd\u0ab7\u0aa3",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "NEET PHY PYQ 11thChap8",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/production/single/uwxla/7780f615-4ba9-4c28-8f8d-fb7649c284e7.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-7 \u0a97\u0ac1\u0ab0\u0ac1\u0aa4\u0acd\u0ab5\u0abe\u0a95\u0ab0\u0acd\u0ab7\u0aa3",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 1",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1125050-1724497289/encrypted-11b501/360p/encrypted.mkv*6449712",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-8 \u0a98\u0aa8 \u0aaa\u0aa6\u0abe\u0ab0\u0acd\u0aa5\u0acb\u0aa8\u0abe \u0aaf\u0abe\u0a82\u0aa4\u0acd\u0ab0\u0abf\u0a95 \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1125050-1724497289",
+            "hash": "11b501",
+            "key": "6449712"
+          }
+        },
+        {
+          "title": "Class Note - 1",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-08-24-0.06746333687708739.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-8 \u0a98\u0aa8 \u0aaa\u0aa6\u0abe\u0ab0\u0acd\u0aa5\u0acb\u0aa8\u0abe \u0aaf\u0abe\u0a82\u0aa4\u0acd\u0ab0\u0abf\u0a95 \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 2",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1125051-1724497291/encrypted-18d237/360p/encrypted.mkv*5009346",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-8 \u0a98\u0aa8 \u0aaa\u0aa6\u0abe\u0ab0\u0acd\u0aa5\u0acb\u0aa8\u0abe \u0aaf\u0abe\u0a82\u0aa4\u0acd\u0ab0\u0abf\u0a95 \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1125051-1724497291",
+            "hash": "18d237",
+            "key": "5009346"
+          }
+        },
+        {
+          "title": "Class Note - 2",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-08-24-0.7159198561717848.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-8 \u0a98\u0aa8 \u0aaa\u0aa6\u0abe\u0ab0\u0acd\u0aa5\u0acb\u0aa8\u0abe \u0aaf\u0abe\u0a82\u0aa4\u0acd\u0ab0\u0abf\u0a95 \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 3",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1139747-1724907875/encrypted-237560/360p/encrypted.mkv*6799093",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-8 \u0a98\u0aa8 \u0aaa\u0aa6\u0abe\u0ab0\u0acd\u0aa5\u0acb\u0aa8\u0abe \u0aaf\u0abe\u0a82\u0aa4\u0acd\u0ab0\u0abf\u0a95 \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1139747-1724907875",
+            "hash": "237560",
+            "key": "6799093"
+          }
+        },
+        {
+          "title": "Class Note - 3",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-08-29-0.5097530305783984.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-8 \u0a98\u0aa8 \u0aaa\u0aa6\u0abe\u0ab0\u0acd\u0aa5\u0acb\u0aa8\u0abe \u0aaf\u0abe\u0a82\u0aa4\u0acd\u0ab0\u0abf\u0a95 \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 4",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1143394-1724992295/encrypted-c90cc3/360p/encrypted.mkv*1445222",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-8 \u0a98\u0aa8 \u0aaa\u0aa6\u0abe\u0ab0\u0acd\u0aa5\u0acb\u0aa8\u0abe \u0aaf\u0abe\u0a82\u0aa4\u0acd\u0ab0\u0abf\u0a95 \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1143394-1724992295",
+            "hash": "c90cc3",
+            "key": "1445222"
+          }
+        },
+        {
+          "title": "Class Note - 4",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-08-30-0.847736569534884.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-8 \u0a98\u0aa8 \u0aaa\u0aa6\u0abe\u0ab0\u0acd\u0aa5\u0acb\u0aa8\u0abe \u0aaf\u0abe\u0a82\u0aa4\u0acd\u0ab0\u0abf\u0a95 \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "All Worksheet",
+          "type": "pdf",
+          "url": "https://appxcontent.securevideo.in/paid_course4/2024-10-02-0.45345077883054685.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-8 \u0a98\u0aa8 \u0aaa\u0aa6\u0abe\u0ab0\u0acd\u0aa5\u0acb\u0aa8\u0abe \u0aaf\u0abe\u0a82\u0aa4\u0acd\u0ab0\u0abf\u0a95 \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "CH-8 PYQ Lecturer 1",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1125032-1724497107/encrypted-0c2e15/360p/encrypted.mkv*1518439",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-8 \u0a98\u0aa8 \u0aaa\u0aa6\u0abe\u0ab0\u0acd\u0aa5\u0acb\u0aa8\u0abe \u0aaf\u0abe\u0a82\u0aa4\u0acd\u0ab0\u0abf\u0a95 \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1125032-1724497107",
+            "hash": "0c2e15",
+            "key": "1518439"
+          }
+        },
+        {
+          "title": "CH-8 PYQ Class Note 1",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-08-24-0.03800172723817319.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-8 \u0a98\u0aa8 \u0aaa\u0aa6\u0abe\u0ab0\u0acd\u0aa5\u0acb\u0aa8\u0abe \u0aaf\u0abe\u0a82\u0aa4\u0acd\u0ab0\u0abf\u0a95 \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Instruction for Application",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1146231-1725026668/encrypted-2b0af9/360p/encrypted.mkv*2824113",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-9 \u0aa4\u0ab0\u0ab2\u0aa8\u0abe \u0aaf\u0abe\u0a82\u0aa4\u0acd\u0ab0\u0abf\u0a95 \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1146231-1725026668",
+            "hash": "2b0af9",
+            "key": "2824113"
+          }
+        },
+        {
+          "title": "POWER4-PHY-11th-CH9-CN4 PYQ Solution",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/production/single/uwxla/57daec64-1f00-4b8a-87f3-9f93cf6b5bb0.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-9 \u0aa4\u0ab0\u0ab2\u0aa8\u0abe \u0aaf\u0abe\u0a82\u0aa4\u0acd\u0ab0\u0abf\u0a95 \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "POWER4-PHY-11th-CH9-L4 PYQ Solution",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/3278480-1722886268/encrypted-702c2f/360p/encrypted.mkv*7023883",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-9 \u0aa4\u0ab0\u0ab2\u0aa8\u0abe \u0aaf\u0abe\u0a82\u0aa4\u0acd\u0ab0\u0abf\u0a95 \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "3278480-1722886268",
+            "hash": "702c2f",
+            "key": "7023883"
+          }
+        },
+        {
+          "title": "Live Class - 1",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1151558-1725254547/encrypted-c9f43a/360p/encrypted.mkv*9151181",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-9 \u0aa4\u0ab0\u0ab2\u0aa8\u0abe \u0aaf\u0abe\u0a82\u0aa4\u0acd\u0ab0\u0abf\u0a95 \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1151558-1725254547",
+            "hash": "c9f43a",
+            "key": "9151181"
+          }
+        },
+        {
+          "title": "Class Note - 1",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-09-02-0.6328275865938762.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-9 \u0aa4\u0ab0\u0ab2\u0aa8\u0abe \u0aaf\u0abe\u0a82\u0aa4\u0acd\u0ab0\u0abf\u0a95 \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live class",
+          "type": "video",
+          "url": "2:https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1155563-1725340586/encrypted-a7722e/360p/encrypted.mkv*1483221",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-9 \u0aa4\u0ab0\u0ab2\u0aa8\u0abe \u0aaf\u0abe\u0a82\u0aa4\u0acd\u0ab0\u0abf\u0a95 \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1155563-1725340586",
+            "hash": "a7722e",
+            "key": "1483221"
+          }
+        },
+        {
+          "title": "Class Note - 2",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-09-03-0.2802188462313451.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-9 \u0aa4\u0ab0\u0ab2\u0aa8\u0abe \u0aaf\u0abe\u0a82\u0aa4\u0acd\u0ab0\u0abf\u0a95 \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 3",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1159438-1725426997/encrypted-220226/360p/encrypted.mkv*4185824",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-9 \u0aa4\u0ab0\u0ab2\u0aa8\u0abe \u0aaf\u0abe\u0a82\u0aa4\u0acd\u0ab0\u0abf\u0a95 \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1159438-1725426997",
+            "hash": "220226",
+            "key": "4185824"
+          }
+        },
+        {
+          "title": "Class Note - 3",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-09-04-0.2694317971124849.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-9 \u0aa4\u0ab0\u0ab2\u0aa8\u0abe \u0aaf\u0abe\u0a82\u0aa4\u0acd\u0ab0\u0abf\u0a95 \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 4",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1162870-1725513212/encrypted-9a52ca/360p/encrypted.mkv*5142082",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-9 \u0aa4\u0ab0\u0ab2\u0aa8\u0abe \u0aaf\u0abe\u0a82\u0aa4\u0acd\u0ab0\u0abf\u0a95 \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1162870-1725513212",
+            "hash": "9a52ca",
+            "key": "5142082"
+          }
+        },
+        {
+          "title": "Class Note 4",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-09-05-0.4500783962175383.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-9 \u0aa4\u0ab0\u0ab2\u0aa8\u0abe \u0aaf\u0abe\u0a82\u0aa4\u0acd\u0ab0\u0abf\u0a95 \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 5",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1165671-1725599066/encrypted-225472/360p/encrypted.mkv*4797385",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-9 \u0aa4\u0ab0\u0ab2\u0aa8\u0abe \u0aaf\u0abe\u0a82\u0aa4\u0acd\u0ab0\u0abf\u0a95 \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1165671-1725599066",
+            "hash": "225472",
+            "key": "4797385"
+          }
+        },
+        {
+          "title": "Class Note - 5",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-09-06-0.6659908962812569.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-9 \u0aa4\u0ab0\u0ab2\u0aa8\u0abe \u0aaf\u0abe\u0a82\u0aa4\u0acd\u0ab0\u0abf\u0a95 \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 6 WS Solution",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1177129-1725947009/encrypted-2f9dcb/360p/encrypted.mkv*3308734",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-9 \u0aa4\u0ab0\u0ab2\u0aa8\u0abe \u0aaf\u0abe\u0a82\u0aa4\u0acd\u0ab0\u0abf\u0a95 \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1177129-1725947009",
+            "hash": "2f9dcb",
+            "key": "3308734"
+          }
+        },
+        {
+          "title": "Live Class - 6  WS Solution",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-09-10-0.6896127837508381.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-9 \u0aa4\u0ab0\u0ab2\u0aa8\u0abe \u0aaf\u0abe\u0a82\u0aa4\u0acd\u0ab0\u0abf\u0a95 \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Extra WS Pascal_Law",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-09-02-0.5704899025164967.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-9 \u0aa4\u0ab0\u0ab2\u0aa8\u0abe \u0aaf\u0abe\u0a82\u0aa4\u0acd\u0ab0\u0abf\u0a95 \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-09-02-0.21196321380081118.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-9 \u0aa4\u0ab0\u0ab2\u0aa8\u0abe \u0aaf\u0abe\u0a82\u0aa4\u0acd\u0ab0\u0abf\u0a95 \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Extra WORKSHEET_Viscosity",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-09-10-0.26343419736760554.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-9 \u0aa4\u0ab0\u0ab2\u0aa8\u0abe \u0aaf\u0abe\u0a82\u0aa4\u0acd\u0ab0\u0abf\u0a95 \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 1",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1211210-1726805250/encrypted-ac76aa/360p/encrypted.mkv*5418067",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-10 \u0aa6\u0acd\u0ab0\u0ab5\u0acd\u0aaf\u0aa8\u0abe \u0a89\u0ab7\u0acd\u0aae\u0ac0\u0aaf \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1211210-1726805250",
+            "hash": "ac76aa",
+            "key": "5418067"
+          }
+        },
+        {
+          "title": "Class Note - 1",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-09-20-0.1298098099130256.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-10 \u0aa6\u0acd\u0ab0\u0ab5\u0acd\u0aaf\u0aa8\u0abe \u0a89\u0ab7\u0acd\u0aae\u0ac0\u0aaf \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live  Class",
+          "type": "video",
+          "url": "2:https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/122322 2-1727151035/encrypted-945181/360p/encrypted.mkv*7574381",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-10 \u0aa6\u0acd\u0ab0\u0ab5\u0acd\u0aaf\u0aa8\u0abe \u0a89\u0ab7\u0acd\u0aae\u0ac0\u0aaf \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "122322 2-1727151035",
+            "hash": "945181",
+            "key": "7574381"
+          }
+        },
+        {
+          "title": "Class Note - 2",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-09-24-0.9223200335984769.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-10 \u0aa6\u0acd\u0ab0\u0ab5\u0acd\u0aaf\u0aa8\u0abe \u0a89\u0ab7\u0acd\u0aae\u0ac0\u0aaf \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Class Note - 3",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-09-25-0.8132939226881761.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-10 \u0aa6\u0acd\u0ab0\u0ab5\u0acd\u0aaf\u0aa8\u0abe \u0a89\u0ab7\u0acd\u0aae\u0ac0\u0aaf \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 4",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1231325-1727325090/encrypted-de8b24/360p/encrypted.mkv*8294392",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-10 \u0aa6\u0acd\u0ab0\u0ab5\u0acd\u0aaf\u0aa8\u0abe \u0a89\u0ab7\u0acd\u0aae\u0ac0\u0aaf \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1231325-1727325090",
+            "hash": "de8b24",
+            "key": "8294392"
+          }
+        },
+        {
+          "title": "Class Note - 4",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-09-26-0.33673725431444823.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-10 \u0aa6\u0acd\u0ab0\u0ab5\u0acd\u0aaf\u0aa8\u0abe \u0a89\u0ab7\u0acd\u0aae\u0ac0\u0aaf \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class",
+          "type": "video",
+          "url": "5 WS Solution:https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1235298-1727410411/encrypted-a931dc/360p/encrypted.mkv*4802533",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-10 \u0aa6\u0acd\u0ab0\u0ab5\u0acd\u0aaf\u0aa8\u0abe \u0a89\u0ab7\u0acd\u0aae\u0ac0\u0aaf \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1235298-1727410411",
+            "hash": "a931dc",
+            "key": "4802533"
+          }
+        },
+        {
+          "title": "Class Note - 5 W.S Solution",
+          "type": "pdf",
+          "url": "https://appxcontent.securevideo.in/paid_course4/2024-09-27-0.5562603774871764.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-10 \u0aa6\u0acd\u0ab0\u0ab5\u0acd\u0aaf\u0aa8\u0abe \u0a89\u0ab7\u0acd\u0aae\u0ac0\u0aaf \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "All Worksheet",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-09-20-0.03165769670903806.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-10 \u0aa6\u0acd\u0ab0\u0ab5\u0acd\u0aaf\u0aa8\u0abe \u0a89\u0ab7\u0acd\u0aae\u0ac0\u0aaf \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "POWER4-PHY-11th-CH10-L6 PYQ Solution",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/3278486-1722886286/encrypted-c8ae47/360p/encrypted.mkv*1306011",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-10 \u0aa6\u0acd\u0ab0\u0ab5\u0acd\u0aaf\u0aa8\u0abe \u0a89\u0ab7\u0acd\u0aae\u0ac0\u0aaf \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "3278486-1722886286",
+            "hash": "c8ae47",
+            "key": "1306011"
+          }
+        },
+        {
+          "title": "POWER4-PHY-11th-CH10-CN6 PYQ Solution",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/production/single/uwxla/a34dd10a-24f6-4e15-9e9d-12971fce1543.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-10 \u0aa6\u0acd\u0ab0\u0ab5\u0acd\u0aaf\u0aa8\u0abe \u0a89\u0ab7\u0acd\u0aae\u0ac0\u0aaf \u0a97\u0ac1\u0aa3\u0aa7\u0ab0\u0acd\u0aae\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 1",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1243759-1727682212/encrypted-331569/360p/encrypted.mkv*7172562",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-11 \u0aa5\u0ab0\u0acd\u0aae\u0acb\u0aa1\u0abe\u0aaf\u0aa8\u0ac7\u0aae\u0abf\u0a95\u0acd\u0ab8",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1243759-1727682212",
+            "hash": "331569",
+            "key": "7172562"
+          }
+        },
+        {
+          "title": "Class Note - 1",
+          "type": "pdf",
+          "url": "https://appxcontent.securevideo.in/paid_course4/2024-09-30-0.8536270711726897.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-11 \u0aa5\u0ab0\u0acd\u0aae\u0acb\u0aa1\u0abe\u0aaf\u0aa8\u0ac7\u0aae\u0abf\u0a95\u0acd\u0ab8",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 2",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1246598-1727756558/encrypted-aded9e/360p/encrypted.mkv*2658913",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-11 \u0aa5\u0ab0\u0acd\u0aae\u0acb\u0aa1\u0abe\u0aaf\u0aa8\u0ac7\u0aae\u0abf\u0a95\u0acd\u0ab8",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1246598-1727756558",
+            "hash": "aded9e",
+            "key": "2658913"
+          }
+        },
+        {
+          "title": "Class Note - 2",
+          "type": "pdf",
+          "url": "https://appxcontent.securevideo.in/paid_course4/2024-10-01-0.39380055352500665.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-11 \u0aa5\u0ab0\u0acd\u0aae\u0acb\u0aa1\u0abe\u0aaf\u0aa8\u0ac7\u0aae\u0abf\u0a95\u0acd\u0ab8",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 3",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1251833-1727855738/encrypted-d7e7da/360p/encrypted.mkv*2557799",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-11 \u0aa5\u0ab0\u0acd\u0aae\u0acb\u0aa1\u0abe\u0aaf\u0aa8\u0ac7\u0aae\u0abf\u0a95\u0acd\u0ab8",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1251833-1727855738",
+            "hash": "d7e7da",
+            "key": "2557799"
+          }
+        },
+        {
+          "title": "Class Note - 3",
+          "type": "pdf",
+          "url": "https://appxcontent.securevideo.in/paid_course4/2024-10-02-0.4394716760303352.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-11 \u0aa5\u0ab0\u0acd\u0aae\u0acb\u0aa1\u0abe\u0aaf\u0aa8\u0ac7\u0aae\u0abf\u0a95\u0acd\u0ab8",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 4",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1254332-1727928460/encrypted-8b260f/360p/encrypted.mkv*9097356",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-11 \u0aa5\u0ab0\u0acd\u0aae\u0acb\u0aa1\u0abe\u0aaf\u0aa8\u0ac7\u0aae\u0abf\u0a95\u0acd\u0ab8",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1254332-1727928460",
+            "hash": "8b260f",
+            "key": "9097356"
+          }
+        },
+        {
+          "title": "Class Note - 4",
+          "type": "pdf",
+          "url": "https://appxcontent.securevideo.in/paid_course4/2024-10-03-0.7946564150106552.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-11 \u0aa5\u0ab0\u0acd\u0aae\u0acb\u0aa1\u0abe\u0aaf\u0aa8\u0ac7\u0aae\u0abf\u0a95\u0acd\u0ab8",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "All Worksheet",
+          "type": "pdf",
+          "url": "https://appxcontent.securevideo.in/paid_course4/2024-10-01-0.761166043158199.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-11 \u0aa5\u0ab0\u0acd\u0aae\u0acb\u0aa1\u0abe\u0aaf\u0aa8\u0ac7\u0aae\u0abf\u0a95\u0acd\u0ab8",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "POWER4-PHY-11th-CH11-L6 PYQ Solution",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/3278492-1722886304/encrypted-7af6a9/360p/encrypted.mkv*1977478",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-11 \u0aa5\u0ab0\u0acd\u0aae\u0acb\u0aa1\u0abe\u0aaf\u0aa8\u0ac7\u0aae\u0abf\u0a95\u0acd\u0ab8",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "3278492-1722886304",
+            "hash": "7af6a9",
+            "key": "1977478"
+          }
+        },
+        {
+          "title": "POWER4-PHY-11th-CH11-CN6 PYQ Solution",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/production/single/uwxla/1d54ed29-f0c3-4596-a8c4-203cff7a4621.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-11 \u0aa5\u0ab0\u0acd\u0aae\u0acb\u0aa1\u0abe\u0aaf\u0aa8\u0ac7\u0aae\u0abf\u0a95\u0acd\u0ab8",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 1",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1180783-1726031248/encrypted-75c171/360p/encrypted.mkv*8751891",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-12 \u0a97\u0aa4\u0abf\u0ab5\u0abe\u0aa6",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1180783-1726031248",
+            "hash": "75c171",
+            "key": "8751891"
+          }
+        },
+        {
+          "title": "Class Note - 1",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-09-11-0.06710218034290771.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-12 \u0a97\u0aa4\u0abf\u0ab5\u0abe\u0aa6",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 2",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1184444-1726118014/encrypted-ed5a43/360p/encrypted.mkv*6518061",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-12 \u0a97\u0aa4\u0abf\u0ab5\u0abe\u0aa6",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1184444-1726118014",
+            "hash": "ed5a43",
+            "key": "6518061"
+          }
+        },
+        {
+          "title": "Class Note - 2",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-09-12-0.02328757663930303.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-12 \u0a97\u0aa4\u0abf\u0ab5\u0abe\u0aa6",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 3",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1187938-1726203510/encrypted-99beee/360p/encrypted.mkv*380847",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-12 \u0a97\u0aa4\u0abf\u0ab5\u0abe\u0aa6",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1187938-1726203510",
+            "hash": "99beee",
+            "key": "380847"
+          }
+        },
+        {
+          "title": "Class Note - 3",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-09-13-0.18748508303979494.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-12 \u0a97\u0aa4\u0abf\u0ab5\u0abe\u0aa6",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 4",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1199935-1726546056/encrypted-0641e3/360p/encrypted.mkv*8519915",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-12 \u0a97\u0aa4\u0abf\u0ab5\u0abe\u0aa6",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1199935-1726546056",
+            "hash": "0641e3",
+            "key": "8519915"
+          }
+        },
+        {
+          "title": "Class Note - 4",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-09-17-0.21427682826651484.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-12 \u0a97\u0aa4\u0abf\u0ab5\u0abe\u0aa6",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class ; 5",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1203439-1726637688/encrypted-fba5ed/360p/encrypted.mkv*3783542",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-12 \u0a97\u0aa4\u0abf\u0ab5\u0abe\u0aa6",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1203439-1726637688",
+            "hash": "fba5ed",
+            "key": "3783542"
+          }
+        },
+        {
+          "title": "Class Note - 5 W.S",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-09-18-0.8529772112297025.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-12 \u0a97\u0aa4\u0abf\u0ab5\u0abe\u0aa6",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "All Worksheet",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-09-12-0.14882163875511578.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-12 \u0a97\u0aa4\u0abf\u0ab5\u0abe\u0aa6",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "POWER4-PHY-11th-CH12-L PYQ Solution",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/3278498-1722886323/encrypted-8c35fa/360p/encrypted.mkv*3981592",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-12 \u0a97\u0aa4\u0abf\u0ab5\u0abe\u0aa6",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "3278498-1722886323",
+            "hash": "8c35fa",
+            "key": "3981592"
+          }
+        },
+        {
+          "title": "POWER4-PHY-11th-CH12-CN PYQ Solution",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/production/single/uwxla/0cadcc7f-d90a-4b3b-a777-9bacda6a3c57.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-12 \u0a97\u0aa4\u0abf\u0ab5\u0abe\u0aa6",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 1",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1296799-1729058681/encrypted-ccfdc1/360p/encrypted.mkv*2196519",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-13 \u0aa6\u0acb\u0ab2\u0aa8\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1296799-1729058681",
+            "hash": "ccfdc1",
+            "key": "2196519"
+          }
+        },
+        {
+          "title": "Class Note - 1",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-10-16-0.6367505932097528.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-13 \u0aa6\u0acb\u0ab2\u0aa8\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class -2",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1300354-1729138057/encrypted-23ebcc/360p/encrypted.mkv*7298169",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-13 \u0aa6\u0acb\u0ab2\u0aa8\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1300354-1729138057",
+            "hash": "23ebcc",
+            "key": "7298169"
+          }
+        },
+        {
+          "title": "Class Note - 2",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-10-18-0.8481141455761201.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-13 \u0aa6\u0acb\u0ab2\u0aa8\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 3",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1304827-1729225177/encrypted-954f53/360p/encrypted.mkv*4446926",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-13 \u0aa6\u0acb\u0ab2\u0aa8\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1304827-1729225177",
+            "hash": "954f53",
+            "key": "4446926"
+          }
+        },
+        {
+          "title": "Class Note - 3",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-10-18-0.8176867690172538.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-13 \u0aa6\u0acb\u0ab2\u0aa8\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 4",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1315052-1729482943/encrypted-1713c3/360p/encrypted.mkv*960628",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-13 \u0aa6\u0acb\u0ab2\u0aa8\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1315052-1729482943",
+            "hash": "1713c3",
+            "key": "960628"
+          }
+        },
+        {
+          "title": "Class Note - 4",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-10-21-0.5579358063502384.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-13 \u0aa6\u0acb\u0ab2\u0aa8\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "11th_Chap_13_Wave_Extra WS_1",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-10-17-0.8952740510477131.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-13 \u0aa6\u0acb\u0ab2\u0aa8\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "CH-13 Full Worksheet",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-10-17-0.6436167277999574.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-13 \u0aa6\u0acb\u0ab2\u0aa8\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "POWER4-PHY-11th-CH13-L4 PYQ Solution",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/3278503-1722886338/encrypted-423c93/360p/encrypted.mkv*7175058",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-13 \u0aa6\u0acb\u0ab2\u0aa8\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "3278503-1722886338",
+            "hash": "423c93",
+            "key": "7175058"
+          }
+        },
+        {
+          "title": "POWER4-PHY-11th-CH13-CN4 PYQ Solution",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/production/single/uwxla/db20efc8-fb78-4cc2-834d-70211bec3bb7.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-13 \u0aa6\u0acb\u0ab2\u0aa8\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 1",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1259340-1728027633/encrypted-1489a2/360p/encrypted.mkv*8481716",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-14 \u0aa4\u0ab0\u0a82\u0a97\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1259340-1728027633",
+            "hash": "1489a2",
+            "key": "8481716"
+          }
+        },
+        {
+          "title": "Class Note - 1",
+          "type": "pdf",
+          "url": "https://appxcontent.securevideo.in/paid_course4/2024-10-04-0.44624036309797255.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-14 \u0aa4\u0ab0\u0a82\u0a97\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class",
+          "type": "video",
+          "url": "2:https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1266936-1728274773/encrypted-3ecb46/360p/encrypted.mkv*8726626",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-14 \u0aa4\u0ab0\u0a82\u0a97\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1266936-1728274773",
+            "hash": "3ecb46",
+            "key": "8726626"
+          }
+        },
+        {
+          "title": "Class Note - 2",
+          "type": "pdf",
+          "url": "https://appxcontent.securevideo.in/paid_course4/2024-10-07-0.421204132921692.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-14 \u0aa4\u0ab0\u0a82\u0a97\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class",
+          "type": "video",
+          "url": "3:https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1271221-1728361893/encrypted-e397b9/360p/encrypted.mkv*9980582",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-14 \u0aa4\u0ab0\u0a82\u0a97\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1271221-1728361893",
+            "hash": "e397b9",
+            "key": "9980582"
+          }
+        },
+        {
+          "title": "Class Note - 3",
+          "type": "pdf",
+          "url": "https://appxcontent.securevideo.in/paid_course4/2024-10-08-0.8736700939438868.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-14 \u0aa4\u0ab0\u0a82\u0a97\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 4",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1277554-1728476936/encrypted-4b2304/360p/encrypted.mkv*4327621",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-14 \u0aa4\u0ab0\u0a82\u0a97\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1277554-1728476936",
+            "hash": "4b2304",
+            "key": "4327621"
+          }
+        },
+        {
+          "title": "Class Note - 4",
+          "type": "pdf",
+          "url": "https://appxcontent.securevideo.in/paid_course4/2024-10-09-0.5753893270199781.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-14 \u0aa4\u0ab0\u0a82\u0a97\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 5",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1278952-1728533610/encrypted-3690e0/360p/encrypted.mkv*4456878",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-14 \u0aa4\u0ab0\u0a82\u0a97\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1278952-1728533610",
+            "hash": "3690e0",
+            "key": "4456878"
+          }
+        },
+        {
+          "title": "Class Note - 5",
+          "type": "pdf",
+          "url": "https://appxcontent.securevideo.in/paid_course4/2024-10-10-0.6526341912047859.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-14 \u0aa4\u0ab0\u0a82\u0a97\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet Chap 14",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-10-11-0.9830051998400084.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-14 \u0aa4\u0ab0\u0a82\u0a97\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Worksheet - 2 Ans With Solution",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-10-11-0.5840294925792968.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-14 \u0aa4\u0ab0\u0a82\u0a97\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class -  6  WORKSHEET SOLUTION",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1289273-1728892539/encrypted-15ecc0/360p/encrypted.mkv*6697494",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-14 \u0aa4\u0ab0\u0a82\u0a97\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1289273-1728892539",
+            "hash": "15ecc0",
+            "key": "6697494"
+          }
+        },
+        {
+          "title": "Class Note - 6 WORKSHEET SOLUTION",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-10-14-0.6722802796363709.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-14 \u0aa4\u0ab0\u0a82\u0a97\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Live Class - 7  WORKSHEET SOLUTION",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1292157-1728968496/encrypted-7b22ea/360p/encrypted.mkv*7305782",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-14 \u0aa4\u0ab0\u0a82\u0a97\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "1292157-1728968496",
+            "hash": "7b22ea",
+            "key": "7305782"
+          }
+        },
+        {
+          "title": "Class Note - 7 WORKSHEET SOLUTION",
+          "type": "pdf",
+          "url": "https://appxcontent.kaxa.in/paid_course4/2024-10-15-0.08222084759761761.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-14 \u0aa4\u0ab0\u0a82\u0a97\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "POWER4-PHY-11th-CH14-L5 PYQ Solution L1",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/3278508-1722886353/encrypted-d6f660/360p/encrypted.mkv*9780527",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-14 \u0aa4\u0ab0\u0a82\u0a97\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "3278508-1722886353",
+            "hash": "d6f660",
+            "key": "9780527"
+          }
+        },
+        {
+          "title": "POWER4-PHY-11th-CH14-CN5 PYQ Solution L1",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/production/single/uwxla/49aeac8f-55db-4ae9-bb29-4c10e836e22b.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-14 \u0aa4\u0ab0\u0a82\u0a97\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "POWER4-PHY-11th-CH14-L6 PYQ Solution L2",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/3278509-1722886356/encrypted-bfa97c/360p/encrypted.mkv*9729825",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-14 \u0aa4\u0ab0\u0a82\u0a97\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "3278509-1722886356",
+            "hash": "bfa97c",
+            "key": "9729825"
+          }
+        },
+        {
+          "title": "POWER4-PHY-11th-CH14-CN6 PYQ Solution L2",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/production/single/uwxla/5a8e3b46-bd68-451c-b426-5fe1967584c4.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-14 \u0aa4\u0ab0\u0a82\u0a97\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Physics Mock Test - 1 Solution Lecture 1",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/3303015-1723639228/encrypted-c454cf/360p/encrypted.mkv*2886565",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "NEET TEST POWER 5.0",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "3303015-1723639228",
+            "hash": "c454cf",
+            "key": "2886565"
+          }
+        },
+        {
+          "title": "Physics Mock Test - 1 Solution",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/12072024/90b0c.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "NEET TEST POWER 5.0",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "Biology Mock Test - 1 Solution Lecture 1",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/3303016-1723639228/encrypted-ccdc0d/360p/encrypted.mkv*5364253",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "NEET TEST POWER 5.0",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "3303016-1723639228",
+            "hash": "ccdc0d",
+            "key": "5364253"
+          }
+        },
+        {
+          "title": "PRACTICE TEST - 2",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/29062024/2772e.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "NEET TEST POWER 5.0",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "PRACTICE TEST - 4",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/fire_physics/content/public/05a67d9e-bcc7-4028-8ee2-47a5f1c90e3d/document/10072024/7e78d.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "NEET TEST POWER 5.0",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "POWER4-PHY-11th.CH14 PYQ Solution P1",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/3278514-1722886371/encrypted-7f6e73/360p/encrypted.mkv*3338553",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-14 \u0aa4\u0ab0\u0a82\u0a97\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "3278514-1722886371",
+            "hash": "7f6e73",
+            "key": "3338553"
+          }
+        },
+        {
+          "title": "POWER4-PHY-11th.CH14-CN PYQ Solution L1",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/production/single/uwxla/27fa052f-2958-423d-a52c-3a2350f03ffa.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-14 \u0aa4\u0ab0\u0a82\u0a97\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        },
+        {
+          "title": "POWER4-PHY-11th.CH14-CN PYQ Solution P2",
+          "type": "video",
+          "url": "https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/3278515-1722886375/encrypted-08e93c/360p/encrypted.mkv*5773123",
+          "thumbnail": "https://img.classx.co.in/thumb/default-video.jpg",
+          "chapter": {
+            "name": "11TH CH-14 \u0aa4\u0ab0\u0a82\u0a97\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20",
+          "video_data": {
+            "id": "3278515-1722886375",
+            "hash": "08e93c",
+            "key": "5773123"
+          }
+        },
+        {
+          "title": "POWER4-PHY-11th.CH14-CN PYQ Solution L2",
+          "type": "pdf",
+          "url": "https://migration-contents.classx.co.in/production/single/uwxla/c8592a45-077a-49e9-9cfb-47e26dda9bfd.pdf",
+          "thumbnail": "/static/images/pdf_thumbnail.svg",
+          "chapter": {
+            "name": "11TH CH-14 \u0aa4\u0ab0\u0a82\u0a97\u0acb",
+            "number": 1
+          },
+          "created_at": "2025-03-20"
+        }
+      ]
+    }
+  }
+}

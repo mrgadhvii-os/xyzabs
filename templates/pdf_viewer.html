@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} - PDF Viewer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #4361ee;
+      --secondary-color: #3f37c9;
+      --accent-color: #4895ef;
+      --text-color: #2b2d42;
+      --light-text: #8d99ae;
+      --bg-color: #f8f9fa;
+      --card-bg: #ffffff;
+    }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    
+    .navbar {
+      background-color: var(--primary-color);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+    
+    .navbar-brand {
+      font-weight: 700;
+      color: white;
+    }
+    
+    .pdf-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    
+    .pdf-toolbar {
+      background-color: var(--card-bg);
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    .pdf-title {
+      font-weight: 600;
+      margin: 0;
+      font-size: 1.25rem;
+      color: var(--text-color);
+      max-width: 60%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    
+    .pdf-controls {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    
+    .btn-control {
+      background-color: var(--card-bg);
+      border: 1px solid #dee2e6;
+      color: var(--text-color);
+      border-radius: 4px;
+      padding: 0.375rem 0.75rem;
+      font-size: 0.9rem;
+      transition: all 0.2s ease;
+    }
+    
+    .btn-control:hover {
+      background-color: #f8f9fa;
+      border-color: #c1c9d0;
+    }
+    
+    .btn-control:active {
+      background-color: #e9ecef;
+    }
+    
+    .btn-control.disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+    
+    .pdf-viewer {
+      flex: 1;
+      overflow: hidden;
+      background-color: #525659;
+      position: relative;
+    }
+    
+    .google-docs-frame {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    
+    .download-btn {
+      background-color: var(--primary-color);
+      color: white;
+      border: none;
+      padding: 0.375rem 0.75rem;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      transition: all 0.2s ease;
+      text-decoration: none;
+    }
+    
+    .download-btn:hover {
+      background-color: var(--secondary-color);
+      color: white;
+    }
+    
+    .download-btn.disabled {
+      background-color: #6c757d;
+      opacity: 0.65;
+      pointer-events: none;
+    }
+    
+    .loading-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(255, 255, 255, 0.8);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+    
+    .spinner {
+      width: 50px;
+      height: 50px;
+      border: 5px solid rgba(67, 97, 238, 0.2);
+      border-radius: 50%;
+      border-top-color: var(--primary-color);
+      animation: spin 1s ease-in-out infinite;
+      margin-bottom: 1rem;
+    }
+    
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    
+    .loading-text {
+      font-weight: 500;
+      color: var(--text-color);
+    }
+    
+    @media (max-width: 768px) {
+      .pdf-toolbar {
+        flex-direction: column;
+        gap: 0.75rem;
+        padding: 0.75rem;
+      }
+      
+      .pdf-title {
+        max-width: 100%;
+        text-align: center;
+      }
+      
+      .pdf-controls {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Include Header Partial -->
+  {% include 'header.html' %}
+
+  <!-- Main Content -->
+  <div class="container-fluid mt-4 px-0 d-flex flex-column" style="height: calc(100vh - 90px);">
+    <!-- PDF Container -->
+    <div class="pdf-container">
+      <!-- PDF Toolbar -->
+      <div class="pdf-toolbar">
+        <h1 class="pdf-title">{{ title }}</h1>
+        
+        <div class="pdf-controls">
+          <a href="{{ pdf_url }}" class="download-btn {% if not enable_download %}disabled{% endif %}" 
+             download="{{ subject_name+'-'+chapter_name+'-'+title+'-MrGadhvii.pdf' if subject_name and chapter_name else title+'-MrGadhvii.pdf' }}" {% if not enable_download %}aria-disabled="true" tabindex="-1"{% endif %}>
+            <i class="fas fa-download me-1"></i> Download
+          </a>
+            
+            <button id="fullscreen" class="btn-control" title="Fullscreen">
+              <i class="fas fa-expand"></i>
+            </button>
+        </div>
+      </div>
+      
+      <!-- PDF Viewer -->
+      <div class="pdf-viewer" id="pdfViewer">
+        <iframe src="{{ google_docs_url }}" class="google-docs-frame" id="googleDocsFrame" 
+                allowfullscreen></iframe>
+      
+      <!-- Loading Overlay -->
+      <div class="loading-container" id="loadingContainer">
+        <div class="spinner"></div>
+        <p class="loading-text">Loading PDF...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- PDF Viewer Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // DOM Elements
+      const pdfViewer = document.getElementById('pdfViewer');
+      const iframe = document.getElementById('googleDocsFrame');
+      const fullscreenButton = document.getElementById('fullscreen');
+      const loadingContainer = document.getElementById('loadingContainer');
+      
+      // Hide loading overlay when iframe is loaded
+      iframe.addEventListener('load', function() {
+        loadingContainer.style.display = 'none';
+      });
+      
+      // Toggle fullscreen
+      function toggleFullscreen() {
+        if (!document.fullscreenElement) {
+          pdfViewer.requestFullscreen().catch(err => {
+            console.error(`Error attempting to enable fullscreen: ${err.message}`);
+          });
+        } else {
+          document.exitFullscreen();
+        }
+      }
+      
+      // Event listeners
+      fullscreenButton.addEventListener('click', toggleFullscreen);
+      
+      // Anti-debugging script 
+      function detectDevTools() {
+        const widthThreshold = window.outerWidth - window.innerWidth > 160;
+        const heightThreshold = window.outerHeight - window.innerHeight > 160;
+        
+        if (widthThreshold || heightThreshold) {
+          document.body.innerHTML = '<div style="text-align:center;padding:50px;"><h1>Developer Tools Detected</h1><p>For security reasons, this page cannot be viewed with developer tools open.</p></div>';
+        }
+      }
+      
+      // Check periodically
+      setInterval(detectDevTools, 1000);
+      
+      // Disable right-click
+      document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+        return false;
+      });
+      
+      // Disable keyboard shortcuts
+      document.addEventListener('keydown', function(e) {
+        // Disable F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
+        if (
+          e.keyCode === 123 || 
+          (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74)) ||
+          (e.ctrlKey && e.keyCode === 85)
+        ) {
+          e.preventDefault();
+          return false;
+        }
+      });
+    });
+  </script>
+</body>
+</html> 

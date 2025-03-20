@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ video.title }} - VidH Player</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #4361ee;
+      --secondary-color: #3f37c9;
+      --accent-color: #4895ef;
+      --text-color: #2b2d42;
+      --light-text: #8d99ae;
+      --bg-color: #f8f9fa;
+      --card-bg: #ffffff;
+      --dark-bg: #212529;
+      --border-radius: 12px;
+      --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      
+      /* Plyr custom variables */
+      --plyr-color-main: var(--primary-color);
+      --plyr-video-control-color: #fff;
+      --plyr-video-control-color-hover: var(--accent-color);
+      --plyr-video-control-background-hover: rgba(0, 0, 0, 0.5);
+      --plyr-audio-control-background-hover: rgba(0, 0, 0, 0.5);
+      --plyr-audio-control-color-hover: var(--accent-color);
+      --plyr-menu-background: rgba(28, 28, 28, 0.95);
+      --plyr-menu-color: #fff;
+      --plyr-menu-border-radius: 8px;
+      --plyr-control-radius: 8px;
+      --plyr-range-thumb-height: 16px;
+      --plyr-range-thumb-width: 16px;
+      --plyr-range-track-height: 6px;
+      --plyr-font-family: "Inter", sans-serif;
+      --plyr-font-size-base: 16px;
+      --plyr-font-size-small: 14px;
+      --plyr-font-size-large: 18px;
+      --plyr-font-weight-regular: 400;
+      --plyr-font-weight-bold: 600;
+    }
+    
+    body { 
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      padding-bottom: 3rem;
+      overflow-x: hidden;
+    }
+    
+    .video-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      box-shadow: var(--shadow);
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      position: relative;
+      background-color: var(--card-bg);
+    }
+    
+    .plyr {
+      border-radius: var(--border-radius) var(--border-radius) 0 0;
+      --plyr-video-controls-background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.7), rgba(0,0,0,0));
+    }
+    
+    .plyr--video .plyr__controls {
+      padding: 30px 15px 15px;
+    }
+    
+    .plyr--full-ui input[type=range] {
+      color: var(--primary-color);
+    }
+    
+    .plyr__control--overlaid {
+      background: var(--primary-color);
+      padding: 25px;
+    }
+    
+    .plyr__control--overlaid svg {
+      height: 32px;
+      width: 32px;
+    }
+    
+    .plyr__control--overlaid:hover {
+      background: var(--secondary-color);
+      transform: scale(1.1);
+    }
+    
+    .plyr--video .plyr__control:hover {
+      background: var(--primary-color);
+    }
+    
+    .plyr__menu__container .plyr__control--back::before {
+      background: rgba(255, 255, 255, 0.1);
+    }
+    
+    .plyr__menu__container .plyr__control--forward::after {
+      border-left-color: rgba(255, 255, 255, 0.5);
+    }
+    
+    .plyr__menu__container .plyr__control[role=menuitemradio][aria-checked=true]::before {
+      background: var(--primary-color);
+    }
+    
+    .video-info {
+      padding: 1.5rem;
+      background: var(--card-bg);
+      border-radius: 0 0 var(--border-radius) var(--border-radius);
+      border-top: 1px solid rgba(0,0,0,0.05);
+    }
+    
+    .video-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text-color);
+      margin-bottom: 0.5rem;
+    }
+    
+    .video-description {
+      color: var(--light-text);
+      margin-bottom: 1.5rem;
+      font-size: 0.95rem;
+    }
+    
+    .btn-primary {
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+      border-radius: var(--border-radius);
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      transition: all 0.3s ease;
+    }
+    
+    .btn-primary:hover {
+      background-color: var(--secondary-color);
+      border-color: var(--secondary-color);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    
+    .btn-outline-primary {
+      color: var(--primary-color);
+      border-color: var(--primary-color);
+      border-radius: var(--border-radius);
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      transition: all 0.3s ease;
+    }
+    
+    .btn-outline-primary:hover {
+      background-color: var(--primary-color);
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    
+    .watermark {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-size: 12px;
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0.7;
+      backdrop-filter: blur(2px);
+    }
+    
+    .copyright-watermark {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 0;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: bold;
+      z-index: 2;
+      opacity: 0.9;
+      backdrop-filter: blur(2px);
+      pointer-events: none;
+    }
+    
+    .video-loading {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+      backdrop-filter: blur(5px);
+    }
+    
+    .loader-container {
+      text-align: center;
+      color: white;
+    }
+    
+    .loader-spinner {
+      width: 50px;
+      height: 50px;
+      border: 3px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      border-top-color: var(--primary-color);
+      animation: spin 1s ease-in-out infinite;
+      margin: 0 auto 15px;
+    }
+    
+    .loader-text {
+      font-size: 16px;
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+    
+    .loader-progress {
+      width: 200px;
+      height: 4px;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 4px;
+      overflow: hidden;
+      margin: 0 auto;
+    }
+    
+    .loader-progress-bar {
+      height: 100%;
+      background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+      width: 0%;
+      transition: width 0.3s ease;
+    }
+    
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    
+    .copyright-footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.85rem;
+      color: var(--light-text);
+      margin-top: 2rem;
+      background-color: var(--card-bg);
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+    }
+    
+    .copyright-footer a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    
+    .copyright-footer a:hover {
+      text-decoration: underline;
+    }
+    
+    /* Share container styles */
+    .share-container {
+      margin-top: 1.5rem;
+      padding: 1.5rem;
+      background-color: var(--card-bg);
+      border-radius: var(--border-radius);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    
+    .share-title {
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--text-color);
+    }
+    
+    .share-link-container {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .share-link-input {
+      flex: 1;
+      padding: 0.5rem 1rem;
+      border: 1px solid rgba(0,0,0,0.1);
+      border-radius: var(--border-radius);
+      font-size: 0.9rem;
+    }
+    
+    .share-link-input:focus {
+      border-color: var(--primary-color);
+      box-shadow: 0 0 0 2px rgba(67, 97, 238, 0.1);
+      outline: none;
+    }
+    
+    .share-buttons {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    
+    .share-button {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      border-radius: var(--border-radius);
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .share-button.whatsapp {
+      background-color: #25D366;
+      color: white;
+    }
+    
+    .share-button.telegram {
+      background-color: #0088cc;
+      color: white;
+    }
+    
+    .share-button.copy {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      border: 1px solid rgba(0,0,0,0.1);
+    }
+    
+    .share-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    
+    .toast-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+    
+    .toast {
+      background-color: var(--card-bg);
+      color: var(--text-color);
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+      border-left: 4px solid var(--primary-color);
+    }
+    
+    @media (max-width: 768px) {
+      .video-container {
+        margin: 0 1rem;
+      }
+      
+      .video-title {
+        font-size: 1.25rem;
+      }
+      
+      .video-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+    
+    /* Quality option styling */
+    .dropdown-item[data-quality] {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .dropdown-item[data-quality]::after {
+      content: attr(data-quality);
+      font-size: 0.75rem;
+      background-color: var(--accent-color);
+      color: white;
+      padding: 0.1rem 0.4rem;
+      border-radius: 4px;
+      margin-left: 0.5rem;
+    }
+    
+    .dropdown-item[data-quality="720p"]::after {
+      background-color: #22c55e; /* Green for HD */
+    }
+    
+    .dropdown-item[data-quality="480p"]::after,
+    .dropdown-item[data-quality="360p"]::after {
+      background-color: #0ea5e9; /* Blue for medium quality */
+    }
+    
+    .dropdown-item[data-quality="240p"]::after,
+    .dropdown-item[data-quality="144p"]::after {
+      background-color: #6b7280; /* Grey for lower quality */
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+</head>
+<body>
+  <!-- Include Header Partial -->
+  {% include 'header.html' %}
+
+  <!-- Flash Messages -->
+  <div class="container my-4">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+          <div class="alert alert-{{ category if category != 'error' else 'danger' }} alert-dismissible fade show">
+            {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+          </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+  </div>
+
+  <!-- Video Player -->
+  <div class="container my-4">
+    <div class="video-container">
+      <div style="position: relative;">
+        <video id="player" poster="{{ video.thumbnail }}" playsinline controls>
+          <!-- Video source will be added via JavaScript -->
+        </video>
+        <div class="watermark" style="display: none;">{{ session.get('display_name') or session.get('user_id') }} - {{ request.remote_addr }}</div>
+        <div class="copyright-watermark">© MrGadhvii - VidH</div>
+        
+        <!-- Loading overlay - initially hidden -->
+        <div class="video-loading" id="videoLoading" style="display: none;">
+          <div class="loader-container">
+            <div class="loader-spinner"></div>
+            <div class="loader-text">Loading video...</div>
+            <div class="loader-progress">
+              <div class="loader-progress-bar" id="progressBar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-info">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h1 class="video-title">{{ video.title }}</h1>
+          <div class="d-flex gap-2">
+            <!-- Quality Selector -->
+            <div class="dropdown">
+              <button class="btn btn-outline-primary dropdown-toggle" type="button" id="qualitySelector" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-video me-2"></i><span id="currentQuality">360p</span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end" id="qualityOptions" aria-labelledby="qualitySelector">
+                <!-- Will be populated by JavaScript -->
+              </ul>
+            </div>
+            
+            {% if video.enable_download %}
+            <a href="{{ video.url }}" download class="btn btn-success">
+              <i class="fas fa-download me-2"></i> Download
+            </a>
+            {% endif %}
+            {% if video.is_zip %}
+            <a href="{{ url_for('player_v2', video_id=video.id, url=video.url) }}" class="btn btn-primary">
+              <i class="fas fa-sync-alt me-2"></i> Switch to HLS Player
+            </a>
+            {% endif %}
+          </div>
+        </div>
+        <p class="video-description">{{ video.description }}</p>
+        
+        <!-- Share Button -->
+        <div class="mt-3">
+          <button id="shareBtn" class="btn btn-outline-primary">
+            <i class="fas fa-share-alt me-2"></i> Share Video
+          </button>
+          
+          <!-- Download Button -->
+          <button id="downloadBtn" class="btn btn-outline-success ms-2">
+            <i class="fas fa-download me-2"></i> Download Video
+          </button>
+          
+          <!-- Share Modal -->
+          <div class="modal fade" id="shareModal" tabindex="-1" aria-labelledby="shareModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="shareModalLabel">Share Video</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div id="sharingLoader" class="text-center py-4">
+                    <div class="spinner-border text-primary" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <p class="mt-3">Generating sharing URL...</p>
+                    <p class="small text-muted">This link will be valid for 24 hours</p>
+                  </div>
+                  
+                  <div id="sharingSuccess" class="d-none">
+                    <p class="mb-3">Your sharing link is ready:</p>
+                    <div class="input-group mb-3">
+                      <input type="text" id="shareLink" class="form-control" readonly>
+                      <button class="btn btn-primary" type="button" id="copyBtn">
+                        <i class="fas fa-copy"></i>
+                      </button>
+                    </div>
+                    <p class="small text-muted">This link will expire in 24 hours</p>
+                  </div>
+                  
+                  <div id="sharingError" class="d-none">
+                    <div class="alert alert-danger">
+                      <i class="fas fa-exclamation-triangle me-2"></i>
+                      <span id="errorMessage">Failed to generate sharing link.</span>
+                    </div>
+                    <button class="btn btn-outline-primary" id="retryBtn">
+                      <i class="fas fa-redo me-2"></i> Try Again
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Copyright Footer -->
+    <div class="copyright-footer mt-4">
+      <p class="mb-0">
+        &copy; 2025 VidH - Secure Video Streaming | Developed by <a href="#">MrGadhvii</a>
+        <br>
+        <small>All rights reserved. Unauthorized distribution is prohibited.</small>
+      </p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+  <script>
+    // Handle user avatar image error
+    const userAvatar = document.getElementById('userAvatar');
+    if (userAvatar) {
+      userAvatar.onerror = function() {
+        this.src = '/profile-image/{{ session.get("user_id") }}';
+      };
+    }
+
+    // Store video information
+    const videoData = {
+      id: "{{ video.id }}",
+      hash: "{{ video.hash }}",
+      key: "{{ video.key }}",
+      url: "{{ video.url }}"
+    };
+
+    // Loading animation
+    const videoLoading = document.getElementById('videoLoading');
+    const progressBar = document.getElementById('progressBar');
+    let loadingProgress = 0;
+    let loadingInterval;
+
+    function startLoadingAnimation() {
+      videoLoading.style.display = 'flex';
+      loadingProgress = 0;
+      progressBar.style.width = '0%';
+      
+      // Simulate loading progress
+      loadingInterval = setInterval(() => {
+        if (loadingProgress < 90) {
+          loadingProgress += Math.random() * 10;
+          progressBar.style.width = `${loadingProgress}%`;
+        }
+      }, 500);
+    }
+
+    function completeLoadingAnimation() {
+      loadingProgress = 100;
+      progressBar.style.width = '100%';
+      
+      clearInterval(loadingInterval);
+      
+      // Hide loading overlay after a short delay
+      setTimeout(() => {
+        videoLoading.style.display = 'none';
+      }, 500);
+    }
+
+    // Initialize Plyr
+    document.addEventListener('DOMContentLoaded', function() {
+      // Quality selector elements
+      const qualitySelector = document.getElementById('qualitySelector');
+      const qualityOptions = document.getElementById('qualityOptions');
+      const currentQualityDisplay = document.getElementById('currentQuality');
+      
+      // Define all supported qualities
+      const availableQualities = ["144p", "240p", "360p", "480p", "720p"];
+      let currentQuality = "360p"; // Default quality
+      
+      // Update quality selector UI with all available qualities
+      updateQualitySelector(availableQualities, currentQuality);
+      
+      // Initialize video with the default quality
+      initializeVideo(currentQuality);
+      
+      // Function to update quality selector dropdown
+      function updateQualitySelector(qualities, selectedQuality) {
+        // Clear existing options
+        qualityOptions.innerHTML = '';
+        
+        // Add available qualities
+        qualities.forEach(quality => {
+          const li = document.createElement('li');
+          const a = document.createElement('a');
+          a.className = 'dropdown-item' + (quality === selectedQuality ? ' active' : '');
+          a.href = '#';
+          a.dataset.quality = quality;
+          a.textContent = quality;
+          
+          // Add click handler
+          a.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Only change if different quality
+            if (quality !== currentQuality) {
+              // Store current time before changing quality
+              const currentTime = player ? player.currentTime : 0;
+              
+              // Update current quality
+              currentQuality = quality;
+              
+              // Update visual indicator
+              document.querySelectorAll('#qualityOptions .dropdown-item').forEach(item => {
+                item.classList.remove('active');
+              });
+              this.classList.add('active');
+              currentQualityDisplay.textContent = quality;
+              
+              // Load video with new quality
+              startLoadingAnimation();
+              loadVideoWithQuality(quality, currentTime);
+            }
+          });
+          
+          li.appendChild(a);
+          qualityOptions.appendChild(li);
+        });
+        
+        // Update current quality display
+        currentQualityDisplay.textContent = selectedQuality;
+      }
+      
+      // Function to load video with specific quality
+      function loadVideoWithQuality(quality, startTime = 0) {
+        const videoElement = document.getElementById('player');
+        
+        // Determine if this is an HLS stream based on the URL
+        const isHlsStream = videoData.url && videoData.url.includes('.zip');
+        
+        // Construct the appropriate URL with quality
+        let streamUrl;
+        if (isHlsStream) {
+          // For HLS streams, use the hls-stream endpoint
+          streamUrl = `/hls-stream?url=${encodeURIComponent(videoData.url)}&quality=${quality}`;
+        } else {
+          // Use FFmpeg streaming for better performance
+          const baseUrl = `https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/${videoData.id}/encrypted-${videoData.hash}/${quality}/encrypted.mkv*${videoData.key}`;
+          streamUrl = `/ffmpeg-stream?url=${encodeURIComponent(baseUrl)}&quality=${quality}`;
+          
+          // If we have a start time, add it to the URL
+          if (startTime > 0) {
+            streamUrl += `&start=${startTime}`;
+          }
+        }
+        
+        if (isHlsStream) {
+          // Handle HLS streams
+          loadHlsStream(videoElement, streamUrl, startTime);
+        } else {
+          // Handle regular video
+          videoElement.src = streamUrl;
+          
+          // Set the current time after the video is loaded
+          if (startTime > 0) {
+            videoElement.addEventListener('loadedmetadata', () => {
+              videoElement.currentTime = startTime;
+              // Play the video automatically after seeking
+              try {
+                videoElement.play().catch(e => console.log("Auto-play prevented:", e));
+              } catch (e) {
+                console.log("Error during auto-play:", e);
+              }
+            }, { once: true });
+          }
+        }
+        
+        // Complete loading animation when video is loaded or if there's an error
+        videoElement.addEventListener('loadeddata', completeLoadingAnimation, { once: true });
+        videoElement.addEventListener('error', completeLoadingAnimation, { once: true });
+      }
+      
+      // Function to load HLS stream
+      function loadHlsStream(videoElement, streamUrl, startTime = 0) {
+        // Check if the browser supports HLS natively
+        if (videoElement.canPlayType('application/vnd.apple.mpegurl')) {
+          // Native HLS support (Safari)
+          videoElement.src = streamUrl;
+          
+          // Set the current time after the video is loaded
+          if (startTime > 0) {
+            videoElement.addEventListener('loadedmetadata', () => {
+              videoElement.currentTime = startTime;
+              // Play the video automatically after seeking
+              try {
+                videoElement.play().catch(e => console.log("Auto-play prevented:", e));
+              } catch (e) {
+                console.log("Error during auto-play:", e);
+              }
+            }, { once: true });
+          }
+        } else {
+          // Use hls.js for browsers without native HLS support
+          if (Hls.isSupported()) {
+            // Destroy existing HLS instance if it exists
+            if (window.hls) {
+              window.hls.destroy();
+            }
+            
+            // Create new HLS instance
+            const hls = new Hls({
+              startPosition: startTime > 0 ? startTime : -1 // Start at specific time if provided
+            });
+            window.hls = hls;
+            
+            hls.loadSource(streamUrl);
+            hls.attachMedia(videoElement);
+            
+            hls.on(Hls.Events.MANIFEST_PARSED, function() {
+              // Set the current time after the manifest is parsed
+              if (startTime > 0) {
+                videoElement.currentTime = startTime;
+                // Play automatically after seeking
+                try {
+                  videoElement.play().catch(e => console.log("Auto-play prevented:", e));
+                } catch (e) {
+                  console.log("Error during auto-play:", e);
+                }
+              }
+            });
+            
+            // Handle HLS.js errors
+            hls.on(Hls.Events.ERROR, function(event, data) {
+              if (data.fatal) {
+                switch(data.type) {
+                  case Hls.ErrorTypes.NETWORK_ERROR:
+                    console.error('HLS network error');
+                    hls.startLoad();
+                    break;
+                  case Hls.ErrorTypes.MEDIA_ERROR:
+                    console.error('HLS media error');
+                    hls.recoverMediaError();
+                    break;
+                  default:
+                    console.error('HLS fatal error:', data);
+                    hls.destroy();
+                    break;
+                }
+              }
+            });
+          } else {
+            console.error('HLS.js is not supported in this browser');
+            alert('Your browser does not support HLS video playback');
+          }
+        }
+      }
+      
+      // Main function to initialize video
+      function initializeVideo(quality) {
+        // Start loading animation
+        startLoadingAnimation();
+        
+        // Load video with selected quality
+        loadVideoWithQuality(quality);
+        
+        // Initialize Plyr with options
+        player = new Plyr('#player', {
+          controls: [
+            'play-large', // The large play button in the center
+            'restart', // Restart playback
+            'rewind', // Rewind by the seek time (default 10 seconds)
+            'play', // Play/pause playback
+            'fast-forward', // Fast forward by the seek time (default 10 seconds)
+            'progress', // The progress bar and scrubber for playback and buffering
+            'current-time', // The current time of playback
+            'duration', // The full duration of the media
+            'mute', // Toggle mute
+            'volume', // Volume control
+            'captions', // Toggle captions
+            'settings', // Settings menu
+            'pip', // Picture-in-picture (currently Safari only)
+            'airplay', // Airplay (currently Safari only)
+            'fullscreen' // Toggle fullscreen
+          ],
+          settings: ['captions', 'speed', 'loop'],
+          speed: { selected: 1, options: [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2, 2.5, 3] },
+          seekTime: 5,
+          keyboard: { focused: true, global: true },
+          tooltips: { controls: true, seek: true },
+          disableContextMenu: true
+        });
+        
+        // Show loading animation when play is clicked
+        player.on('play', function() {
+          // Only show loading if video is not already playing
+          if (player.currentTime === 0 || player.seeking) {
+            startLoadingAnimation();
+          }
+        });
+        
+        // Handle video loaded event
+        player.on('loadeddata', function() {
+          completeLoadingAnimation();
+        });
+        
+        // Handle seeking event
+        player.on('seeking', function() {
+          startLoadingAnimation();
+        });
+        
+        // Handle seeked event
+        player.on('seeked', function() {
+          completeLoadingAnimation();
+          
+          // Get current time and update the stream URL to start from this position
+          const currentTime = player.currentTime;
+          const videoElement = document.getElementById('player');
+          const currentSrc = videoElement.src;
+          
+          // If we have an HLS stream, no need to reload source
+          if (window.hls) {
+            return;
+          }
+          
+          try {
+            // Extract the current URL parameters
+            const urlObj = new URL(currentSrc);
+            const urlParams = new URLSearchParams(urlObj.search);
+            
+            // Only reload if the source doesn't have start parameter or it's significantly different
+            const currentStartParam = urlParams.get('start');
+            const startDiff = currentStartParam ? Math.abs(parseFloat(currentStartParam) - currentTime) : 999;
+            
+            if (!currentStartParam || startDiff > 5) {
+              console.log(`Reloading video at time: ${currentTime}`);
+              
+              // Get current quality
+              const quality = document.getElementById('currentQuality').textContent;
+              
+              // Create a new URL with the correct start time
+              const baseUrl = `https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/${videoData.id}/encrypted-${videoData.hash}/${quality}/encrypted.mkv*${videoData.key}`;
+              const streamUrl = `/ffmpeg-stream?url=${encodeURIComponent(baseUrl)}&quality=${quality}&start=${currentTime}`;
+              
+              // Save the current playing state
+              const wasPlaying = !videoElement.paused;
+              
+              // Update the video source
+              videoElement.src = streamUrl;
+              
+              // Resume playing if it was playing before
+              videoElement.addEventListener('loadedmetadata', () => {
+                if (wasPlaying) {
+                  videoElement.play().catch(e => console.log("Auto-play prevented:", e));
+                }
+              }, { once: true });
+            }
+          } catch (error) {
+            console.error("Error handling seek:", error);
+          }
+        });
+        
+        // Handle waiting event (buffering)
+        player.on('waiting', function() {
+          startLoadingAnimation();
+        });
+        
+        // Handle playing event
+        player.on('playing', function() {
+          completeLoadingAnimation();
+        });
+        
+        // Handle error event
+        player.on('error', function() {
+          completeLoadingAnimation();
+          alert('Error loading video. Please try again later.');
+        });
+      }
+      
+      // Add event listener to pause if debugger is opened
+      setInterval(checkDebugger, 1000);
+      
+      // Disable right-click on video
+      document.addEventListener('click', function() {
+        const plyrElement = document.querySelector('.plyr');
+        if (plyrElement) {
+          plyrElement.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+            return false;
+          });
+        }
+      }, { once: true });
+      
+      // Update watermark position periodically
+      setInterval(updateWatermark, 10000);
+    });
+
+    // Share functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const shareBtn = document.getElementById('shareBtn');
+      const shareModal = new bootstrap.Modal(document.getElementById('shareModal'));
+      const sharingLoader = document.getElementById('sharingLoader');
+      const sharingSuccess = document.getElementById('sharingSuccess');
+      const sharingError = document.getElementById('sharingError');
+      const shareLink = document.getElementById('shareLink');
+      const copyBtn = document.getElementById('copyBtn');
+      const retryBtn = document.getElementById('retryBtn');
+      const errorMessage = document.getElementById('errorMessage');
+      
+      // Show share modal
+      shareBtn.addEventListener('click', function() {
+        // Reset modal state
+        sharingLoader.classList.remove('d-none');
+        sharingSuccess.classList.add('d-none');
+        sharingError.classList.add('d-none');
+        
+        // Show modal
+        shareModal.show();
+        
+        // Generate share link
+        fetch('/generate-share-link', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            video_id: "{{ video.id }}",
+            batch_id: "{{ video.batch_id }}",
+            subject: "{{ video.subject }}"
+        })
+      })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(data => {
+          // Hide loader
+          sharingLoader.classList.add('d-none');
+          
+          if (data.success) {
+            // Show success state
+            sharingSuccess.classList.remove('d-none');
+            shareLink.value = data.share_url;
+          } else {
+            // Show error state
+            sharingError.classList.remove('d-none');
+            errorMessage.textContent = data.error || 'Failed to generate sharing link.';
+          }
+        })
+        .catch(error => {
+          // Hide loader
+          sharingLoader.classList.add('d-none');
+          
+          // Show error state
+          sharingError.classList.remove('d-none');
+          errorMessage.textContent = 'An error occurred. Please try again.';
+          console.error('Error:', error);
+        });
+      });
+      
+      // Copy link to clipboard
+      copyBtn.addEventListener('click', function() {
+        shareLink.select();
+        document.execCommand('copy');
+        
+        // Change button text temporarily
+        const originalHTML = copyBtn.innerHTML;
+        copyBtn.innerHTML = '<i class="fas fa-check"></i>';
+        setTimeout(() => {
+          copyBtn.innerHTML = originalHTML;
+        }, 2000);
+      });
+      
+      // Retry button
+      retryBtn.addEventListener('click', function() {
+        // Reset modal state
+        sharingLoader.classList.remove('d-none');
+        sharingSuccess.classList.add('d-none');
+        sharingError.classList.add('d-none');
+        
+        // Trigger share link generation again
+        shareBtn.click();
+      });
+    });
+
+    // Anti-debugging measures
+    let lastChecked = Date.now();
+    
+    function checkDebugger() {
+      // Don't check too frequently to avoid performance issues
+      if (Date.now() - lastChecked < 1000) return;
+      lastChecked = Date.now();
+      
+      // Check if debugger is open
+      const start = Date.now();
+      debugger; // This will pause execution if dev tools are open
+      const end = Date.now();
+      
+      // If execution took too long, debugger might be open
+      if (end - start > 100) {
+        document.getElementById('player').pause();
+        alert("Video playback paused. Please close developer tools to continue watching.");
+      }
+    }
+    
+    // Disable keyboard shortcuts
+    document.addEventListener('keydown', function(e) {
+      // Disable F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
+      if (
+        e.keyCode === 123 || 
+        (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74)) ||
+        (e.ctrlKey && e.keyCode === 85)
+      ) {
+        e.preventDefault();
+        document.getElementById('player').pause();
+        return false;
+      }
+    });
+    
+    // Update watermark position
+    function updateWatermark() {
+      const watermark = document.querySelector('.watermark');
+      if (watermark) {
+        // Randomize position slightly
+        const top = 20 + Math.floor(Math.random() * 10);
+        const right = 20 + Math.floor(Math.random() * 10);
+        watermark.style.top = `${top}px`;
+        watermark.style.right = `${right}px`;
+      }
+    }
+    
+    // Download functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const downloadBtn = document.getElementById('downloadBtn');
+      if (downloadBtn) {
+        downloadBtn.addEventListener('click', function() {
+          // Show loading toast
+          const toastHTML = `
+            <div class="toast align-items-center text-white bg-primary border-0 show" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="d-flex">
+                <div class="toast-body">
+                  <i class="fas fa-spinner fa-spin me-2"></i> Preparing download...
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+            </div>
+          `;
+          
+          // Add toast to container
+          const toastContainer = document.querySelector('.toast-container') || createToastContainer();
+          toastContainer.innerHTML = toastHTML;
+          
+          // Create download link using the streaming URL
+          const videoElement = document.getElementById('player');
+          const videoTitle = document.querySelector('.video-title').textContent.trim();
+          const sanitizedTitle = videoTitle.replace(/[^\w\s]/gi, '').replace(/\s+/g, '_');
+          
+          // Get the current quality
+          const selectedQuality = document.getElementById('currentQuality').textContent;
+          
+          // Create downloadable URL
+          let downloadUrl;
+          
+          // HLS stream handling
+          if (videoData.url && videoData.url.includes('.zip')) {
+            // For HLS streams, we need to inform the user
+            alert('This is an HLS stream which cannot be downloaded directly. A download link will be created to the original video source.');
+            downloadUrl = videoData.url;
+          } else {
+            // For direct stream, create a download URL with the selected quality
+            const baseUrl = `https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/${videoData.id}/encrypted-${videoData.hash}/${selectedQuality}/encrypted.mkv*${videoData.key}`;
+            downloadUrl = `/ffmpeg-stream?url=${encodeURIComponent(baseUrl)}&download=true&quality=${selectedQuality}`;
+          }
+          
+          // Create a temporary anchor and trigger download
+          const a = document.createElement('a');
+          a.href = downloadUrl;
+          a.download = `${sanitizedTitle}_${selectedQuality}.mp4`;
+          a.style.display = 'none';
+          document.body.appendChild(a);
+          a.click();
+          
+          // Clean up
+          setTimeout(function() {
+            document.body.removeChild(a);
+            // Show success toast
+            toastContainer.innerHTML = `
+              <div class="toast align-items-center text-white bg-success border-0 show" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="d-flex">
+                  <div class="toast-body">
+                    <i class="fas fa-check me-2"></i> Download started!
+                  </div>
+                  <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+              </div>
+            `;
+            
+            // Auto-hide toast after 3 seconds
+            setTimeout(function() {
+              toastContainer.innerHTML = '';
+            }, 3000);
+          }, 1500);
+        });
+      }
+      
+      // Helper function to create toast container if it doesn't exist
+      function createToastContainer() {
+        const container = document.createElement('div');
+        container.className = 'toast-container position-fixed bottom-0 end-0 p-3';
+        document.body.appendChild(container);
+        return container;
+      }
+    });
+  </script>
+</body>
+</html> 

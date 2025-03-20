@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Admins - VidH</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #4361ee;
+      --secondary-color: #3f37c9;
+      --accent-color: #4895ef;
+      --success-color: #38b000;
+      --danger-color: #e5383b;
+      --warning-color: #f9c74f;
+      --text-color: #2b2d42;
+      --light-text: #8d99ae;
+      --bg-color: #f8f9fa;
+      --card-bg: #ffffff;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+      min-height: 100vh;
+    }
+    
+    .navbar {
+      background-color: white;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .navbar-brand {
+      font-weight: 700;
+      color: var(--primary-color);
+    }
+    
+    .page-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+    
+    .page-header {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    
+    .page-header h1 {
+      font-weight: 700;
+      font-size: 2rem;
+      color: var(--primary-color);
+      margin-bottom: 0.5rem;
+    }
+    
+    .page-header p {
+      color: var(--light-text);
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    .admins-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    
+    .admin-card {
+      background-color: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .admin-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+    
+    .admin-header {
+      background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+      padding: 1.5rem;
+      text-align: center;
+      position: relative;
+    }
+    
+    .admin-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      color: var(--primary-color);
+      font-size: 2rem;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .admin-content {
+      padding: 1.5rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .admin-name {
+      font-weight: 700;
+      font-size: 1.2rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    
+    .admin-info {
+      margin-top: auto;
+    }
+    
+    .admin-detail {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.75rem;
+      padding: 0.75rem;
+      background-color: var(--bg-color);
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+    
+    .admin-detail:hover {
+      background-color: rgba(67, 97, 238, 0.05);
+    }
+    
+    .admin-detail i {
+      margin-right: 0.75rem;
+      color: var(--primary-color);
+    }
+    
+    .admin-detail span {
+      color: var(--text-color);
+      font-weight: 500;
+    }
+    
+    .admin-detail small {
+      color: var(--light-text);
+      margin-left: auto;
+    }
+    
+    .admin-footer {
+      padding: 1rem 1.5rem;
+      border-top: 1px solid #f0f0f0;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .btn-contact {
+      padding: 0.6rem 1.2rem;
+      background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+      border: none;
+      border-radius: 50px;
+      color: white;
+      font-weight: 600;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(67, 97, 238, 0.2);
+    }
+    
+    .btn-contact:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(67, 97, 238, 0.3);
+    }
+    
+    .btn-contact i {
+      margin-right: 0.5rem;
+    }
+    
+    .empty-state {
+      text-align: center;
+      padding: 3rem;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+    
+    .empty-state i {
+      font-size: 3rem;
+      color: var(--light-text);
+      margin-bottom: 1rem;
+    }
+    
+    .empty-state h3 {
+      font-weight: 600;
+      color: var(--text-color);
+      margin-bottom: 0.5rem;
+    }
+    
+    .empty-state p {
+      color: var(--light-text);
+      margin-bottom: 1.5rem;
+    }
+    
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.6rem 1.2rem;
+      background-color: var(--bg-color);
+      border: 1px solid #e0e0e0;
+      border-radius: 50px;
+      color: var(--text-color);
+      font-weight: 500;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+      margin-top: 1.5rem;
+    }
+    
+    .back-btn:hover {
+      background-color: var(--primary-color);
+      color: white;
+      border-color: var(--primary-color);
+    }
+    
+    .back-btn i {
+      margin-right: 0.5rem;
+    }
+    
+    @media (max-width: 576px) {
+      .admins-container {
+        grid-template-columns: 1fr;
+      }
+      
+      .page-header h1 {
+        font-size: 1.75rem;
+      }
+      
+      .page-header p {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="/">VidH</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/batches"><i class="fas fa-book"></i> Batches</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="page-container">
+    <div class="page-header">
+      <h1>Contact Admins</h1>
+      <p>Get in touch with our administrators for any questions or assistance you may need.</p>
+    </div>
+    
+    {% if admins and admins|length > 0 %}
+      <div class="admins-container">
+        {% for admin in admins %}
+          <div class="admin-card">
+            <div class="admin-header">
+              <div class="admin-avatar">
+                <i class="fas fa-user-shield"></i>
+              </div>
+            </div>
+            
+            <div class="admin-content">
+              <div class="admin-name">{{ admin.display_name }}</div>
+              
+              <div class="admin-info">
+                <div class="admin-detail">
+                  <i class="fas fa-user"></i>
+                  <span>Admin</span>
+                  <small>Role</small>
+                </div>
+                
+                {% if admin.telegram %}
+                <div class="admin-detail">
+                  <i class="fab fa-telegram"></i>
+                  <span>{{ admin.telegram }}</span>
+                  <small>Telegram</small>
+                </div>
+                {% endif %}
+                
+                <div class="admin-detail" style="display: none;">
+                  <i class="fas fa-user-tag"></i>
+                  <span>@{{ admin.username }}</span>
+                  <small>Username</small>
+                </div>
+              </div>
+            </div>
+            
+            <div class="admin-footer">
+              {% if admin.telegram %}
+              <a style="text-decoration: none;" href="https://t.me/{{ admin.telegram | replace('@', '') }}" target="_blank" class="btn-contact">
+                <i class="fab fa-telegram"></i> Contact on Telegram
+              </a>
+              {% else %}
+              <button class="btn-contact" disabled>
+                <i class="fas fa-envelope"></i> No contact info
+              </button>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% else %}
+      <div class="empty-state">
+        <i class="fas fa-user-slash"></i>
+        <h3>No Admins Available</h3>
+        <p>There are currently no administrators registered in the system.</p>
+        <a href="/" class="back-btn">
+          <i class="fas fa-home"></i> Back to Home
+        </a>
+      </div>
+    {% endif %}
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

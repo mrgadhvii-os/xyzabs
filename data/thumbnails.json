@@ -1,0 +1,7 @@
+{
+  "default": "/static/images/default.jpg",
+  "physics": "/static/images/physics.jpg",
+  "chemistry": "/static/images/chemistry.jpg",
+  "math": "/static/images/math.jpg",
+  "biology": "/static/images/biology.jpg"
+}

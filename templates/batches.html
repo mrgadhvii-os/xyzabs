@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Available Batches - VidH</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #4361ee;
+      --secondary-color: #3f37c9;
+      --accent-color: #4895ef;
+      --text-color: #2b2d42;
+      --light-text: #8d99ae;
+      --bg-color: #f8f9fa;
+      --card-bg: #ffffff;
+    }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+    
+    .navbar {
+      background-color: var(--primary-color);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .navbar-brand {
+      font-weight: 700;
+      color: white;
+    }
+    
+    .page-header {
+      background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+      color: white;
+      padding: 2rem 0;
+      margin-bottom: 2rem;
+      border-radius: 0 0 10px 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    .page-title {
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    
+    .page-subtitle {
+      opacity: 0.9;
+    }
+    
+    /* Modern Batch Card Styles */
+    .section-title {
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      position: relative;
+      display: inline-block;
+      padding-bottom: 0.5rem;
+    }
+    
+    .section-title::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 50px;
+      height: 3px;
+      background-color: var(--primary-color);
+      border-radius: 10px;
+    }
+    
+    .batch-card {
+      border: none;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+      transition: all 0.3s ease;
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .batch-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(67, 97, 238, 0.15);
+    }
+    
+    .batch-thumbnail {
+      position: relative;
+      overflow: hidden;
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      object-fit: cover;
+    }
+    
+    .batch-thumbnail::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(0deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.05) 100%);
+      z-index: 1;
+    }
+    
+    .batch-thumbnail-default {
+      background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    }
+    
+    .batch-title-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 1.5rem;
+      z-index: 2;
+      color: white;
+    }
+    
+    .batch-title {
+      font-weight: 700;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+    
+    .batch-type {
+      font-size: 0.95rem;
+      opacity: 0.9;
+      display: inline-block;
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 0.25rem 0.75rem;
+      border-radius: 50rem;
+      backdrop-filter: blur(4px);
+      margin-bottom: 0.5rem;
+    }
+    
+    .batch-year {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 0.25rem 0.75rem;
+      border-radius: 50rem;
+      font-weight: 600;
+      backdrop-filter: blur(4px);
+      z-index: 2;
+    }
+    
+    .batch-content {
+      padding: 1.5rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      background-color: var(--card-bg);
+    }
+    
+    .batch-subjects {
+      margin-bottom: 1.5rem;
+    }
+    
+    .subject-badge {
+      display: inline-block;
+      background-color: rgba(67, 97, 238, 0.1);
+      color: var(--primary-color);
+      padding: 0.25rem 0.75rem;
+      border-radius: 50rem;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      font-size: 0.85rem;
+      transition: all 0.2s ease;
+    }
+    
+    .subject-badge:hover {
+      background-color: var(--primary-color);
+      color: white;
+      transform: translateY(-2px);
+    }
+    
+    .batch-stats {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      background-color: var(--bg-color);
+      border-radius: 12px;
+    }
+    
+    .stat-item {
+      text-align: center;
+      position: relative;
+    }
+    
+    .stat-item:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      right: -5px;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 70%;
+      width: 1px;
+      background-color: rgba(0,0,0,0.1);
+    }
+    
+    .stat-value {
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: var(--primary-color);
+    }
+    
+    .stat-label {
+      font-size: 0.85rem;
+      color: var(--light-text);
+    }
+    
+    .batch-actions {
+      margin-top: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid rgba(0,0,0,0.05);
+      padding-top: 1.25rem;
+    }
+    
+    .batch-date {
+      font-size: 0.85rem;
+      color: var(--light-text);
+      display: flex;
+      align-items: center;
+    }
+    
+    .batch-date i {
+      margin-right: 0.5rem;
+      color: var(--primary-color);
+    }
+    
+    .btn-enroll {
+      background-color: var(--primary-color);
+      color: white;
+      border-radius: 50rem;
+      padding: 0.5rem 1.25rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      border: none;
+    }
+    
+    .btn-enroll:hover {
+      background-color: var(--secondary-color);
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(67, 97, 238, 0.3);
+    }
+    
+    .btn-enrolled {
+      background-color: #38b000;
+      color: white;
+      border-radius: 50rem;
+      padding: 0.5rem 1.25rem;
+      font-weight: 500;
+      cursor: default;
+      border: none;
+    }
+    
+    .btn-view {
+      background-color: var(--accent-color);
+      color: white;
+      border-radius: 50rem;
+      padding: 0.5rem 1.25rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      border: none;
+    }
+    
+    .btn-view:hover {
+      background-color: #3a77cf;
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(72, 149, 239, 0.3);
+    }
+    
+    .enrolled-badge {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      background-color: #38b000;
+      color: white;
+      padding: 0.25rem 0.75rem;
+      border-radius: 50rem;
+      font-weight: 600;
+      z-index: 3;
+      backdrop-filter: blur(4px);
+    }
+    
+    .empty-state {
+      text-align: center;
+      padding: 3rem;
+      color: var(--light-text);
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    }
+    
+    .empty-state i {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+      opacity: 0.5;
+    }
+    
+    .empty-state h4 {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    
+    .empty-state p {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    
+    /* Enrolled Batches Section */
+    .enrolled-section {
+      margin-bottom: 3rem;
+      position: relative;
+    }
+    
+    .enrolled-section::before {
+      content: '';
+      position: absolute;
+      top: 4rem;
+      left: 0;
+      width: 100%;
+      height: 80%;
+      background-color: rgba(67, 97, 238, 0.03);
+      border-radius: 24px;
+      z-index: -1;
+    }
+    
+    @media (max-width: 768px) {
+      .batch-thumbnail {
+        height: 180px;
+      }
+      
+      .batch-title {
+        font-size: 1.25rem;
+      }
+      
+      .batch-content {
+        padding: 1.25rem;
+      }
+      
+      .enrolled-section::before {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Include Header Partial -->
+  {% include 'header.html' %}
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container">
+      <h1 class="page-title">Available Batches</h1>
+      <p class="page-subtitle">Explore and enroll in our specialized learning batches</p>
+    </div>
+  </div>
+
+  <div class="container mb-5">
+    <!-- Enrolled Batches Section -->
+    {% set user_enrolled_batches = [] %}
+        {% for batch in batches %}
+      {% if batch.id in enrolled_batches %}
+        {% set _ = user_enrolled_batches.append(batch) %}
+      {% endif %}
+    {% endfor %}
+    
+    {% if user_enrolled_batches %}
+    <div class="enrolled-section">
+      <h2 class="section-title mb-4">Your Enrolled Batches</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5">
+        {% for batch in user_enrolled_batches %}
+          <div class="col">
+            <div class="batch-card">
+              <div class="enrolled-badge">
+                <i class="fas fa-check-circle me-1"></i> Enrolled
+              </div>
+              
+              <div class="batch-thumbnail {% if not batch.thumbnail %}batch-thumbnail-default{% endif %}" 
+                   {% if batch.thumbnail %}style="background-image: url('{{ batch.thumbnail }}');"{% endif %}>
+                <span class="batch-year">{{ batch.year|default(batch.batch_info.year if batch.batch_info is defined else '') }}</span>
+              </div>
+              
+              <div class="batch-content">
+                <h3 class="mb-3">{{ batch.name|default(batch.batch_info.name if batch.batch_info is defined else 'Untitled Batch') }}</h3>
+                <p class="mb-3 text-muted">{{ batch.type|default(batch.batch_info.type if batch.batch_info is defined else 'Regular') }}</p>
+                
+                <div class="batch-subjects">
+                  {% for subject_key, subject in batch.subjects.items() %}
+                    {% if subject is mapping and subject.name is defined %}
+                      <span class="subject-badge">{{ subject.name }}</span>
+                    {% else %}
+                      <span class="subject-badge">{{ subject_key }}</span>
+                    {% endif %}
+                  {% endfor %}
+                </div>
+                
+                <div class="batch-stats">
+                  <div class="stat-item">
+                    <div class="stat-value">{{ batch.subjects|length }}</div>
+                    <div class="stat-label">Subjects</div>
+                  </div>
+                  
+                  {% set total_content = 0 %}
+                  {% set video_count = 0 %}
+                  {% set pdf_count = 0 %}
+                  
+                  {% for subject_key, subject in batch.subjects.items() %}
+                    {% if subject is mapping and subject.content is defined %}
+                      {% set total_content = total_content + subject.content|length %}
+                      {% for item in subject.content %}
+                        {% if item.type == 'video' %}
+                          {% set video_count = video_count + 1 %}
+                        {% elif item.type == 'pdf' %}
+                          {% set pdf_count = pdf_count + 1 %}
+                        {% endif %}
+                      {% endfor %}
+                    {% else %}
+                      {% for chapter_key, chapter_items in subject.items() %}
+                        {% if chapter_items is iterable and chapter_items is not mapping %}
+                          {% set total_content = total_content + chapter_items|length %}
+                          {% for item in chapter_items %}
+                            {% if item.type == 'video' or item.content_type == 'video' %}
+                              {% set video_count = video_count + 1 %}
+                            {% elif item.type == 'pdf' or item.content_type == 'pdf' %}
+                              {% set pdf_count = pdf_count + 1 %}
+                            {% endif %}
+                          {% endfor %}
+                        {% endif %}
+                      {% endfor %}
+                    {% endif %}
+                  {% endfor %}
+                  
+                  <div class="stat-item">
+                    <div class="stat-value">{{ batch.video_count|default(video_count) }}</div>
+                    <div class="stat-label">Videos</div>
+                  </div>
+                  
+                  <div class="stat-item">
+                    <div class="stat-value">{{ batch.pdf_count|default(pdf_count) }}</div>
+                    <div class="stat-label">PDFs</div>
+                  </div>
+                </div>
+                
+                <div class="batch-actions">
+                  <div class="batch-date">
+                    <i class="fas fa-calendar-alt"></i> 
+                    {% if batch.created_at %}
+                      {{ batch.created_at|date }}
+                    {% elif batch.batch_info is defined and batch.batch_info.created_at %}
+                      {{ batch.batch_info.created_at|date }}
+                    {% else %}
+                      Unknown Date
+                    {% endif %}
+                  </div>
+                  
+                  <a href="/batch/{{ batch.id }}" class="btn btn-view">
+                    <i class="fas fa-eye me-1"></i> View Content
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
+    <!-- All Available Batches -->
+    <h2 class="section-title">Available Batches</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      {% if batches %}
+        {% for batch in batches %}
+          {% if batch.id not in enrolled_batches %}
+            <div class="col">
+              <div class="batch-card">
+                <div class="batch-thumbnail {% if not batch.thumbnail %}batch-thumbnail-default{% endif %}" 
+                     {% if batch.thumbnail %}style="background-image: url('{{ batch.thumbnail }}');"{% endif %}>
+                  <span class="batch-year">{{ batch.year|default(batch.batch_info.year if batch.batch_info is defined else '') }}</span>
+                </div>
+                
+                <div class="batch-content">
+                  <h3 class="mb-3">{{ batch.name|default(batch.batch_info.name if batch.batch_info is defined else 'Untitled Batch') }}</h3>
+                  <p class="mb-3 text-muted">{{ batch.type|default(batch.batch_info.type if batch.batch_info is defined else 'Regular') }}</p>
+                  
+                  <div class="batch-subjects">
+                    {% for subject_key, subject in batch.subjects.items() %}
+                      {% if subject is mapping and subject.name is defined %}
+                        <span class="subject-badge">{{ subject.name }}</span>
+                      {% else %}
+                        <span class="subject-badge">{{ subject_key }}</span>
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+                  
+                  <div class="batch-stats">
+                    <div class="stat-item">
+                      <div class="stat-value">{{ batch.subjects|length }}</div>
+                      <div class="stat-label">Subjects</div>
+                    </div>
+                    
+                    {% set total_content = 0 %}
+                    {% set video_count = 0 %}
+                    {% set pdf_count = 0 %}
+                    
+                    {% for subject_key, subject in batch.subjects.items() %}
+                      {% if subject is mapping and subject.content is defined %}
+                        {% set total_content = total_content + subject.content|length %}
+                        {% for item in subject.content %}
+                          {% if item.type == 'video' %}
+                            {% set video_count = video_count + 1 %}
+                          {% elif item.type == 'pdf' %}
+                            {% set pdf_count = pdf_count + 1 %}
+                          {% endif %}
+                        {% endfor %}
+                      {% else %}
+                        {% for chapter_key, chapter_items in subject.items() %}
+                          {% if chapter_items is iterable and chapter_items is not mapping %}
+                            {% set total_content = total_content + chapter_items|length %}
+                            {% for item in chapter_items %}
+                              {% if item.type == 'video' or item.content_type == 'video' %}
+                                {% set video_count = video_count + 1 %}
+                              {% elif item.type == 'pdf' or item.content_type == 'pdf' %}
+                                {% set pdf_count = pdf_count + 1 %}
+                              {% endif %}
+                            {% endfor %}
+                          {% endif %}
+                        {% endfor %}
+                      {% endif %}
+                    {% endfor %}
+                    
+                    <div class="stat-item">
+                      <div class="stat-value">{{ batch.video_count|default(video_count) }}</div>
+                      <div class="stat-label">Videos</div>
+                    </div>
+                    
+                    <div class="stat-item">
+                      <div class="stat-value">{{ batch.pdf_count|default(pdf_count) }}</div>
+                      <div class="stat-label">PDFs</div>
+                    </div>
+                  </div>
+                  
+                  <div class="batch-actions">
+                    <div class="batch-date">
+                      <i class="fas fa-calendar-alt"></i> 
+                      {% if batch.created_at %}
+                        {{ batch.created_at|date }}
+                      {% elif batch.batch_info is defined and batch.batch_info.created_at %}
+                        {{ batch.batch_info.created_at|date }}
+                      {% else %}
+                        Unknown Date
+                      {% endif %}
+                    </div>
+                    
+                    <button class="btn btn-enroll" onclick="enrollBatch('{{ batch.id }}')">
+                      <i class="fas fa-graduation-cap me-1"></i> Enroll
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      {% else %}
+        <div class="col-12">
+          <div class="empty-state">
+            <i class="fas fa-graduation-cap"></i>
+            <h4>No batches available</h4>
+            <p>There are no batches available at the moment. Please check back later.</p>
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>VidH</h5>
+          <p class="small">Secure Video Streaming Platform</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p class="small">&copy; 2023 VidH. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Alert Modal -->
+  <div class="modal fade" id="alertModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="alertModalTitle">Notification</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="alertModalBody">
+          <!-- Alert message will be inserted here -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Custom JS -->
+  <script>
+    // Enrollment functionality
+    function enrollBatch(batchId) {
+      // Show loading state
+      const enrollBtn = event.target.closest('.btn-enroll');
+      const originalHTML = enrollBtn.innerHTML;
+      enrollBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Enrolling...';
+      enrollBtn.disabled = true;
+      
+      // Call API to enroll in batch
+      fetch('/api/enroll-batch', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          batch_id: batchId
+        })
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.success) {
+          // Show success message
+          showAlert('Success', data.message || 'Successfully enrolled in batch!');
+          
+          // Reload page to show updated enrollments
+          setTimeout(() => {
+            window.location.reload();
+          }, 1500);
+        } else {
+          // Show error message
+          showAlert('Error', data.message || 'Failed to enroll in batch.');
+          
+          // Restore button
+          enrollBtn.innerHTML = originalHTML;
+          enrollBtn.disabled = false;
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        
+        // Show error message
+        showAlert('Error', 'An error occurred. Please try again.');
+        
+        // Restore button
+        enrollBtn.innerHTML = originalHTML;
+        enrollBtn.disabled = false;
+      });
+    }
+    
+    // Show alert modal
+    function showAlert(title, message) {
+      const alertModal = new bootstrap.Modal(document.getElementById('alertModal'));
+      document.getElementById('alertModalTitle').textContent = title;
+      document.getElementById('alertModalBody').textContent = message;
+      alertModal.show();
+    }
+  </script>
+</body>
+</html> 

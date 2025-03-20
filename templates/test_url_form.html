@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Video URL - VidH</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #4361ee;
+      --secondary-color: #3f37c9;
+      --accent-color: #4895ef;
+      --text-color: #2b2d42;
+      --light-text: #8d99ae;
+      --bg-color: #f8f9fa;
+      --card-bg: #ffffff;
+      --dark-bg: #212529;
+      --border-radius: 12px;
+      --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
+    
+    body { 
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .navbar {
+      background-color: var(--card-bg);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      padding: 0.75rem 1rem;
+    }
+    
+    .navbar-brand {
+      font-weight: 700;
+      color: var(--primary-color) !important;
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .navbar-brand i {
+      color: var(--accent-color);
+    }
+    
+    .main-content {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    
+    .form-container {
+      background-color: var(--card-bg);
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+      padding: 2rem;
+      width: 100%;
+      max-width: 800px;
+    }
+    
+    .form-title {
+      font-weight: 700;
+      color: var(--text-color);
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    
+    .form-control {
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      border: 1px solid #e2e8f0;
+      font-size: 1rem;
+    }
+    
+    .form-control:focus {
+      border-color: var(--primary-color);
+      box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.15);
+    }
+    
+    .btn-primary {
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+      border-radius: 8px;
+      padding: 0.75rem 1.5rem;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    
+    .btn-primary:hover {
+      background-color: var(--secondary-color);
+      border-color: var(--secondary-color);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    
+    .url-info {
+      background-color: rgba(67, 97, 238, 0.05);
+      border-radius: 8px;
+      padding: 1rem;
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+      color: var(--light-text);
+    }
+    
+    .url-info h5 {
+      color: var(--text-color);
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .url-format {
+      font-family: monospace;
+      background-color: rgba(0,0,0,0.05);
+      padding: 0.5rem;
+      border-radius: 4px;
+      margin-top: 0.5rem;
+      font-size: 0.8rem;
+      word-break: break-all;
+    }
+    
+    .loader {
+      display: none;
+      width: 24px;
+      height: 24px;
+      border: 3px solid rgba(255,255,255,0.3);
+      border-radius: 50%;
+      border-top-color: #fff;
+      animation: spin 1s ease-in-out infinite;
+      margin-right: 8px;
+    }
+    
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    
+    @media (max-width: 768px) {
+      .form-container {
+        padding: 1.5rem;
+      }
+    }
+    
+    .url-type-selector {
+      margin-bottom: 1.5rem;
+    }
+    .url-type-btn {
+      padding: 0.5rem 1.5rem;
+      margin-right: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .url-type-btn.active {
+      background-color: #4361ee;
+      color: white;
+    }
+    .url-type-btn:not(.active) {
+      background-color: #f8f9fa;
+      border: 1px solid #dee2e6;
+    }
+    .url-input {
+      margin-bottom: 1rem;
+    }
+    .url-input input {
+      border-radius: 8px;
+      padding: 0.75rem;
+    }
+    .url-input input:focus {
+      border-color: #4361ee;
+      box-shadow: 0 0 0 0.2rem rgba(67, 97, 238, 0.25);
+    }
+    .submit-btn {
+      background-color: #4361ee;
+      border: none;
+      padding: 0.75rem 2rem;
+      border-radius: 8px;
+      color: white;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    .submit-btn:hover {
+      background-color: #3f37c9;
+      transform: translateY(-2px);
+    }
+    .example-urls {
+      margin-top: 2rem;
+      padding: 1rem;
+      background-color: #f8f9fa;
+      border-radius: 8px;
+    }
+    .example-urls h5 {
+      color: #4361ee;
+      margin-bottom: 1rem;
+    }
+    .example-urls code {
+      display: block;
+      padding: 0.5rem;
+      background-color: #e9ecef;
+      border-radius: 4px;
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="{{ url_for('index') }}">
+        <i class="fas fa-play-circle"></i>
+        VidH
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('index') }}">
+              <i class="fas fa-home me-1"></i> Home
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Flash Messages -->
+  <div class="container mt-4">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+          <div class="alert alert-{{ category if category != 'error' else 'danger' }} alert-dismissible fade show">
+            {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+          </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="form-container">
+      <h2 class="form-title">Test Video URL</h2>
+      
+      <div class="url-type-selector text-center">
+        <button class="url-type-btn active" data-type="regular">Regular Video</button>
+        <button class="url-type-btn" data-type="zip">HLS Video (ZIP)</button>
+      </div>
+      
+      <form id="testUrlForm" action="{{ url_for('test_url') }}" method="GET">
+        <div class="url-input">
+          <label for="url" class="form-label">Enter Video URL:</label>
+          <input type="text" class="form-control" id="url" name="url" required
+                 placeholder="Enter video URL here...">
+        </div>
+        
+        <div class="text-center">
+          <button type="submit" class="submit-btn">
+            <i class="fas fa-play me-2"></i> Test Video
+          </button>
+        </div>
+      </form>
+      
+      <div class="example-urls">
+        <h5>Example URLs:</h5>
+        <div id="regularExamples">
+          <code>https://appx-transcoded-videos.livelearn.in/videos/firephysics-data/1307760-1729251999/encrypted-72aa5f/360p/encrypted.mkv*1024838</code>
+        </div>
+        <div id="zipExamples" style="display: none;">
+          <code>https://transcoded-videos-v2.classx.co.in/videos/firephysics-data/220742-1737980013/encrypted-fcdffe/360p.zip</code>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const urlTypeBtns = document.querySelectorAll('.url-type-btn');
+      const regularExamples = document.getElementById('regularExamples');
+      const zipExamples = document.getElementById('zipExamples');
+      const urlInput = document.getElementById('url');
+      
+      urlTypeBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          // Update active button
+          urlTypeBtns.forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+          
+          // Show/hide examples
+          if (this.dataset.type === 'regular') {
+            regularExamples.style.display = 'block';
+            zipExamples.style.display = 'none';
+            urlInput.placeholder = 'Enter regular video URL...';
+          } else {
+            regularExamples.style.display = 'none';
+            zipExamples.style.display = 'block';
+            urlInput.placeholder = 'Enter HLS video ZIP URL...';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html> 

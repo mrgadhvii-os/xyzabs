@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ video.title }} - VidH Zip Player</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <style>
+    :root {
+      --primary-color: #4361ee;
+      --secondary-color: #3f37c9;
+      --accent-color: #4895ef;
+      --text-color: #2b2d42;
+      --light-text: #8d99ae;
+      --bg-color: #f8f9fa;
+      --card-bg: #ffffff;
+      --dark-bg: #212529;
+      --border-radius: 12px;
+      --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
+    
+    body { 
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      padding-bottom: 3rem;
+    }
+    
+    .video-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      box-shadow: var(--shadow);
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      background-color: var(--card-bg);
+    }
+    
+    .plyr {
+      border-radius: var(--border-radius) var(--border-radius) 0 0;
+    }
+    
+    .video-info {
+      padding: 1.5rem;
+      background: var(--card-bg);
+      border-radius: 0 0 var(--border-radius) var(--border-radius);
+      border-top: 1px solid rgba(0,0,0,0.05);
+    }
+    
+    .video-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text-color);
+      margin-bottom: 0.5rem;
+    }
+    
+    .video-description {
+      color: var(--light-text);
+      margin-bottom: 1.5rem;
+      font-size: 0.95rem;
+    }
+    
+    .watermark {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-size: 12px;
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0.7;
+      backdrop-filter: blur(2px);
+    }
+    
+    .copyright-watermark {
+      position: absolute;
+      bottom: 60px;
+      right: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: bold;
+      z-index: 2;
+      opacity: 0.7;
+      backdrop-filter: blur(2px);
+      pointer-events: none;
+    }
+    
+    .video-loading {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+      backdrop-filter: blur(5px);
+    }
+    
+    .loader-container {
+      text-align: center;
+      color: white;
+    }
+    
+    .loader-spinner {
+      width: 50px;
+      height: 50px;
+      border: 3px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      border-top-color: var(--primary-color);
+      animation: spin 1s ease-in-out infinite;
+      margin: 0 auto 15px;
+    }
+    
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    
+    .m3u8-content {
+      margin-top: 1.5rem;
+      background-color: var(--dark-bg);
+      color: #f8f9fa;
+      padding: 1rem;
+      border-radius: var(--border-radius);
+      font-family: monospace;
+      font-size: 0.85rem;
+      white-space: pre;
+      overflow-x: auto;
+      max-height: 300px;
+      overflow-y: auto;
+    }
+    
+    .m3u8-title {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: var(--text-color);
+    }
+  </style>
+</head>
+<body>
+  {% include 'header.html' %}
+
+  <div class="container my-4">
+    <div class="video-container">
+      <div style="position: relative;">
+        <video id="player" poster="{{ video.thumbnail }}" playsinline controls>
+          <!-- Video source will be added via JavaScript -->
+        </video>
+        <div class="watermark">{{ session.get('display_name') or session.get('user_id') }} - {{ request.remote_addr }}</div>
+        <div class="copyright-watermark">© MrGadhvii - VidH</div>
+        
+        <div class="video-loading" id="videoLoading">
+          <div class="loader-container">
+            <div class="loader-spinner"></div>
+            <div class="loader-text">Loading video...</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-info">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h1 class="video-title">{{ video.title }}</h1>
+          <div class="d-flex gap-2">
+            {% if video.enable_download %}
+            <a href="{{ video.url }}" download class="btn btn-success">
+              <i class="fas fa-download me-2"></i> Download
+            </a>
+            {% endif %}
+            <a href="{{ url_for('player_by_id', video_id=video.id, hash=video.hash, key=video.key, url=video.url) }}" class="btn btn-primary">
+              <i class="fas fa-sync-alt me-2"></i> Switch to Regular Player
+            </a>
+          </div>
+        </div>
+        <p class="video-description">{{ video.description }}</p>
+        
+        {% if video.m3u8_content %}
+        <div class="m3u8-title">M3U8 Playlist Content:</div>
+        <div class="m3u8-content">{{ video.m3u8_content }}</div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const videoElement = document.getElementById('player');
+      const videoLoading = document.getElementById('videoLoading');
+      
+      // Show loading overlay
+      videoLoading.style.display = 'flex';
+      
+      // Get the HLS stream URL
+      const streamUrl = `/hls-stream?url=${encodeURIComponent("{{ video.url }}")}`;
+      
+      // Initialize Plyr
+      const player = new Plyr('#player', {
+        controls: [
+          'play-large',
+          'play',
+          'progress',
+          'current-time',
+          'mute',
+          'volume',
+          'fullscreen'
+        ],
+        settings: ['quality', 'speed'],
+        speed: { selected: 1, options: [0.5, 0.75, 1, 1.25, 1.5, 2] }
+      });
+      
+      // Check if the browser supports HLS natively
+      if (videoElement.canPlayType('application/vnd.apple.mpegurl')) {
+        // Native HLS support (Safari)
+        videoElement.src = streamUrl;
+        videoElement.addEventListener('loadedmetadata', function() {
+          videoLoading.style.display = 'none';
+          videoElement.play().catch(e => console.error('Error playing video:', e));
+        });
+      } else {
+        // Use hls.js for browsers without native HLS support
+        if (Hls.isSupported()) {
+          const hls = new Hls({
+            debug: false,
+            enableWorker: true,
+            lowLatencyMode: true,
+            xhrSetup: function(xhr) {
+              xhr.withCredentials = true; // Include cookies for cross-origin requests
+            }
+          });
+          
+          hls.loadSource(streamUrl);
+          hls.attachMedia(videoElement);
+          
+          hls.on(Hls.Events.MANIFEST_PARSED, function() {
+            // Hide loading overlay when manifest is parsed
+            videoLoading.style.display = 'none';
+            videoElement.play().catch(e => console.error('Error playing video:', e));
+          });
+          
+          hls.on(Hls.Events.ERROR, function(event, data) {
+            console.error('HLS error:', data);
+            if (data.fatal) {
+              switch(data.type) {
+                case Hls.ErrorTypes.NETWORK_ERROR:
+                  console.error('HLS network error');
+                  hls.startLoad();
+                  break;
+                case Hls.ErrorTypes.MEDIA_ERROR:
+                  console.error('HLS media error');
+                  hls.recoverMediaError();
+                  break;
+                default:
+                  console.error('HLS fatal error:', data);
+                  videoLoading.style.display = 'none';
+                  alert('Error loading video: ' + data.details);
+                  break;
+              }
+            }
+          });
+        } else {
+          console.error('HLS.js is not supported in this browser');
+          alert('Your browser does not support HLS video playback');
+          videoLoading.style.display = 'none';
+        }
+      }
+      
+      // Handle video events
+      videoElement.addEventListener('loadeddata', function() {
+        videoLoading.style.display = 'none';
+      });
+      
+      videoElement.addEventListener('error', function(e) {
+        console.error('Video error:', e);
+        videoLoading.style.display = 'none';
+        alert('Error loading video. Please try again later.');
+      });
+      
+      // Update watermark position periodically
+      setInterval(updateWatermark, 10000);
+    });
+    
+    function updateWatermark() {
+      const watermark = document.querySelector('.watermark');
+      if (watermark) {
+        const top = 20 + Math.floor(Math.random() * 10);
+        const right = 20 + Math.floor(Math.random() * 10);
+        watermark.style.top = `${top}px`;
+        watermark.style.right = `${right}px`;
+      }
+    }
+  </script>
+</body>
+</html> 

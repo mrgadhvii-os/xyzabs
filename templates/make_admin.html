@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Management - VidH</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #4361ee;
+      --secondary-color: #3f37c9;
+      --accent-color: #4895ef;
+      --success-color: #38b000;
+      --danger-color: #e5383b;
+      --warning-color: #f9c74f;
+      --text-color: #2b2d42;
+      --light-text: #8d99ae;
+      --bg-color: #f8f9fa;
+      --card-bg: #ffffff;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #4361ee, #4895ef);
+      color: var(--text-color);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow-x: hidden;
+      position: relative;
+    }
+    
+    .admin-container {
+      width: 100%;
+      max-width: 600px;
+      background-color: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      animation: fadeIn 0.8s ease-out;
+      padding: 2.5rem;
+      position: relative;
+      text-align: center;
+      margin: 3rem auto;
+    }
+    
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .admin-header {
+      margin-bottom: 2rem;
+    }
+    
+    .admin-header h1 {
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: var(--primary-color);
+      margin-bottom: 0.5rem;
+    }
+    
+    .admin-header p {
+      color: var(--light-text);
+      font-size: 1rem;
+    }
+    
+    .form-group {
+      margin-bottom: 1.5rem;
+      position: relative;
+      text-align: left;
+    }
+    
+    .form-label {
+      font-weight: 500;
+      font-size: 0.9rem;
+      color: var(--text-color);
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+    
+    .form-control {
+      padding: 0.75rem 1rem 0.75rem 2.5rem;
+      height: auto;
+      border-radius: 10px;
+      border: 1px solid #e0e0e0;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+    
+    .form-control:focus {
+      box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.15);
+      border-color: var(--primary-color);
+    }
+    
+    .form-group i {
+      position: absolute;
+      left: 1rem;
+      top: 2.5rem;
+      transform: translateY(-50%);
+      color: var(--light-text);
+      transition: all 0.3s ease;
+    }
+    
+    .form-control:focus + i {
+      color: var(--primary-color);
+    }
+    
+    .btn-create {
+      width: 100%;
+      padding: 0.75rem;
+      background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+      border: none;
+      border-radius: 10px;
+      color: white;
+      font-weight: 600;
+      font-size: 1rem;
+      box-shadow: 0 4px 10px rgba(67, 97, 238, 0.3);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+    }
+    
+    .btn-create::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+      transition: all 0.4s ease;
+      z-index: -1;
+    }
+    
+    .btn-create:hover::before {
+      left: 0;
+    }
+    
+    .btn-create:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(67, 97, 238, 0.4);
+    }
+    
+    .btn-home {
+      display: inline-block;
+      margin-top: 2rem;
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    
+    .btn-home:hover {
+      color: var(--accent-color);
+      text-decoration: underline;
+    }
+    
+    .btn-home i {
+      margin-right: 6px;
+    }
+    
+    .loading-spinner {
+      display: none;
+      width: 20px;
+      height: 20px;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      border-top-color: white;
+      animation: spin 1s ease-in-out infinite;
+      margin-left: 8px;
+    }
+    
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    
+    .btn-create.loading .loading-spinner {
+      display: inline-block;
+    }
+    
+    .btn-create.loading span {
+      display: none;
+    }
+    
+    .admin-list {
+      margin-top: 2rem;
+      text-align: left;
+    }
+    
+    .admin-list h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--text-color);
+      text-align: center;
+    }
+    
+    .admin-item {
+      background-color: rgba(67, 97, 238, 0.05);
+      padding: 1rem;
+      border-radius: 10px;
+      margin-bottom: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .admin-info {
+      flex: 1;
+    }
+    
+    .admin-name {
+      font-weight: 600;
+      color: var(--text-color);
+      margin-bottom: 0.25rem;
+    }
+    
+    .admin-telegram {
+      font-size: 0.85rem;
+      color: var(--light-text);
+    }
+    
+    .alert {
+      display: none;
+      padding: 1rem;
+      border-radius: 10px;
+      margin-bottom: 1.5rem;
+      font-weight: 500;
+      text-align: center;
+    }
+    
+    .alert-success {
+      background-color: rgba(56, 176, 0, 0.1);
+      color: var(--success-color);
+      border: 1px solid rgba(56, 176, 0, 0.2);
+    }
+    
+    .alert-danger {
+      background-color: rgba(229, 56, 59, 0.1);
+      color: var(--danger-color);
+      border: 1px solid rgba(229, 56, 59, 0.2);
+    }
+    
+    .tab-nav {
+      display: flex;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    
+    .tab-btn {
+      padding: 1rem 1.5rem;
+      background: none;
+      border: none;
+      border-bottom: 3px solid transparent;
+      font-weight: 600;
+      color: #777;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .tab-btn.active {
+      color: var(--primary-color);
+      border-bottom-color: var(--primary-color);
+    }
+    
+    .tab-content {
+      display: none;
+    }
+    
+    .tab-content.active {
+      display: block;
+      animation: fadeIn 0.3s ease;
+    }
+    
+    .invite-form {
+      background-color: #f8f9fa;
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin-bottom: 1.5rem;
+      border: 1px solid #e0e0e0;
+    }
+    
+    .invite-link-container {
+      background-color: #f0f0f0;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-top: 1.5rem;
+      position: relative;
+      border: 1px solid #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    .invite-link {
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin-right: 10px;
+      font-family: monospace;
+      color: #555;
+    }
+    
+    .copy-btn {
+      background-color: var(--primary-color);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 0.5rem 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .copy-btn:hover {
+      background-color: var(--secondary-color);
+    }
+    
+    .copy-btn i {
+      margin-right: 5px;
+    }
+    
+    .expiry-info {
+      margin-top: 0.75rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+    
+    .expiry-info i {
+      margin-right: 5px;
+      color: var(--warning-color);
+    }
+  </style>
+</head>
+<body>
+  <div class="admin-container">
+    <div class="admin-header">
+      <h1>Admin Management</h1>
+      <p>Manage administrators for your site</p>
+    </div>
+    
+    <div class="tab-nav">
+      <button class="tab-btn active" data-tab="create-admin">Create Admin</button>
+      <button class="tab-btn" data-tab="invite-admin">Generate Invite Link</button>
+    </div>
+    
+    <div id="create-admin" class="tab-content active">
+      <form id="adminForm">
+        <div class="form-group">
+          <label for="username" class="form-label">Username</label>
+          <input type="text" class="form-control" id="username" name="username" placeholder="Enter admin username" required>
+          <i class="fas fa-user"></i>
+        </div>
+        
+        <div class="form-group">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" name="password" placeholder="Enter admin password" required>
+          <i class="fas fa-lock"></i>
+        </div>
+        
+        <div id="successMessage" class="alert alert-success"></div>
+        <div id="errorMessage" class="alert alert-danger"></div>
+        
+        <button type="submit" class="btn-create" id="createButton">
+          <span>Create Admin</span>
+          <div class="loading-spinner"></div>
+        </button>
+      </form>
+    </div>
+    
+    <div id="invite-admin" class="tab-content">
+      <div class="invite-form">
+        <form id="inviteForm">
+          <div class="form-group">
+            <label for="expiryTime" class="form-label">Invitation Link Expires In:</label>
+            <select class="form-control" id="expiryTime" name="expiryTime">
+              <option value="1h">1 Hour</option>
+              <option value="24h" selected>24 Hours</option>
+              <option value="48h">48 Hours</option>
+              <option value="7d">7 Days</option>
+            </select>
+            <i class="fas fa-clock"></i>
+          </div>
+          
+          <button type="submit" class="btn-create" id="generateBtn">
+            <span><i class="fas fa-link"></i> Generate Invite Link</span>
+            <div class="loading-spinner"></div>
+          </button>
+        </form>
+        
+        <div id="inviteLinkContainer" class="invite-link-container" style="display: none;">
+          <div class="invite-link" id="inviteLink"></div>
+          <button class="copy-btn" id="copyButton">
+            <i class="fas fa-copy"></i> Copy
+          </button>
+        </div>
+        
+        <div class="expiry-info" id="expiryInfo" style="display: none;">
+          <i class="fas fa-clock"></i> <span id="expiryText"></span>
+        </div>
+      </div>
+      
+      <div id="inviteSuccessMessage" class="alert alert-success"></div>
+      <div id="inviteErrorMessage" class="alert alert-danger"></div>
+    </div>
+    
+    <div class="admin-list">
+      <h3>Current Administrators</h3>
+      <div id="adminsList">
+        <div class="text-center">
+          <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <a href="/" class="btn-home">
+      <i class="fas fa-home"></i> Back to Home
+    </a>
+  </div>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Tab switching functionality
+      const tabButtons = document.querySelectorAll('.tab-btn');
+      const tabContents = document.querySelectorAll('.tab-content');
+      
+      tabButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          // Remove active class from all tabs
+          tabButtons.forEach(btn => btn.classList.remove('active'));
+          tabContents.forEach(content => content.classList.remove('active'));
+          
+          // Add active class to clicked tab
+          this.classList.add('active');
+          document.getElementById(this.dataset.tab).classList.add('active');
+        });
+      });
+      
+      // Create Admin Form
+      const adminForm = document.getElementById('adminForm');
+      const createButton = document.getElementById('createButton');
+      const successMessage = document.getElementById('successMessage');
+      const errorMessage = document.getElementById('errorMessage');
+      
+      adminForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Add loading state
+        createButton.classList.add('loading');
+        
+        // Get form data
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        
+        // Create admin API call
+        fetch('/create_admin', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            username: username,
+            password: password
+          })
+        })
+        .then(response => response.json())
+        .then(data => {
+          createButton.classList.remove('loading');
+          
+          if (data.success) {
+            // Show success message
+            successMessage.textContent = data.message || 'Admin created successfully!';
+            successMessage.style.display = 'block';
+            errorMessage.style.display = 'none';
+            
+            // Reset form
+            adminForm.reset();
+            
+            // Refresh admin list
+            loadAdmins();
+            
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+              successMessage.style.display = 'none';
+            }, 5000);
+          } else {
+            // Show error message
+            errorMessage.textContent = data.message || 'Failed to create admin.';
+            errorMessage.style.display = 'block';
+            successMessage.style.display = 'none';
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          createButton.classList.remove('loading');
+          
+          // Show error message
+          errorMessage.textContent = 'An error occurred. Please try again.';
+          errorMessage.style.display = 'block';
+          successMessage.style.display = 'none';
+        });
+      });
+      
+      // Invite Link Generation
+      const inviteForm = document.getElementById('inviteForm');
+      const generateBtn = document.getElementById('generateBtn');
+      const inviteLinkContainer = document.getElementById('inviteLinkContainer');
+      const inviteLink = document.getElementById('inviteLink');
+      const copyButton = document.getElementById('copyButton');
+      const expiryInfo = document.getElementById('expiryInfo');
+      const expiryText = document.getElementById('expiryText');
+      const inviteSuccessMessage = document.getElementById('inviteSuccessMessage');
+      const inviteErrorMessage = document.getElementById('inviteErrorMessage');
+      
+      inviteForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Add loading state
+        generateBtn.classList.add('loading');
+        
+        // Get selected expiry time
+        const expiryTime = document.getElementById('expiryTime').value;
+        
+        // Generate invite API call
+        fetch('/api/generate-invite', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            expiryTime: expiryTime
+          })
+        })
+        .then(response => response.json())
+        .then(data => {
+          generateBtn.classList.remove('loading');
+          
+          if (data.success) {
+            // Display the invite link
+            inviteLink.textContent = data.invite_url;
+            inviteLinkContainer.style.display = 'flex';
+            
+            // Show the expiry info
+            const expiryDate = new Date(data.expires_at);
+            expiryText.textContent = `This link will expire on ${expiryDate.toLocaleString()}`;
+            expiryInfo.style.display = 'block';
+            
+            // Show success message
+            inviteSuccessMessage.textContent = 'Invite link generated successfully!';
+            inviteSuccessMessage.style.display = 'block';
+            inviteErrorMessage.style.display = 'none';
+            
+            // Auto-hide success message after 5 seconds
+            setTimeout(() => {
+              inviteSuccessMessage.style.display = 'none';
+            }, 5000);
+          } else {
+            // Show error message
+            inviteErrorMessage.textContent = data.message || 'Failed to generate invite link.';
+            inviteErrorMessage.style.display = 'block';
+            inviteSuccessMessage.style.display = 'none';
+            
+            // Hide invite link container and expiry info
+            inviteLinkContainer.style.display = 'none';
+            expiryInfo.style.display = 'none';
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          generateBtn.classList.remove('loading');
+          
+          // Show error message
+          inviteErrorMessage.textContent = 'An error occurred. Please try again.';
+          inviteErrorMessage.style.display = 'block';
+          inviteSuccessMessage.style.display = 'none';
+          
+          // Hide invite link container and expiry info
+          inviteLinkContainer.style.display = 'none';
+          expiryInfo.style.display = 'none';
+        });
+      });
+      
+      // Copy to clipboard functionality
+      copyButton.addEventListener('click', function() {
+        const linkText = inviteLink.textContent;
+        
+        navigator.clipboard.writeText(linkText)
+          .then(() => {
+            // Temporarily change button text
+            const originalText = copyButton.innerHTML;
+            copyButton.innerHTML = '<i class="fas fa-check"></i> Copied!';
+            
+            // Reset button text after 2 seconds
+            setTimeout(() => {
+              copyButton.innerHTML = originalText;
+            }, 2000);
+          })
+          .catch(err => {
+            console.error('Failed to copy: ', err);
+            inviteErrorMessage.textContent = 'Failed to copy to clipboard.';
+            inviteErrorMessage.style.display = 'block';
+          });
+      });
+      
+      // Load admins list
+      function loadAdmins() {
+        const adminsList = document.getElementById('adminsList');
+        
+        fetch('/get_admins')
+          .then(response => response.json())
+          .then(data => {
+            if (data.success) {
+              adminsList.innerHTML = '';
+              
+              if (data.admins.length === 0) {
+                adminsList.innerHTML = '<p class="text-center">No administrators found.</p>';
+                return;
+              }
+              
+              data.admins.forEach(admin => {
+                const adminItem = document.createElement('div');
+                adminItem.className = 'admin-item';
+                
+                adminItem.innerHTML = `
+                  <div class="admin-info">
+                    <div class="admin-name">${admin.display_name || admin.username}</div>
+                    <div class="admin-telegram">${admin.telegram ? 'Telegram: ' + admin.telegram : '@' + admin.username}</div>
+                  </div>
+                `;
+                
+                adminsList.appendChild(adminItem);
+              });
+            } else {
+              adminsList.innerHTML = `<div class="alert alert-danger" style="display: block;">${data.message || 'Failed to load administrators.'}</div>`;
+            }
+          })
+          .catch(error => {
+            console.error('Error:', error);
+            adminsList.innerHTML = '<div class="alert alert-danger" style="display: block;">An error occurred while loading administrators.</div>';
+          });
+      }
+      
+      // Load admins on page load
+      loadAdmins();
+    });
+  </script>
+</body>
+</html> 

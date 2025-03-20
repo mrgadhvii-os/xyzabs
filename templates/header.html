@@ -1,0 +1,373 @@
+<!-- Modern Header Partial -->
+<style>
+  /* Header specific styles */
+  .modern-navbar {
+    background-color: var(--card-bg);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 0.75rem 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+  }
+  
+  .modern-navbar.scrolled {
+    padding: 0.5rem 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+  }
+  
+  .logo-icon {
+    width: 38px;
+    height: 38px;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.25rem;
+    box-shadow: 0 4px 8px rgba(67, 97, 238, 0.25);
+    transition: all 0.3s ease;
+  }
+  
+  .brand-logo:hover .logo-icon {
+    transform: rotate(10deg);
+    box-shadow: 0 6px 12px rgba(67, 97, 238, 0.35);
+  }
+  
+  .brand-name {
+    font-weight: 700;
+    font-size: 1.5rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .nav-link {
+    font-weight: 500;
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .nav-link:hover {
+    color: var(--primary-color);
+    background-color: rgba(67, 97, 238, 0.05);
+  }
+  
+  .nav-link.active {
+    color: var(--primary-color);
+    font-weight: 600;
+  }
+  
+  .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0.75rem;
+    right: 0.75rem;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    border-radius: 3px;
+  }
+  
+  .user-profile {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 1rem;
+    background-color: rgba(67, 97, 238, 0.05);
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .user-profile:hover {
+    background-color: rgba(67, 97, 238, 0.1);
+    transform: translateY(-2px);
+  }
+  
+  .user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 2px 8px rgba(67, 97, 238, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .user-profile:hover .user-avatar {
+    border-color: var(--accent-color);
+    transform: scale(1.05);
+  }
+  
+  .user-avatar-placeholder {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 8px rgba(67, 97, 238, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .user-profile:hover .user-avatar-placeholder {
+    transform: scale(1.05);
+  }
+  
+  .user-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .user-name {
+    font-weight: 600;
+    color: var(--text-color);
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.2;
+  }
+  
+  .user-role {
+    font-size: 0.75rem;
+    color: var(--light-text);
+    line-height: 1;
+  }
+  
+  .dropdown-menu {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    padding: 0.75rem 0;
+    min-width: 200px;
+    margin-top: 0.75rem;
+    animation: dropdown-fade 0.2s ease;
+  }
+  
+  @keyframes dropdown-fade {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .dropdown-item {
+    padding: 0.75rem 1.25rem;
+    font-weight: 500;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    transition: all 0.2s ease;
+  }
+  
+  .dropdown-item:hover {
+    background-color: rgba(67, 97, 238, 0.05);
+    color: var(--primary-color);
+  }
+  
+  .dropdown-item i {
+    color: var(--primary-color);
+    font-size: 1rem;
+    width: 20px;
+    text-align: center;
+  }
+  
+  .dropdown-divider {
+    margin: 0.5rem 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  
+  .alert {
+    border-radius: var(--border-radius);
+    border: none;
+    box-shadow: var(--shadow);
+    margin-bottom: 1.5rem;
+    animation: alert-slide 0.3s ease;
+  }
+  
+  @keyframes alert-slide {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .modern-navbar {
+      padding: 0.75rem 1rem;
+    }
+    
+    .brand-name {
+      font-size: 1.25rem;
+    }
+    
+    .logo-icon {
+      width: 34px;
+      height: 34px;
+      font-size: 1rem;
+    }
+    
+    .user-info {
+      display: none;
+    }
+    
+    .user-profile {
+      padding: 0.5rem;
+    }
+    
+    .nav-menu {
+      gap: 0.75rem;
+    }
+  }
+</style>
+
+<nav class="navbar navbar-expand-lg modern-navbar">
+  <div class="container">
+    <a class="brand-logo" href="/">
+      <div class="logo-icon">
+        <i class="fas fa-play"></i>
+      </div>
+      <span class="brand-name">VidH</span>
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto nav-menu">
+        <li class="nav-item">
+          <a class="nav-link {% if request.path == '/' %}active{% endif %}" href="/">
+            <i class="fas fa-home me-2"></i>Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if request.path == '/batches' %}active{% endif %}" href="/batches">
+            <i class="fas fa-graduation-cap me-2"></i>Batches
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if request.path == '/contact-admins' %}active{% endif %}" href="/contact-admins">
+            <i class="fas fa-headset me-2"></i>Contact Admins
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <div class="user-profile dropdown-toggle" data-bs-toggle="dropdown">
+            {% if session.get('photo_url') %}
+            <img src="{{ session.get('photo_url') }}" alt="{{ session.get('display_name') }}" class="user-avatar" id="userAvatar">
+            {% else %}
+            <div class="user-avatar-placeholder">
+              {{ (session.get('display_name') or session.get('user_id', ''))[0:1].upper() }}
+            </div>
+            {% endif %}
+            <div class="user-info">
+              <span class="user-name">{{ session.get('display_name') or session.get('user_id') }}</span>
+              <span class="user-role">{{ session.get('role', 'User') }}</span>
+            </div>
+          </div>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li>
+              <a class="dropdown-item" href="#">
+                <i class="fas fa-user-circle"></i>Profile
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                <i class="fas fa-cog"></i>Settings
+              </a>
+            </li>
+            <li><hr class="dropdown-divider"></li>
+            <li>
+              <a class="dropdown-item" href="{{ url_for('logout') }}">
+                <i class="fas fa-sign-out-alt"></i>Logout
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Flash Messages -->
+<div class="container mt-4">
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      {% for category, message in messages %}
+        <div class="alert alert-{{ category if category != 'error' else 'danger' }} alert-dismissible fade show">
+          <div class="d-flex align-items-center">
+            {% if category == 'success' %}
+              <i class="fas fa-check-circle me-2 text-success"></i>
+            {% elif category == 'error' or category == 'danger' %}
+              <i class="fas fa-exclamation-circle me-2 text-danger"></i>
+            {% elif category == 'warning' %}
+              <i class="fas fa-exclamation-triangle me-2 text-warning"></i>
+            {% elif category == 'info' %}
+              <i class="fas fa-info-circle me-2 text-info"></i>
+            {% endif %}
+            {{ message }}
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+      {% endfor %}
+    {% endif %}
+  {% endwith %}
+</div>
+
+<script>
+  // Add scrolled class to navbar on scroll
+  document.addEventListener('DOMContentLoaded', function() {
+    const navbar = document.querySelector('.modern-navbar');
+    
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 10) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+    
+    // Handle user avatar image error
+    const userAvatar = document.getElementById('userAvatar');
+    if (userAvatar) {
+      userAvatar.onerror = function() {
+        this.src = '/profile-image/{{ session.get("user_id") }}';
+      };
+    }
+  });
+</script> 

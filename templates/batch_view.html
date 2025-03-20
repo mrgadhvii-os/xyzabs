@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ batch.name|default('Batch View') }} - VidH</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #4361ee;
+      --secondary-color: #3f37c9;
+      --accent-color: #4895ef;
+      --text-color: #2b2d42;
+      --light-text: #8d99ae;
+      --bg-color: #f8f9fa;
+      --card-bg: #ffffff;
+      --border-color: #e9ecef;
+      --hover-bg: #f1f3f5;
+    }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+    
+    .navbar {
+      background-color: var(--primary-color);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .navbar-brand {
+      font-weight: 700;
+      color: white;
+    }
+    
+    .batch-header {
+      background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+      color: white;
+      padding: 2rem 0;
+      margin-bottom: 2rem;
+      border-radius: 0 0 10px 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    .batch-title {
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    
+    .batch-meta {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+    
+    /* Content display styles */
+    .explorer-container {
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      overflow: hidden;
+      background-color: white;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+    
+    .content-header {
+      padding: 15px;
+      border-bottom: 1px solid var(--border-color);
+      background-color: #f8f9fa;
+    }
+    
+    .content-title {
+      font-weight: 600;
+      margin: 0;
+      color: var(--text-color);
+    }
+    
+    .content-path {
+      color: var(--light-text);
+      font-size: 0.85rem;
+      margin-top: 5px;
+    }
+    
+    .content-item {
+      display: flex;
+      align-items: center;
+      padding: 16px;
+      border-bottom: 1px solid var(--border-color);
+      transition: all 0.2s;
+    }
+    
+    .content-item:hover {
+      background-color: var(--hover-bg);
+    }
+    
+    .content-item-icon {
+      font-size: 24px;
+      margin-right: 16px;
+      width: 40px;
+      text-align: center;
+      color: var(--primary-color);
+    }
+    
+    .content-item-details {
+      flex-grow: 1;
+    }
+    
+    .content-item-title {
+      font-weight: 500;
+      margin-bottom: 4px;
+      color: var(--text-color);
+    }
+    
+    .content-item-meta {
+      font-size: 0.85rem;
+      color: var(--light-text);
+    }
+    
+    .content-item-actions {
+      display: flex;
+      align-items: center;
+    }
+    
+    .btn-action {
+      padding: 6px 12px;
+      border-radius: 50rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+    
+    .btn-video {
+      background-color: var(--primary-color);
+      color: white;
+    }
+    
+    .btn-video:hover {
+      background-color: var(--secondary-color);
+      color: white;
+    }
+    
+    .btn-pdf {
+      background-color: #e63946;
+      color: white;
+    }
+    
+    .btn-pdf:hover {
+      background-color: #d62828;
+      color: white;
+    }
+    
+    .btn-youtube {
+      background-color: #ff0000;
+      color: white;
+    }
+    
+    .btn-youtube:hover {
+      background-color: #cc0000;
+      color: white;
+    }
+    
+    .icon-physics {
+      color: #3a86ff;
+    }
+    
+    .icon-chemistry {
+      color: #38b000;
+    }
+    
+    .icon-mathematics {
+      color: #ff006e;
+    }
+    
+    .icon-biology {
+      color: #8338ec;
+    }
+    
+    .empty-state {
+      text-align: center;
+      padding: 3rem;
+      color: var(--light-text);
+    }
+    
+    .empty-state i {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      opacity: 0.5;
+    }
+    
+    .empty-state h4 {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    
+    .empty-state p {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    
+    /* Special styles for subjects and chapters */
+    .subject-card, .chapter-card {
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    
+    .subject-card:hover, .chapter-card:hover {
+      background-color: var(--hover-bg);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transform: translateY(-2px);
+    }
+    
+    .subject-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      border-radius: 12px;
+      background-color: rgba(67, 97, 238, 0.1);
+      font-size: 28px;
+      margin-right: 20px;
+    }
+    
+    .chapter-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      background-color: rgba(56, 176, 0, 0.1);
+      font-size: 24px;
+      margin-right: 20px;
+      color: #38b000;
+    }
+    
+    .arrow-icon {
+      color: var(--light-text);
+      font-size: 18px;
+      transition: all 0.2s;
+    }
+    
+    .subject-card:hover .arrow-icon,
+    .chapter-card:hover .arrow-icon {
+      transform: translateX(4px);
+      color: var(--primary-color);
+    }
+    
+    .back-button {
+      display: inline-flex;
+      align-items: center;
+      background-color: rgba(0,0,0,0.05);
+      color: var(--text-color);
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 16px;
+      transition: all 0.2s;
+    }
+    
+    .back-button:hover {
+      background-color: rgba(0,0,0,0.1);
+    }
+    
+    .back-button i {
+      margin-right: 8px;
+    }
+    
+    @media (max-width: 768px) {
+      .content-item {
+        padding: 12px;
+      }
+      
+      .subject-icon, .chapter-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 22px;
+        margin-right: 15px;
+      }
+      
+      .batch-header {
+        padding: 1.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Include Header Partial -->
+  {% include 'header.html' %}
+
+  <!-- Batch Header -->
+  <div class="batch-header">
+    <div class="container">
+      <h1 class="batch-title">{{ batch.name|default('Untitled Batch') }}</h1>
+      <div class="batch-meta">
+        <span class="me-3"><i class="fas fa-graduation-cap me-2"></i>{{ batch.type|default('Regular') }}</span>
+        <span class="me-3"><i class="fas fa-calendar-alt me-2"></i>{{ batch.year|default('') }}</span>
+        <span><i class="fas fa-clock me-2"></i>Created: {{ batch.created_at|default('')|date }}</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mb-5">
+    <!-- Content Container -->
+    <div class="explorer-container">
+      <!-- Content Header -->
+      <div class="content-header">
+        <h4 class="content-title" id="viewTitle">Subjects</h4>
+        <div class="content-path" id="viewPath">
+          <i class="fas fa-home"></i> / Subjects
+            </div>
+          </div>
+          
+      <!-- Content Views -->
+      
+      <!-- 1. Subjects View (initial view) -->
+      <div id="subjectsView">
+        {% if batch.subjects|length > 0 %}
+          {% for subject_key, subject in batch.subjects.items() %}
+            <div class="content-item subject-card" data-subject-key="{{ subject_key }}">
+              <div class="subject-icon icon-{{ subject.icon }}">
+                <i class="fas fa-atom"></i>
+                      </div>
+              <div class="content-item-details">
+                <h5 class="content-item-title">{{ subject.name }}</h5>
+                <div class="content-item-meta">
+                  <span><i class="fas fa-folder me-1"></i> Click to view chapters</span>
+                </div>
+              </div>
+              <div class="content-item-actions">
+                <div class="arrow-icon">
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+          </div>
+          {% endfor %}
+        {% else %}
+          <div class="empty-state">
+            <i class="fas fa-book"></i>
+            <h4>No subjects available</h4>
+            <p>There are no subjects available for this batch yet.</p>
+        </div>
+        {% endif %}
+      </div>
+      
+      <!-- 2. Chapters Views (one per subject, hidden initially) -->
+              {% for subject_key, subject in batch.subjects.items() %}
+        {% set chapters = {} %}
+                {% for item in subject.content %}
+          {% if item.chapter and item.chapter.name %}
+            {% if item.chapter.name not in chapters %}
+              {% set _ = chapters.update({item.chapter.name: []}) %}
+            {% endif %}
+            {% set _ = chapters[item.chapter.name].append(item) %}
+          {% endif %}
+        {% endfor %}
+        
+        <div id="chapters-{{ subject_key }}" class="chapters-view" style="display: none;">
+          <button class="back-button" data-to-subjects>
+            <i class="fas fa-arrow-left"></i> Back to Subjects
+          </button>
+          
+          {% if chapters|length > 0 %}
+            {% for chapter_name, items in chapters.items() %}
+              <div class="content-item chapter-card" data-subject="{{ subject_key }}" data-chapter="{{ chapter_name|replace(' ', '_') }}">
+                <div class="chapter-icon">
+                  <i class="fas fa-folder"></i>
+                          </div>
+                <div class="content-item-details">
+                  <h5 class="content-item-title">{{ chapter_name }}</h5>
+                  <div class="content-item-meta">
+                    <span><i class="fas fa-file me-1"></i> {{ items|length }} items</span>
+                          </div>
+                        </div>
+                <div class="content-item-actions">
+                  <div class="arrow-icon">
+                    <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+              </div>
+            {% endfor %}
+          {% else %}
+            <div class="empty-state">
+              <i class="fas fa-folder-open"></i>
+              <h4>No chapters available</h4>
+              <p>There are no chapters available for {{ subject.name }} yet.</p>
+            </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+      
+      <!-- 3. Content Views (one per chapter, hidden initially) -->
+              {% for subject_key, subject in batch.subjects.items() %}
+        {% set chapters = {} %}
+                {% for item in subject.content %}
+          {% if item.chapter and item.chapter.name %}
+            {% if item.chapter.name not in chapters %}
+              {% set _ = chapters.update({item.chapter.name: []}) %}
+            {% endif %}
+            {% set _ = chapters[item.chapter.name].append(item) %}
+          {% endif %}
+        {% endfor %}
+        
+        {% for chapter_name, items in chapters.items() %}
+          <div id="content-{{ subject_key }}-{{ chapter_name|replace(' ', '_') }}" class="content-view" style="display: none;">
+            <button class="back-button" data-to-chapters data-subject-key="{{ subject_key }}">
+              <i class="fas fa-arrow-left"></i> Back to {{ subject.name }} Chapters
+            </button>
+            
+            {% if items|length > 0 %}
+              {% for item in items %}
+                <div class="content-item">
+                  {% if item.type == 'video' %}
+                    <div class="content-item-icon">
+                      <i class="fas fa-video text-primary"></i>
+                    </div>
+                  {% elif item.type == 'pdf' %}
+                    <div class="content-item-icon">
+                      <i class="fas fa-file-pdf text-danger"></i>
+                    </div>
+                  {% elif item.type == 'youtube' %}
+                    <div class="content-item-icon">
+                      <i class="fab fa-youtube text-danger"></i>
+                    </div>
+                  {% endif %}
+                  
+                  <div class="content-item-details">
+                    <h5 class="content-item-title">{{ item.title }}</h5>
+                    <div class="content-item-meta">
+                      <span><i class="fas fa-calendar-alt me-1"></i> {{ item.created_at|date }}</span>
+                    </div>
+                  </div>
+                  
+                  <div class="content-item-actions">
+                    {% if item.type == 'video' %}
+                      {% if item.video_data is defined and item.video_data %}
+                        <a href="/player/auth-site=MrGadhvii-JWTToken{{ '%.6d' | format(range(100000, 999999) | random) }}-MDoxNzQyMjA4Nzc1OkFlaHJ2Wk9TTjI=.{{ '%.8d' | format(range(10000000, 99999999) | random) }}?v={{ item.video_data.id }}&t={{ item.video_data.hash }}&s={{ item.video_data.key }}" class="btn btn-action btn-video">
+                          <i class="fas fa-play me-1"></i> Watch
+                        </a>
+                      {% else %}
+                        <a href="{{ item.url }}" class="btn btn-action btn-video">
+                          <i class="fas fa-play me-1"></i> Watch
+                        </a>
+                      {% endif %}
+                    {% elif item.type == 'pdf' %}
+                      <a href="/pdf-direct-download?url={{ item.url|urlencode }}&title={{ item.title|urlencode }}&subject={{ subject.name|urlencode }}&chapter={{ chapter_name|urlencode }}" class="btn btn-action btn-pdf">
+                        <i class="fas fa-file-pdf me-1"></i> Download
+                      </a>
+                    {% elif item.type == 'youtube' %}
+                      <a href="{{ item.url }}" target="_blank" class="btn btn-action btn-youtube">
+                        <i class="fab fa-youtube me-1"></i> Watch
+                      </a>
+                    {% endif %}
+                      </div>
+                    </div>
+              {% endfor %}
+            {% else %}
+                <div class="empty-state">
+                <i class="fas fa-exclamation-circle"></i>
+                <h4>No content available</h4>
+                <p>There is no content available for this chapter yet.</p>
+              </div>
+              {% endif %}
+          </div>
+        {% endfor %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>VidH</h5>
+          <p class="small">Secure Video Streaming Platform</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p class="small">&copy; 2023 VidH. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Custom JS for navigation -->
+  <script>
+    // Show subjects view (default)
+    function showSubjects() {
+      // Hide all views
+      hideAllViews();
+      
+      // Show subjects view
+      document.getElementById('subjectsView').style.display = 'block';
+      
+      // Update header
+      document.getElementById('viewTitle').textContent = 'Subjects';
+      document.getElementById('viewPath').innerHTML = '<i class="fas fa-home"></i> / Subjects';
+    }
+    
+    // Show chapters for a specific subject
+    function showChapters(subjectKey) {
+      // Hide all views
+      hideAllViews();
+      
+      // Get subject name for header
+      const subjectName = document.querySelector(`[data-subject-key="${subjectKey}"] .content-item-title`).textContent;
+      
+      // Show chapters view
+      document.getElementById(`chapters-${subjectKey}`).style.display = 'block';
+      
+      // Update header
+      document.getElementById('viewTitle').textContent = `${subjectName} Chapters`;
+      document.getElementById('viewPath').innerHTML = `<i class="fas fa-home"></i> / Subjects / ${subjectName}`;
+    }
+    
+    // Show content for a specific chapter
+    function showContent(subjectKey, chapterName) {
+      // Hide all views
+      hideAllViews();
+      
+      // Format chapter name for display
+      const readableChapterName = chapterName.replace(/_/g, ' ');
+      
+      // Get subject name for the path
+      const subjectName = document.querySelector(`[data-subject-key="${subjectKey}"] .content-item-title`).textContent;
+      
+      // Show content view
+      document.getElementById(`content-${subjectKey}-${chapterName}`).style.display = 'block';
+      
+      // Update header
+      document.getElementById('viewTitle').textContent = readableChapterName;
+      document.getElementById('viewPath').innerHTML = `<i class="fas fa-home"></i> / Subjects / ${subjectName} / ${readableChapterName}`;
+    }
+    
+    // Hide all views
+    function hideAllViews() {
+      // Hide subjects view
+      document.getElementById('subjectsView').style.display = 'none';
+      
+      // Hide all chapter views
+      document.querySelectorAll('.chapters-view').forEach(view => {
+        view.style.display = 'none';
+      });
+      
+      // Hide all content views
+      document.querySelectorAll('.content-view').forEach(view => {
+        view.style.display = 'none';
+      });
+    }
+    
+    // Initialize the view and add event listeners
+    document.addEventListener('DOMContentLoaded', function() {
+      // Show subjects initially
+      showSubjects();
+      
+      // Add event listeners to subject cards
+      document.querySelectorAll('.subject-card').forEach(card => {
+        card.addEventListener('click', function() {
+          const subjectKey = this.getAttribute('data-subject-key');
+          showChapters(subjectKey);
+        });
+      });
+      
+      // Add event listeners to chapter cards
+      document.querySelectorAll('.chapter-card').forEach(card => {
+        card.addEventListener('click', function() {
+          const subjectKey = this.getAttribute('data-subject');
+          const chapterName = this.getAttribute('data-chapter');
+          showContent(subjectKey, chapterName);
+        });
+      });
+      
+      // Add event listeners to back buttons
+      document.querySelectorAll('.back-button').forEach(button => {
+        button.addEventListener('click', function(e) {
+          e.stopPropagation(); // Prevent event bubbling
+          
+          if (this.hasAttribute('data-to-subjects')) {
+            showSubjects();
+          } else if (this.hasAttribute('data-to-chapters')) {
+            const subjectKey = this.getAttribute('data-subject-key');
+            showChapters(subjectKey);
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html> 

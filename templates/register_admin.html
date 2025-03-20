@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register as Admin - VidH</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #4361ee;
+      --secondary-color: #3f37c9;
+      --accent-color: #4895ef;
+      --success-color: #38b000;
+      --danger-color: #e5383b;
+      --warning-color: #f9c74f;
+      --text-color: #2b2d42;
+      --light-text: #8d99ae;
+      --bg-color: #f8f9fa;
+      --card-bg: #ffffff;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #4361ee, #4895ef);
+      color: var(--text-color);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow-x: hidden;
+      position: relative;
+    }
+    
+    .animated-bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 0;
+    }
+    
+    .animated-shape {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      animation: float 15s ease-in-out infinite;
+      z-index: -1;
+    }
+    
+    .shape-1 {
+      width: 300px;
+      height: 300px;
+      top: -100px;
+      left: -100px;
+      animation-delay: 0s;
+    }
+    
+    .shape-2 {
+      width: 200px;
+      height: 200px;
+      top: 50%;
+      right: -50px;
+      animation-delay: 2s;
+    }
+    
+    .shape-3 {
+      width: 150px;
+      height: 150px;
+      bottom: -50px;
+      left: 30%;
+      animation-delay: 4s;
+    }
+    
+    @keyframes float {
+      0% {
+        transform: translate(0, 0) rotate(0deg);
+      }
+      25% {
+        transform: translate(10px, 15px) rotate(5deg);
+      }
+      50% {
+        transform: translate(5px, 25px) rotate(10deg);
+      }
+      75% {
+        transform: translate(15px, 5px) rotate(5deg);
+      }
+      100% {
+        transform: translate(0, 0) rotate(0deg);
+      }
+    }
+    
+    .admin-container {
+      width: 100%;
+      max-width: 480px;
+      background-color: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      animation: fadeIn 0.8s ease-out;
+      padding: 2.5rem;
+      position: relative;
+      text-align: center;
+    }
+    
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .admin-header {
+      margin-bottom: 2rem;
+    }
+    
+    .admin-header h1 {
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: var(--primary-color);
+      margin-bottom: 0.5rem;
+    }
+    
+    .admin-header p {
+      color: var(--light-text);
+      font-size: 1rem;
+    }
+    
+    .form-group {
+      margin-bottom: 1.5rem;
+      position: relative;
+      text-align: left;
+    }
+    
+    .form-label {
+      font-weight: 500;
+      font-size: 0.9rem;
+      color: var(--text-color);
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+    
+    .form-control {
+      padding: 0.75rem 1rem 0.75rem 2.5rem;
+      height: auto;
+      border-radius: 10px;
+      border: 1px solid #e0e0e0;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+    
+    .form-control:focus {
+      box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.15);
+      border-color: var(--primary-color);
+    }
+    
+    .form-group i {
+      position: absolute;
+      left: 1rem;
+      top: 2.5rem;
+      transform: translateY(-50%);
+      color: var(--light-text);
+      transition: all 0.3s ease;
+    }
+    
+    .form-control:focus + i {
+      color: var(--primary-color);
+    }
+    
+    .btn-register {
+      width: 100%;
+      padding: 0.75rem;
+      background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+      border: none;
+      border-radius: 10px;
+      color: white;
+      font-weight: 600;
+      font-size: 1rem;
+      box-shadow: 0 4px 10px rgba(67, 97, 238, 0.3);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+    }
+    
+    .btn-register::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+      transition: all 0.4s ease;
+      z-index: -1;
+    }
+    
+    .btn-register:hover::before {
+      left: 0;
+    }
+    
+    .btn-register:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(67, 97, 238, 0.4);
+    }
+    
+    .btn-home {
+      display: inline-block;
+      margin-top: 2rem;
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    
+    .btn-home:hover {
+      color: var(--accent-color);
+      text-decoration: underline;
+    }
+    
+    .btn-home i {
+      margin-right: 6px;
+    }
+    
+    .loading-spinner {
+      display: none;
+      width: 20px;
+      height: 20px;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      border-top-color: white;
+      animation: spin 1s ease-in-out infinite;
+      margin-left: 8px;
+    }
+    
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    
+    .btn-register.loading .loading-spinner {
+      display: inline-block;
+    }
+    
+    .btn-register.loading span {
+      display: none;
+    }
+    
+    .alert {
+      display: none;
+      padding: 1rem;
+      border-radius: 10px;
+      margin-bottom: 1.5rem;
+      font-weight: 500;
+      text-align: center;
+    }
+    
+    .alert-success {
+      background-color: rgba(56, 176, 0, 0.1);
+      color: var(--success-color);
+      border: 1px solid rgba(56, 176, 0, 0.2);
+    }
+    
+    .alert-danger {
+      background-color: rgba(229, 56, 59, 0.1);
+      color: var(--danger-color);
+      border: 1px solid rgba(229, 56, 59, 0.2);
+    }
+    
+    .invite-status {
+      padding: 1rem;
+      border-radius: 10px;
+      margin-bottom: 1.5rem;
+    }
+    
+    .invite-status.valid {
+      background-color: rgba(56, 176, 0, 0.1);
+      border: 1px solid rgba(56, 176, 0, 0.2);
+    }
+    
+    .invite-status.invalid {
+      background-color: rgba(229, 56, 59, 0.1);
+      border: 1px solid rgba(229, 56, 59, 0.2);
+    }
+    
+    .invite-status i {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+    
+    .invite-status.valid i {
+      color: var(--success-color);
+    }
+    
+    .invite-status.invalid i {
+      color: var(--danger-color);
+    }
+    
+    .invite-status h3 {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+    
+    .invite-status p {
+      color: var(--light-text);
+      font-size: 0.9rem;
+      margin-bottom: 0;
+    }
+    
+    /* Success animation */
+    .checkmark {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      display: block;
+      stroke-width: 4;
+      stroke: var(--success-color);
+      stroke-miterlimit: 10;
+      box-shadow: inset 0px 0px 0px var(--success-color);
+      animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
+      position: relative;
+      margin: 0 auto 1rem;
+    }
+    
+    .checkmark__circle {
+      stroke-dasharray: 166;
+      stroke-dashoffset: 166;
+      stroke-width: 4;
+      stroke-miterlimit: 10;
+      stroke: var(--success-color);
+      fill: none;
+      animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+    }
+    
+    .checkmark__check {
+      transform-origin: 50% 50%;
+      stroke-dasharray: 48;
+      stroke-dashoffset: 48;
+      animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+    }
+    
+    @keyframes stroke {
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
+    
+    @keyframes scale {
+      0%, 100% {
+        transform: none;
+      }
+      50% {
+        transform: scale3d(1.1, 1.1, 1);
+      }
+    }
+    
+    @keyframes fill {
+      100% {
+        box-shadow: inset 0px 0px 0px 30px rgba(56, 176, 0, 0.1);
+      }
+    }
+    
+    .success-message {
+      display: none;
+      text-align: center;
+      animation: fadeIn 0.6s ease-out;
+    }
+    
+    .success-message h2 {
+      font-weight: 700;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+    
+    .success-message p {
+      color: var(--light-text);
+      margin-bottom: 1.5rem;
+    }
+    
+    .reg-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.75rem 1.5rem;
+      background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+      border: none;
+      border-radius: 50px;
+      color: white;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(67, 97, 238, 0.3);
+    }
+    
+    .reg-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(67, 97, 238, 0.4);
+      color: white;
+    }
+    
+    .reg-btn i {
+      margin-right: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="animated-bg">
+    <div class="animated-shape shape-1"></div>
+    <div class="animated-shape shape-2"></div>
+    <div class="animated-shape shape-3"></div>
+  </div>
+  
+  <div class="admin-container">
+    <!-- Invite Status -->
+    {% if is_valid_invite %}
+      <div class="invite-status valid">
+        <i class="fas fa-check-circle"></i>
+        <h3>Valid Invitation</h3>
+        <p>This invitation link is valid and ready for registration.</p>
+      </div>
+      
+      <div class="admin-header">
+        <h1>Register as Admin</h1>
+        <p>Complete your registration to become an administrator</p>
+      </div>
+      
+      <div id="alertMessage" class="alert"></div>
+      
+      <div id="registrationForm">
+        <form id="adminForm">
+          <input type="hidden" id="inviteCode" value="{{ invite_code }}">
+          
+          <div class="form-group">
+            <label for="adminName" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="adminName" name="adminName" placeholder="Enter your name" required>
+            <i class="fas fa-user"></i>
+          </div>
+          
+          <div class="form-group">
+            <label for="adminTelegram" class="form-label">Telegram Username (Optional)</label>
+            <input type="text" class="form-control" id="adminTelegram" name="adminTelegram" placeholder="@username">
+            <i class="fab fa-telegram"></i>
+          </div>
+          
+          <button type="submit" class="btn btn-register" id="registerButton">
+            <span>Become Admin</span>
+            <div class="loading-spinner"></div>
+          </button>
+        </form>
+      </div>
+      
+      <div id="successMessage" class="success-message">
+        <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+          <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+          <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+        </svg>
+        <h2>Registration Successful!</h2>
+        <p>You have been successfully registered as an administrator.</p>
+        <a href="/" class="reg-btn">
+          <i class="fas fa-home"></i> Go to Dashboard
+        </a>
+      </div>
+    {% else %}
+      <div class="invite-status invalid">
+        <i class="fas fa-times-circle"></i>
+        <h3>Invalid Invitation</h3>
+        <p>{{ error_message|default('This invitation link is invalid or has already been used.') }}</p>
+      </div>
+      
+      <a href="/" class="btn-home">
+        <i class="fas fa-home"></i> Back to Home
+      </a>
+    {% endif %}
+  </div>
+  
+  <!-- Specify validation status for JavaScript -->
+  <input type="hidden" id="isValidInvite" value="{% if is_valid_invite %}true{% else %}false{% endif %}">
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const isValidInvite = document.getElementById('isValidInvite').value === 'true';
+      
+      if (isValidInvite) {
+        const adminForm = document.getElementById('adminForm');
+        const registerButton = document.getElementById('registerButton');
+        const alertMessage = document.getElementById('alertMessage');
+        const registrationForm = document.getElementById('registrationForm');
+        const successMessage = document.getElementById('successMessage');
+        
+        adminForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          // Add loading state
+          registerButton.classList.add('loading');
+          
+          // Get form data
+          const inviteCode = document.getElementById('inviteCode').value;
+          const adminName = document.getElementById('adminName').value;
+          const adminTelegram = document.getElementById('adminTelegram').value;
+          
+          // Register admin
+          fetch('/api/register-admin', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              inviteCode: inviteCode,
+              adminName: adminName,
+              adminTelegram: adminTelegram
+            })
+          })
+          .then(response => response.json())
+          .then(data => {
+            registerButton.classList.remove('loading');
+            
+            if (data.success) {
+              // Show success message
+              registrationForm.style.display = 'none';
+              successMessage.style.display = 'block';
+              
+              // Redirect after 5 seconds
+              setTimeout(() => {
+                window.location.href = '/';
+              }, 5000);
+            } else {
+              // Show error message
+              showAlert(data.message || 'Registration failed. Please try again.', 'danger');
+            }
+          })
+          .catch(error => {
+            console.error('Error:', error);
+            registerButton.classList.remove('loading');
+            showAlert('An error occurred. Please try again.', 'danger');
+          });
+        });
+        
+        function showAlert(message, type) {
+          alertMessage.textContent = message;
+          alertMessage.className = 'alert';
+          alertMessage.classList.add(`alert-${type}`);
+          alertMessage.style.display = 'block';
+          
+          // Hide alert after 5 seconds
+          setTimeout(() => {
+            alertMessage.style.display = 'none';
+          }, 5000);
+        }
+      }
+    });
+  </script>
+</body>
+</html> 

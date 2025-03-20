@@ -1,0 +1,45 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Allow authenticated users to read and write their own data
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+    
+    // Allow authenticated users to read batches
+    match /batches/{batchId} {
+      allow read: if request.auth != null;
+    }
+    
+    // Allow authenticated users to read videos
+    match /videos/{videoId} {
+      allow read: if request.auth != null;
+    }
+    
+    // Allow authenticated users to create and read share links
+    match /sharelinks/{linkId} {
+      allow read, write: if request.auth != null;
+    }
+    
+    // Allow anyone to read/write batch upload requests
+    match /batch_upload_requests/{requestId} {
+      allow read, write: if true;
+    }
+    
+    // Allow anyone to read/write settings
+    match /settings/{settingId} {
+      allow read, write: if true;
+    }
+    
+    // Admin-only collections should have stricter rules in production
+    // The "true" rule is for development purposes only
+    match /admins/{adminId} {
+      allow read, write: if true;
+    }
+    
+    // Default rule to deny all other access
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+} 

