@@ -53,24 +53,29 @@ ffmpeg_process_cache = {}  # Store ffmpeg processes
 VIDEO_QUALITIES = ["240p", "360p", "480p", "720p", "1080p"]
 DEFAULT_QUALITY = "360p"
 
-# FFmpeg installation check function
 def check_ffmpeg_installation():
     """Verify FFmpeg is installed and available"""
     try:
-        result = subprocess.run(['ffmpeg', '-version'], 
-                              stdout=subprocess.PIPE, 
-                              stderr=subprocess.PIPE, 
-                              text=True, 
-                              check=True)
-        logger.info(f"FFmpeg installed: {result.stdout.split(chr(10))[0]}")
+        # Run the 'ffmpeg -version' command to check FFmpeg installation
+        result = subprocess.run(
+            ['ffmpeg', '-version'], 
+            stdout=subprocess.PIPE, 
+            stderr=subprocess.PIPE, 
+            text=True,  # Ensures output is returned as a string (not bytes)
+            check=True   # Raises CalledProcessError if the command fails
+        )
+
+        # Log the first line of FFmpeg version output
+        logger.info(f"FFmpeg installed: {result.stdout.splitlines()[0]}")
         return True
+
     except subprocess.CalledProcessError:
         logger.error("FFmpeg failed to run. Check installation.")
         return False
     except FileNotFoundError:
         logger.error("FFmpeg not found. Please install FFmpeg.")
         return False
-
+        
 # Check FFmpeg availability once at startup
 ffmpeg_available = check_ffmpeg_installation()
 logger.info(f"FFmpeg availability: {'Available' if ffmpeg_available else 'Not available'}")
@@ -2078,38 +2083,7 @@ def delete_all_share_links():
 # Global variables
 LAST_TERMINAL_CLEAN = datetime.now()
 
-# Setup terminal cleaning thread
-def clean_terminal_task():
-    """Task to clean terminal every 30 minutes"""
-    global LAST_TERMINAL_CLEAN
-    
-    while True:
-        try:
-            # Clear the terminal based on OS
-            os.system('cls' if os.name == 'nt' else 'clear')
-            
-            # Update the last cleaned time
-            LAST_TERMINAL_CLEAN = datetime.now()
-            
-            # Print a message
-            print("\n" + "="*50)
-            print("Terminal automatically cleaned at", LAST_TERMINAL_CLEAN.strftime("%Y-%m-%d %H:%M:%S"))
-            print("Next cleaning scheduled at", (LAST_TERMINAL_CLEAN + timedelta(minutes=30)).strftime("%Y-%m-%d %H:%M:%S"))
-            print("="*50 + "\n")
-            
-            # Sleep for 30 minutes
-            time.sleep(30 * 60)
-        except Exception as e:
-            print(f"Error in terminal cleaning task: {str(e)}")
-            # If there's an error, wait a bit and try again
-            time.sleep(60)
 
-# Start the terminal cleaning thread
-terminal_cleaner_thread = threading.Thread(target=clean_terminal_task, daemon=True)
-terminal_cleaner_thread.start()
-print("\n" + "="*50)
-print("Terminal cleaning thread started at", datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
-print("="*50 + "\n")
 
 @app.route('/api/clean-terminal', methods=['POST'])
 @login_required
@@ -3049,13 +3023,7 @@ def test_share_link(share_id):
 load_videos()
 load_thumbnails()
 
-# Clean terminal at startup - using thread to avoid blocking
-import threading
-terminal_cleaner_thread = threading.Thread(target=clean_terminal_task, daemon=True)
-terminal_cleaner_thread.start()
-print("\n" + "="*50)
-print("Terminal cleaning thread started at", datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
-print("="*50 + "\n")
+
 
 # Batch upload route
 @app.route('/batch-upload-user')
@@ -3781,4 +3749,4 @@ def get_video_qualities(video_id, video_hash):
 
 # For local development
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True, threaded=True)
+    app.run(host='0.0.0.0', port=8000, debug=True, threaded=True)
